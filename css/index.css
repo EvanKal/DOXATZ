@@ -1,0 +1,181 @@
+/* * {
+  border: 1px solid #f00 !important;
+} */
+/* .slide-content .scroller {
+  width: 1024px;
+} */
+:root {
+    --main-bg-color: $Light;
+    --main-text-color: red;
+  }
+
+  body {
+      background-color: var(--main-bg-color);
+
+  }
+
+h1{
+    color: red;
+}
+
+/* burger menu icon */
+
+.navbar {
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+  height: 8vh;
+}
+
+.navbar-brand img {
+  width: auto;
+  height: 75%;
+}
+
+nav #navbarResponsive {
+  width: 40%;
+  height: 92vh;  
+  top: 8vh;
+  left: -40%;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+
+.slidein {
+  transform: translateX(100%);
+}
+
+/* Carousel */
+.carouselContainer {
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.carouselContainer #carouselExampleCaptions {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carouselContainer img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.carouselContainer .carousel-indicators { 
+  bottom: 20% !important;
+}
+
+.carouselContainer .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+form {
+  top: -6vh;
+  box-shadow: 0 0 20px rgba(0,0,0,.1);
+  padding: 1em;
+  height: 12vh;
+  width: 700px;
+}
+
+.form-group {
+  height: 100%;
+  margin: 0;
+  width: 35%;
+  padding-right: 1.5em;
+  margin-bottom: 0 !important;
+}
+
+.form-group * {
+margin: 0;
+}
+
+form button {
+  height: 100%;
+  margin: 0;
+  width: 20%;
+}
+
+/* Icon carousel */
+.controls-top {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left:0%
+  z-index: 10;
+}
+
+#iconCarousel .active, 
+#iconCarousel .carousel-item-next, 
+#iconCarousel .carousel-item-left,
+#iconCarousel .carousel-item-prev, 
+#iconCarousel .carousel-item-right
+{
+  display: flex;
+}
+
+#iconCarousel .carousel-item-left.active {
+  transform: translateX(-16.66%);
+}
+
+#iconCarousel .carousel-item-right.active {
+  transform: translateX(16.66%);
+}
+
+#iconCarousel .carousel-item-next {
+  transform: translateX(16.66%);
+}
+
+#iconCarousel .carousel-item-prev {
+  transform: translateX(-16.66%);
+}
+
+#iconCarousel .carousel-item-left,
+#iconCarousel .carousel-item-right {
+  transform: translateX(0);
+}
+
+#iconCarousel .carousel-item i {
+  font-size: 2em;
+}
+
+
+/* Card carousel */
+.controls-top {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left:0%
+  z-index: 10;
+}
+
+#cardCarousel .active, 
+#cardCarousel .carousel-item-next, 
+#cardCarousel .carousel-item-left,
+#cardCarousel .carousel-item-prev, 
+#cardCarousel .carousel-item-right
+{
+  display: flex;
+}
+
+
+
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) { ... }
+  
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) { ... }
+  
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) { ... }
+  
+  // Large devices (desktops, less than 1200px)
+  @media (max-width: 1199.98px) { ... }
+  
+  // Extra large devices (large desktops)
+  // No media query since the extra-large breakpoint has no upper bound on its width
