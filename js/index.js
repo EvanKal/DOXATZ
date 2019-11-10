@@ -14,6 +14,16 @@ window.addEventListener('DOMContentLoaded', () => {
     interval: 2000
   });
 
+  $(document).ready(function () {
+    $('.multiple-items').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
+  });
+
 });
 
 window.addEventListener('resize', () => {
