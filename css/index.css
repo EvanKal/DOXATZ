@@ -364,9 +364,9 @@ form button {
   z-index: 10;
 }
 
-.mySlickCarousel .card {
-  width: 250px;
-  min-width: 250px
+.slick-list {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
 }
 
 .mySlickCarousel  .slick-carousel-item{
@@ -374,10 +374,14 @@ form button {
   justify-content: center;
 }
 
-.slick-list {
-  margin-left: 3rem !important;
-  margin-right: 3rem !important;
+.mySlickCarousel.small-coupon-carousel .card {
+  width: 250px;
+  min-width: 250px
 }
+
+
+
+
 
 
 

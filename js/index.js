@@ -15,11 +15,12 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   $(document).ready(function () {
-    $('.multiple-items').slick({
+
+    $('.mySlickCarousel.small-coupon-carousel').slick({
       infinite: false,
-      prevArrow: $(".slick-controls .prev-arrow"),
-      nextArrow: $(".slick-controls .next-arrow"),
-      appendArrows: $(".slick-controls"),
+      prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
       slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
@@ -62,6 +63,55 @@ window.addEventListener('DOMContentLoaded', () => {
         // instead of a settings object
       ]
     });
+
+    
+
+    $('.mySlickCarousel.large-coupon-carousel').slick({
+      infinite: false,
+      prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // infinite: true,
+            // dots: true
+          }
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            // infinite: true,
+            // dots: true
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+
   });
 
 });
