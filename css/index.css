@@ -376,9 +376,47 @@ form button {
 
 .mySlickCarousel.small-coupon-carousel .card {
   width: 250px;
-  min-width: 250px
+  min-width: 250px;
 }
 
+.mySlickCarousel.large-coupon-carousel .card {
+  width: 400px;
+  min-width: 400px;
+  height: 400px;
+  min-height: 400px;
+}
+
+.mySlickCarousel.large-coupon-carousel .card {
+  width: 400px;
+  min-width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block-with-text {
+  overflow: hidden;
+  position: relative; 
+  line-height: 1.2em;
+  max-height: 2.4em; 
+  text-align: justify;  
+  padding-right: 1em;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.block-with-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}
 
 
 

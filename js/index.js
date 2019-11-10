@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   initiateIconCarousel();
   modifyCarouselsToSingleSlideCarousel();
+  checkIfCardDescriptionOverflows();
 
   $('.carousel').carousel({
     touch: true,
@@ -17,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   $(document).ready(function () {
 
     $('.mySlickCarousel.small-coupon-carousel').slick({
-      infinite: false,
+      infinite: true,
       prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
       nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
       appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
@@ -67,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
 
     $('.mySlickCarousel.large-coupon-carousel').slick({
-      infinite: false,
+      infinite: true,
       prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
       nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
       appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
@@ -77,32 +78,16 @@ window.addEventListener('DOMContentLoaded', () => {
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            // infinite: true,
-            // dots: true
-          }
-        },
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            // infinite: true,
-            // dots: true
-          }
-        },
-        {
-          breakpoint: 890,
+          breakpoint: 1330,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            // infinite: true,
+            // dots: true
           }
         },
         {
-          breakpoint: 590,
+          breakpoint: 910,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1
@@ -254,43 +239,20 @@ function nonSlidingCarousel() {
   });
 }
 
-// function setCarouselToSingleSlide() {
+//Cards
 
-//   let carouselItems = $('#iconCarousel .carousel-item');
+//Check if card description is overflowing
 
-//   carouselItems.each(function () {
-//     var next = $(this).next();
-//     if (!next.length) {
-//       next = $(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
+function checkIfCardDescriptionOverflows() {
+  let blockswithtext = $('.card p');
 
-//     for (var i = 0; i < 4; i++) {
-//       next = next.next();
-//       if (!next.length) {
-//         next = $(this).siblings(':first');
-//       }
-//       next.children(':first-child').clone().appendTo($(this));
-//     }
-//   });
-// }
+  blockswithtext.each(function(){
+    let elem = $(this);
+    console.log(elem.parent().innerHeight());
+    console.log(elem.prop("scrollHeight"));
 
-
-//   $('#iconCarousel').carousel({
-//     interval: 10000
-//   })
-
-//   $('#iconCarousel .carousel-item').each(function(){
-//     var next = $(this).next();
-//     if (!next.length) {
-//       next = $(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
-
-//     if (next.next().length>0) {
-//       next.next().children(':first-child').clone().appendTo($(this));
-//     }
-//     else {
-//         $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-//     }
-//   });
+    if(elem.parent().innerHeight() < elem.innerHeight()) {
+      elem.addClass("block-with-text");
+    }
+  });
+}
