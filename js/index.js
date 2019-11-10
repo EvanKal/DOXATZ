@@ -4,32 +4,100 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector("#navbarResponsive").classList.toggle("slidein");
   });
 
+
+
   initiateIconCarousel();
+  modifyCarouselsToSingleSlideCarousel();
+
+  $('.carousel').carousel({
+    touch: true,
+    interval: 2000
+  });
+
 });
 
-function initiateIconCarousel() {
-  let carouselItems = $('#iconCarousel .carousel-item');
-  let iconCarouselControls = document.querySelector("#iconCarousel .controls-top");
-  console.log(iconCarouselControls);
+window.addEventListener('resize', () => {
+  appendProperClassForSlidingSync();
+});
 
-  if (carouselItems.length <= 6) {
 
-    let carouselInner = document.querySelector("#iconCarousel .carousel-inner");
-    iconCarouselControls.classList.add("d-none");
-    $('#iconCarousel').carousel({
-      interval: false
-    });
-    carouselInner.classList.add("d-flex", "justify-content-between");
-    carouselInner.querySelectorAll(".carousel-item").forEach((elem)=>{
-      elem.classList.add("d-block");
-    });
-  } else {
-    setIconCarouselSliding(carouselItems);
-  }
 
+function appendProperClassForSlidingSync() {
+  let carousels = document.querySelectorAll('.singleItemSlideCarousel');
+
+  carousels.forEach((elem) => {
+    let firstitem = elem.querySelector(".carousel-item").querySelector(".carousel-item > div");
+
+    let flexbasis = window.getComputedStyle(firstitem).getPropertyValue("flex-basis");
+    console.log(flexbasis);
+
+    switch (flexbasis) {
+      case '100%':
+        elem.querySelectorAll(".carousel-item").forEach((elem) => {
+          elem.classList.remove("oneItem", "twoItem", "threeItem", "fourItem", "sixItem")
+          elem.classList.add("oneItem");
+        })
+        break;
+      case '50%':
+        elem.querySelectorAll(".carousel-item").forEach((elem) => {
+          elem.classList.remove("oneItem", "twoItem", "threeItem", "fourItem", "sixItem")
+          elem.classList.add("twoItem");
+        })
+        break;
+      case '33.3333%':
+        elem.querySelectorAll(".carousel-item").forEach((elem) => {
+          elem.classList.remove("oneItem", "twoItem", "threeItem", "fourItem", "sixItem")
+          elem.classList.add("threeItem");
+        })
+        break;
+      case '25%':
+        elem.querySelectorAll(".carousel-item").forEach((elem) => {
+          elem.classList.remove("oneItem", "twoItem", "threeItem", "fourItem", "sixItem")
+          elem.classList.add("fourItem");
+        })
+        break;
+      case '16.6667%':
+        elem.querySelectorAll(".carousel-item").forEach((elem) => {
+          elem.classList.remove("oneItem", "twoItem", "threeItem", "fourItem", "sixItem")
+          elem.classList.add("sixItem");
+        })
+        break;
+    }
+  });
 }
 
-function setIconCarouselSliding(carouselItems) {
+function modifyCarouselsToSingleSlideCarousel() {
+  appendProperClassForSlidingSync();
+
+  $(".singleItemSlideCarousel").each(function () {
+
+    let carouselItems = $(this).find(".carousel-item");
+
+    carouselItems.each(function () {
+      console.log("hi");
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+
+    });
+
+  });
+}
+
+
+function setCarouselToSingleSlide(carousel) {
+
+  let carouselItems = $(carousel).find(".carousel-item");
 
   carouselItems.each(function () {
     var next = $(this).next();
@@ -47,6 +115,65 @@ function setIconCarouselSliding(carouselItems) {
     }
   });
 }
+
+
+
+
+// Icon carousel
+
+function initiateIconCarousel() {
+  let carouselItems = $('#iconCarousel .carousel-item');
+
+  if (carouselItems.length <= 6) {
+    nonSlidingCarousel();
+  } else {
+    setCarouselToSingleSlide();
+  }
+
+}
+
+function nonSlidingCarousel() {
+  let carouselItems = $('#iconCarousel .carousel-item');
+
+  // Hide controls and stop the carousel
+  let iconCarouselControls = document.querySelector("#iconCarousel .controls-top");
+
+  iconCarouselControls.classList.add("d-none");
+  $('#iconCarousel').carousel({
+    interval: false
+  });
+
+  //Fix display
+  let carouselInner = document.querySelector("#iconCarousel .carousel-inner");
+
+  carouselInner.classList.add("d-flex", "justify-content-between", "flex-wrap");
+  carouselItems.each(function () {
+    $(this).addClass("d-block");
+    $(this).addClass("item");
+    $(this).removeClass("carousel-item");
+  });
+}
+
+// function setCarouselToSingleSlide() {
+
+//   let carouselItems = $('#iconCarousel .carousel-item');
+
+//   carouselItems.each(function () {
+//     var next = $(this).next();
+//     if (!next.length) {
+//       next = $(this).siblings(':first');
+//     }
+//     next.children(':first-child').clone().appendTo($(this));
+
+//     for (var i = 0; i < 4; i++) {
+//       next = next.next();
+//       if (!next.length) {
+//         next = $(this).siblings(':first');
+//       }
+//       next.children(':first-child').clone().appendTo($(this));
+//     }
+//   });
+// }
 
 
 //   $('#iconCarousel').carousel({

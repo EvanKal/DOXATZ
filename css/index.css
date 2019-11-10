@@ -1,3 +1,5 @@
+html { font-size: calc(0.3em + 1vw) }
+
 /* * {
   border: 1px solid #f00 !important;
 } */
@@ -104,29 +106,33 @@ form button {
   display: flex;
   justify-content: space-between;
   top: 50%;
-  left:0%
   z-index: 10;
 }
 
-#iconCarousel .active, 
+/* #iconCarousel .active, 
 #iconCarousel .carousel-item-next, 
 #iconCarousel .carousel-item-left,
 #iconCarousel .carousel-item-prev, 
 #iconCarousel .carousel-item-right
 {
   display: flex;
+  overflow: hidden;
+
 }
 
 #iconCarousel .carousel-item-left.active {
   transform: translateX(-16.66%);
+
 }
 
 #iconCarousel .carousel-item-right.active {
   transform: translateX(16.66%);
+
 }
 
 #iconCarousel .carousel-item-next {
   transform: translateX(16.66%);
+
 }
 
 #iconCarousel .carousel-item-prev {
@@ -136,9 +142,34 @@ form button {
 #iconCarousel .carousel-item-left,
 #iconCarousel .carousel-item-right {
   transform: translateX(0);
+
+} */
+
+#iconCarousel .carousel-item a div
+{
+  font-size: 0.7em;
 }
 
-#iconCarousel .carousel-item i {
+#iconCarousel .carousel-item a i  
+{
+  font-size: 2em;
+}
+
+.item {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.item div {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.item i {
   font-size: 2em;
 }
 
@@ -150,18 +181,181 @@ form button {
   display: flex;
   justify-content: space-between;
   top: 50%;
-  left:0%
   z-index: 10;
 }
 
-#cardCarousel .active, 
-#cardCarousel .carousel-item-next, 
-#cardCarousel .carousel-item-left,
-#cardCarousel .carousel-item-prev, 
-#cardCarousel .carousel-item-right
+/* .singleItemSlideCarousel .active, 
+.singleItemSlideCarousel .carousel-item-next, 
+.singleItemSlideCarousel .carousel-item-left,
+.singleItemSlideCarousel .carousel-item-prev, 
+.singleItemSlideCarousel .carousel-item-right
 {
-  display: flex;
+  display: flex !important;
+  overflow: hidden;
 }
+
+.singleItemSlideCarousel .carousel-item-left.active {
+  transform: translateX(-33.3%) !important;
+
+}
+
+.singleItemSlideCarousel .carousel-item-right.active {
+  transform: translateX(33.3%) !important;
+
+}
+
+.singleItemSlideCarousel .carousel-item-next {
+  transform: translateX(33.3%) !important;
+
+}
+
+.singleItemSlideCarousel .carousel-item-prev {
+  transform: translateX(-33.3%) !important;
+
+}
+
+.singleItemSlideCarousel .carousel-item-left,
+.singleItemSlideCarousel .carousel-item-right {
+  transform: translateX(0) !important;
+
+} */
+
+
+
+
+/* ////////////////////////////////////////////////////////////// */
+
+/* Carousel handling */
+
+.singleItemSlideCarousel .active, 
+.singleItemSlideCarousel .carousel-item-next, 
+.singleItemSlideCarousel .carousel-item-left,
+.singleItemSlideCarousel .carousel-item-prev, 
+.singleItemSlideCarousel .carousel-item-right
+{
+  display: flex !important;
+  overflow: hidden;
+}
+
+/* One item in carousel */
+
+.singleItemSlideCarousel .carousel-item-left.active.oneItem {
+  transform: translateX(-100%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-right.active.oneItem {
+  transform: translateX(100%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-next.oneItem {
+  transform: translateX(100%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-prev.oneItem {
+  transform: translateX(-100%) !important;
+}
+
+
+.singleItemSlideCarousel .carousel-item-left.oneItem,
+.singleItemSlideCarousel .carousel-item-right.oneItem {
+  transform: translateX(0) !important;
+}
+
+/* Two items in carousel */
+
+.singleItemSlideCarousel .carousel-item-left.active.twoItem {
+  transform: translateX(-50%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-right.active.twoItem {
+  transform: translateX(50%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-next.twoItem {
+  transform: translateX(50%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-prev.twoItem {
+  transform: translateX(-50%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-left.twoItem,
+.singleItemSlideCarousel .carousel-item-right.twoItem {
+  transform: translateX(0) !important;
+}
+
+/* Three items in carousel */
+
+.singleItemSlideCarousel .carousel-item-left.active.threeItem {
+  transform: translateX(-33.33%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-right.active.threeItem {
+  transform: translateX(33.33%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-next.threeItem {
+  transform: translateX(33.33%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-prev.threeItem {
+  transform: translateX(-33.33%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-left.threeItem,
+.singleItemSlideCarousel .carousel-item-right.threeItem {
+  transform: translateX(0) !important;
+}
+
+/* Four items in carousel */
+
+.singleItemSlideCarousel .carousel-item-left.active.fourItem {
+  transform: translateX(-25%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-right.active.fourItem {
+  transform: translateX(25%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-next.fourItem {
+  transform: translateX(25%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-prev.fourItem {
+  transform: translateX(-25%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-left.fourItem,
+.singleItemSlideCarousel .carousel-item-right.fourItem {
+  transform: translateX(0) !important;
+}
+
+/* Six items in carousel */
+
+.singleItemSlideCarousel .carousel-item-left.active.sixItem {
+  transform: translateX(-16.66%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-right.active.sixItem {
+  transform: translateX(16.66%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-next.sixItem {
+  transform: translateX(16.66%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-prev.sixItem {
+  transform: translateX(-16.66%) !important;
+}
+
+.singleItemSlideCarousel .carousel-item-left.sixItem,
+.singleItemSlideCarousel .carousel-item-right.sixItem {
+  transform: translateX(0) !important;
+}
+/* ////////////////////////////////////////////////////////////// */
+
+
+
 
 
 

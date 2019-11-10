@@ -164,12 +164,13 @@
     <div class="container-fluid">
         <div class="row my-5">
 
+
             <div id="iconCarousel"
-                class="carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center text-secondary"
+                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center text-secondary"
                 data-ride="carousel">
 
                 <!--Controls-->
-                <div class="controls-top text-secondary mx-auto">
+                <div class="controls-top text-secondary mx-auto d-none d-md-flex">
                     <a class="btn-floating text-secondary" href="#iconCarousel" data-slide="prev"><i
                             class="fa fa-chevron-left"></i></a>
                     <a class="btn-floating text-secondary" href="#iconCarousel" data-slide="next"><i
@@ -177,68 +178,74 @@
                 </div>
                 <!--/.Controls-->
 
-                <!--Indicators-->
-
-                <!--/.Indicators-->
-
                 <!--items-->
                 <div class="carousel-inner mx-5 p-5" role="listbox">
 
                     <!--First item-->
                     <div class="carousel-item active">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-music w-100"></i> </span> ΔΙΑΣΚΕΔΑΣΗ
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-music col-12"></i>
+                                <div class="col-12">ΔΙΑΣΚΕΔΑΣΗ</div> 
                             </a>
                         </div>
                     </div>
+                    
                     <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-eye w-100"></i> </span> ΚΑΘΗΜΕΡΙΝΑ
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-eye col-12"></i>
+                                <div class="col-12">ΚΑΘΗΜΕΡΙΝΑ</div> 
                             </a>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-shopping-bag w-100"></i> </span>
-                                ΕΝΔΥΣΗ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-plane w-100"></i> </span> ΤΑΞΙΔΙ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-microchip w-100"></i> </span>
-                                ΤΕΧΝΟΛΟΓΙΑ
-                            </a>
-                        </div>
-                    </div>
-                    <!-- <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-car w-100"></i> </span> ΑΥΤΟΚΙΝΗΤΑ
-                            </a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <a class="btn btn-default btn-lg" role="button" aria-pressed="true">
-                                <span class="" aria-hidden="true"> <i class="fa fa-eye w-100"></i> </span> ΕΒΔΟΜΟ
-                            </a>
-                        </div>
-                    </div> -->
 
+                    <div class="carousel-item">
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-shopping-bag col-12"></i>
+                                <div class="col-12">ΕΝΔΥΣΗ</div> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-plane col-12"></i>
+                                <div class="col-12">ΤΑΞΙΔΙ</div> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-microchip col-12"></i>
+                                <div class="col-12">ΤΕΧΝΟΛΟΓΙΑ</div> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-car col-12"></i>
+                                <div class="col-12">ΑΥΤΟΚΙΝΗΤΑ</div> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="col-md-3 col-lg-2 col-4">
+                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                                <i class="fa fa-eye col-12"></i>
+                                <div class="col-12">ΕΒΔΟΜΟ</div> 
+                            </a>
+                        </div>
+                    </div>
+                    
                 </div>
-
             </div>
             <!--/.Carousel Wrapper-->
 
@@ -250,11 +257,11 @@
         <div class="row my-5">
 
             <div id="cardCarousel"
-                class="carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center"
+                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center"
                 data-ride="carousel">
 
                 <!--Controls-->
-                <div class="controls-top text-secondary mx-auto">
+                <div class="controls-top text-secondary mx-auto d-none d-md-flex">
                     <a class="btn-floating text-secondary" href="#cardCarousel" data-slide="prev"><i
                             class="fa fa-chevron-left"></i></a>
                     <a class="btn-floating text-secondary" href="#cardCarousel" data-slide="next"><i
@@ -275,8 +282,7 @@
 
                     <!--First slide-->
                     <div class="carousel-item active">
-
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
@@ -291,8 +297,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
@@ -307,8 +315,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
@@ -323,14 +333,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <!--/.First slide-->
 
-                    <!--Second slide-->
                     <div class="carousel-item">
-
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg"
@@ -345,8 +351,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg"
@@ -361,8 +369,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg"
@@ -377,14 +387,10 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
-                    <!--/.Second slide-->
 
-                    <!--Third slide-->
                     <div class="carousel-item">
-
-                        <div class="col-md-4">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
@@ -399,8 +405,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
@@ -415,8 +423,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col-md-4">
+                    <div class="carousel-item">
+                        <div class="col-md-4 col-6">
                             <div class="card mb-2">
                                 <img class="card-img-top"
                                     src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
@@ -431,7 +441,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <!--/.Third slide-->
 
