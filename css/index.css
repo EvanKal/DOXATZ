@@ -355,10 +355,28 @@ form button {
 /* ////////////////////////////////////////////////////////////// */
 
 /* Slick Carousel */
+.slick-controls {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  z-index: 10;
+}
 
-.slick-track {
-  /* width: 100%; */
-  /* display: flex; */
+.mySlickCarousel .card {
+  width: 250px;
+  min-width: 250px
+}
+
+.mySlickCarousel  .slick-carousel-item{
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-list {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
 }
 
 

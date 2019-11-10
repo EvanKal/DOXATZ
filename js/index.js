@@ -17,10 +17,50 @@ window.addEventListener('DOMContentLoaded', () => {
   $(document).ready(function () {
     $('.multiple-items').slick({
       infinite: false,
-      slidesToShow: 3,
+      prevArrow: $(".slick-controls .prev-arrow"),
+      nextArrow: $(".slick-controls .next-arrow"),
+      appendArrows: $(".slick-controls"),
+      slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // infinite: true,
+            // dots: true
+          }
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            // infinite: true,
+            // dots: true
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
     });
   });
 
