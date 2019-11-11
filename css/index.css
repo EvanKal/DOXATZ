@@ -394,6 +394,24 @@ form button {
     background-repeat: no-repeat;
 }
 
+.mySlickCarousel.large-coupon-carousel .card {
+  width: 400px;
+  min-width: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mySlickCarousel.large-coupon-carousel .card .card-head .logo{
+  width: 100px;
+  height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Class to deal with text truncation 2 lines */
 .block-with-text {
   overflow: hidden;
   position: relative; 
