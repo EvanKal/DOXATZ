@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
       appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
       slidesToShow: 5,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       responsive: [
         {
@@ -245,15 +245,28 @@ function nonSlidingCarousel() {
 //Check if card description is overflowing
 
 function checkIfCardDescriptionOverflows() {
-  let blockswithtext = $('.card p');
+  let blockswithtextinlargecoupons = $('.mySlickCarousel.large-coupon-carousel p');
 
-  blockswithtext.each(function () {
+  blockswithtextinlargecoupons.each(function () {
     let elem = $(this);
     console.log(elem.parent().innerHeight());
     console.log(elem.prop("scrollHeight"));
 
     if (elem.parent().innerHeight() < elem.innerHeight()) {
       elem.addClass("block-with-text");
+      elem.addClass("twoline");
+    }
+  });
+
+  let blockswithtextinsmallcoupons = $('.mySlickCarousel.small-coupon-carousel p');
+  blockswithtextinsmallcoupons.each(function () {
+    let elem = $(this);
+    console.log(elem.parent().innerHeight());
+    console.log(elem.prop("scrollHeight"));
+
+    if (elem.parent().innerHeight() < elem.innerHeight()) {
+      elem.addClass("block-with-text");
+      elem.addClass("threeline");
     }
   });
 }
