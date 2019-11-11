@@ -435,6 +435,11 @@ form button {
     background-repeat: no-repeat;
 }
 
+.mySlickCarousel.small-coupon-carousel .card-head .head-icons-container .head-icon {
+    width: 25px;
+    height: 25px;
+}
+
 /* Large Coupon  */
 
 .mySlickCarousel.large-coupon-carousel .card {
