@@ -1,113 +1,124 @@
-html { font-size: calc(0.3em + 1vw) }
+html {
+    font-size: calc(0.3em + 1vw)
+}
+
 
 /* * {
   border: 1px solid #f00 !important;
 } */
+
+
 /* .slide-content .scroller {
   width: 1024px;
 } */
+
 :root {
     --main-bg-color: $Light;
     --main-text-color: red;
-  }
+}
 
-  body {
-      background-color: var(--main-bg-color);
+body {
+    background-color: var(--main-bg-color);
+}
 
-  }
-
-h1{
+h1 {
     color: red;
 }
+
 
 /* burger menu icon */
 
 .navbar {
-  padding-top: 1.5vh;
-  padding-bottom: 1.5vh;
-  height: 8vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    height: 8vh;
 }
 
 .navbar-brand img {
-  width: auto;
-  height: 75%;
+    width: auto;
+    height: 75%;
 }
 
 nav #navbarResponsive {
-  width: 40%;
-  height: 92vh;  
-  top: 8vh;
-  left: -40%;
-  z-index: 10;
-  transition: 0.5s ease-in-out;
+    width: 40%;
+    height: 92vh;
+    top: 8vh;
+    left: -40%;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
 }
 
 .slidein {
-  transform: translateX(100%);
+    transform: translateX(100%);
 }
 
+
 /* Carousel */
+
 .carouselContainer {
-  height: 80vh;
-  width: 100vw;
-  overflow: hidden;
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .carouselContainer #carouselExampleCaptions {
-  width: 100% !important;
-  height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .carouselContainer img {
-  width: 100% !important;
-  height: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
-.carouselContainer .carousel-indicators { 
-  bottom: 20% !important;
+.carouselContainer .carousel-indicators {
+    bottom: 20% !important;
 }
 
 .carouselContainer .carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 form {
-  top: -6vh;
-  box-shadow: 0 0 20px rgba(0,0,0,.1);
-  padding: 1em;
-  height: 12vh;
-  width: 700px;
+    top: -6vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    padding: 1em;
+    height: 12vh;
+    width: 700px;
 }
 
 .form-group {
-  height: 100%;
-  margin: 0;
-  width: 35%;
-  padding-right: 1.5em;
-  margin-bottom: 0 !important;
+    height: 100%;
+    margin: 0;
+    width: 35%;
+    padding-right: 1.5em;
+    margin-bottom: 0 !important;
 }
 
 .form-group * {
-margin: 0;
+    margin: 0;
 }
 
 form button {
-  height: 100%;
-  margin: 0;
-  width: 20%;
+    height: 100%;
+    margin: 0;
+    width: 20%;
 }
 
+
 /* Icon carousel */
+
 .controls-top {
-  position: absolute;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  z-index: 10;
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    z-index: 10;
 }
+
 
 /* #iconCarousel .active, 
 #iconCarousel .carousel-item-next, 
@@ -145,44 +156,44 @@ form button {
 
 } */
 
-#iconCarousel .carousel-item a div
-{
-  font-size: 0.7em;
+#iconCarousel .carousel-item a div {
+    font-size: 0.7em;
 }
 
-#iconCarousel .carousel-item a i  
-{
-  font-size: 2em;
+#iconCarousel .carousel-item a i {
+    font-size: 2em;
 }
 
 .item {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }
 
 .item div {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .item i {
-  font-size: 2em;
+    font-size: 2em;
 }
 
 
 /* Card carousel */
+
 .controls-top {
-  position: absolute;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  z-index: 10;
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    z-index: 10;
 }
+
 
 /* .singleItemSlideCarousel .active, 
 .singleItemSlideCarousel .carousel-item-next, 
@@ -221,190 +232,206 @@ form button {
 } */
 
 
-
-
 /* ////////////////////////////////////////////////////////////// */
+
 
 /* Carousel handling */
 
-.singleItemSlideCarousel .active, 
-.singleItemSlideCarousel .carousel-item-next, 
+.singleItemSlideCarousel .active,
+.singleItemSlideCarousel .carousel-item-next,
 .singleItemSlideCarousel .carousel-item-left,
-.singleItemSlideCarousel .carousel-item-prev, 
-.singleItemSlideCarousel .carousel-item-right
-{
-  display: flex !important;
-  overflow: hidden;
+.singleItemSlideCarousel .carousel-item-prev,
+.singleItemSlideCarousel .carousel-item-right {
+    display: flex !important;
+    overflow: hidden;
 }
+
 
 /* One item in carousel */
 
 .singleItemSlideCarousel .carousel-item-left.active.oneItem {
-  transform: translateX(-100%) !important;
+    transform: translateX(-100%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-right.active.oneItem {
-  transform: translateX(100%) !important;
+    transform: translateX(100%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-next.oneItem {
-  transform: translateX(100%) !important;
+    transform: translateX(100%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-prev.oneItem {
-  transform: translateX(-100%) !important;
+    transform: translateX(-100%) !important;
 }
-
 
 .singleItemSlideCarousel .carousel-item-left.oneItem,
 .singleItemSlideCarousel .carousel-item-right.oneItem {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
+
 
 /* Two items in carousel */
 
 .singleItemSlideCarousel .carousel-item-left.active.twoItem {
-  transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-right.active.twoItem {
-  transform: translateX(50%) !important;
+    transform: translateX(50%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-next.twoItem {
-  transform: translateX(50%) !important;
+    transform: translateX(50%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-prev.twoItem {
-  transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-left.twoItem,
 .singleItemSlideCarousel .carousel-item-right.twoItem {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
+
 
 /* Three items in carousel */
 
 .singleItemSlideCarousel .carousel-item-left.active.threeItem {
-  transform: translateX(-33.33%) !important;
+    transform: translateX(-33.33%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-right.active.threeItem {
-  transform: translateX(33.33%) !important;
+    transform: translateX(33.33%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-next.threeItem {
-  transform: translateX(33.33%) !important;
+    transform: translateX(33.33%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-prev.threeItem {
-  transform: translateX(-33.33%) !important;
+    transform: translateX(-33.33%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-left.threeItem,
 .singleItemSlideCarousel .carousel-item-right.threeItem {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
+
 
 /* Four items in carousel */
 
 .singleItemSlideCarousel .carousel-item-left.active.fourItem {
-  transform: translateX(-25%) !important;
+    transform: translateX(-25%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-right.active.fourItem {
-  transform: translateX(25%) !important;
+    transform: translateX(25%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-next.fourItem {
-  transform: translateX(25%) !important;
+    transform: translateX(25%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-prev.fourItem {
-  transform: translateX(-25%) !important;
+    transform: translateX(-25%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-left.fourItem,
 .singleItemSlideCarousel .carousel-item-right.fourItem {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
+
 
 /* Six items in carousel */
 
 .singleItemSlideCarousel .carousel-item-left.active.sixItem {
-  transform: translateX(-16.66%) !important;
+    transform: translateX(-16.66%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-right.active.sixItem {
-  transform: translateX(16.66%) !important;
+    transform: translateX(16.66%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-next.sixItem {
-  transform: translateX(16.66%) !important;
+    transform: translateX(16.66%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-prev.sixItem {
-  transform: translateX(-16.66%) !important;
+    transform: translateX(-16.66%) !important;
 }
 
 .singleItemSlideCarousel .carousel-item-left.sixItem,
 .singleItemSlideCarousel .carousel-item-right.sixItem {
-  transform: translateX(0) !important;
+    transform: translateX(0) !important;
 }
+
+
 /* ////////////////////////////////////////////////////////////// */
 
+
 /* Slick Carousel */
+
 .slick-controls {
-  position: absolute;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  z-index: 10;
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    z-index: 10;
 }
 
 .slick-list {
-  margin-left: 3rem !important;
-  margin-right: 3rem !important;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
 }
 
-.mySlickCarousel  .slick-carousel-item{
-  display: flex !important;
-  justify-content: center;
+.mySlickCarousel .slick-carousel-item {
+    display: flex !important;
+    justify-content: center;
 }
 
 .mySlickCarousel.small-coupon-carousel .card {
-  width: 250px;
-  min-width: 250px;
+    width: 250px;
+    min-width: 250px;
 }
 
 .mySlickCarousel.large-coupon-carousel .card {
-  width: 400px;
-  min-width: 400px;
-  height: 400px;
-  min-height: 400px;
-}
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    min-height: 400px;
 
-.mySlickCarousel.large-coupon-carousel .card {
-  width: 400px;
-  min-width: 400px;
-    background-size: cover;
-    background-position: center;
+    background-size: 180%!important;
+    background-position: 50%!important;
+
+    /* background-size: cover;
+    background-position: center; */
     background-repeat: no-repeat;
+
+    transition: background-size .3s ease-in;
+    -webkit-transition: background-size .3s ease-in;
 }
 
-.mySlickCarousel.large-coupon-carousel .card {
-  width: 400px;
-  min-width: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.mySlickCarousel.large-coupon-carousel .slick-carousel-item:hover .card {
+    /* background-origin: border-box; */
+    background-size: 200%!important;
 }
 
-.mySlickCarousel.large-coupon-carousel .card .card-head .logo{
-  width: 100px;
-  height: 100px;
+.mySlickCarousel.large-coupon-carousel .slick-carousel-item:hover .card:after {
+    content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid orange;
+  /* transition: border-width 1s linear; */
+  pointer-events: none;
+}
+
+.mySlickCarousel.large-coupon-carousel .card .card-head .logo {
+    width: 100px;
+    height: 100px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -412,47 +439,52 @@ form button {
 
 
 /* Class to deal with text truncation 2 lines */
+
 .block-with-text {
-  overflow: hidden;
-  position: relative; 
-  line-height: 1.2em;
-  max-height: 2.4em; 
-  text-align: justify;  
-  padding-right: 1em;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.2em;
+    max-height: 2.4em;
+    text-align: justify;
+    padding-right: 1em;
 }
+
 .block-with-text:before {
-  content: '...';
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
+
 .block-with-text:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  width: 1em;
-  height: 1em;
-  margin-top: 0.2em;
-  background: white;
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: white;
 }
 
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    ...
+}
 
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    ...
+}
 
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    ...
+}
 
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    ...
+}
 
-
-
-  // Extra small devices (portrait phones, less than 576px)
-  @media (max-width: 575.98px) { ... }
-  
-  // Small devices (landscape phones, less than 768px)
-  @media (max-width: 767.98px) { ... }
-  
-  // Medium devices (tablets, less than 992px)
-  @media (max-width: 991.98px) { ... }
-  
-  // Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) { ... }
-  
-  // Extra large devices (large desktops)
-  // No media query since the extra-large breakpoint has no upper bound on its width
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
