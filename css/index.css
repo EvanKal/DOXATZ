@@ -500,6 +500,24 @@ form button {
     background-repeat: no-repeat;
 }
 
+/* Jumbotron */
+
+.jumbotron .jumbotron-hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 180%!important;
+    background-position: 50%!important; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.jumbotron .jumbotron-left {
+    padding: 5em;
+    left: 15%;
+    z-index: 1;
+}
+
 
 /* Class to deal with text truncation 2 lines */
 
