@@ -23,27 +23,23 @@ window.addEventListener('DOMContentLoaded', () => {
       prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
       nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
       appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
-      slidesToShow: 5,
+      slidesToShow: 4,
       slidesToScroll: 1,
       autoplay: false,
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            // infinite: true,
-            // dots: true
-          }
-        },
-        {
           breakpoint: 1400,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
-            // infinite: true,
-            // dots: true
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
           }
         },
         {
@@ -60,9 +56,6 @@ window.addEventListener('DOMContentLoaded', () => {
             slidesToScroll: 1
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
     });
 
@@ -75,16 +68,14 @@ window.addEventListener('DOMContentLoaded', () => {
       appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1330,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            // infinite: true,
-            // dots: true
+            slidesToScroll: 1
           }
         },
         {
@@ -107,6 +98,183 @@ window.addEventListener('resize', () => {
 });
 
 
+
+// mySlickCarousel set up
+
+let optionsByMaxNumberOfSlidesToBeDisplayed = {
+  // nocarousel: {
+  //   arrows: false,
+  //   autoplay: false,
+  //   infinite: false,
+  //   responsive: []
+  // },
+  // setupcarousel: {
+  //   arrows: true,
+  //   autoplay: true,
+  //   infinite: true
+  // },
+
+  'large-coupon-carousel': {
+
+    threeslides: {
+      slidesToShow: 3,
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      responsive: [
+          {
+            breakpoint: 1330,
+            settings: {
+              arrows: true,
+              autoplay: true,
+              infinite: true,
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 910,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+      ]
+    },
+
+    twoslides: {
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 910,
+          settings: {
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    },
+
+    oneslide: {
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      slidesToShow: 1,
+      responsive: []
+    }
+  },
+
+  'small-coupon-carousel': {
+    fourslides: {
+      slidesToShow: 4,
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    },
+
+    threeslides: {
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 890,
+          settings: {
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    },
+
+    twoslides: {
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 590,
+          settings: {
+            arrows: true,
+            autoplay: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    },
+
+    oneslide: {
+      arrows: false,
+      autoplay: false,
+      infinite: false,
+      slidesToShow: 1,
+      responsive: []
+    }
+  }
+
+  
+}
+
+
+
+
+
+
+
+// Single Slide Bootstrap Carousel Set up
 
 function appendProperClassForSlidingSync() {
   let carousels = document.querySelectorAll('.singleItemSlideCarousel');
