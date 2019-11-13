@@ -36,21 +36,22 @@ h1 {
 /* burger menu icon */
 
 .navbar {
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
+    width: 100vw;
     height: 8vh;
+    z-index: 100;
+    position: fixed !important;
 }
 
 .navbar-brand img {
     width: auto;
-    height: 75%;
+    height: 100%;
 }
 
 nav #navbarResponsive {
-    width: 40%;
+    width: 20%;
     height: 92vh;
     top: 8vh;
-    left: -40%;
+    left: -20%;
     z-index: 10;
     transition: 0.5s ease-in-out;
 }
@@ -58,6 +59,11 @@ nav #navbarResponsive {
 .slidein {
     transform: translateX(100%);
 }
+
+.navbar ul {
+    list-style: none;
+}
+/* Nav Bar */
 
 
 /* Carousel */

@@ -35,7 +35,7 @@ function initializeCarousels() {
     appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay:  true,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -97,7 +97,7 @@ function initializeCarousels() {
     ]
   });
 }
- 
+
 
 
 function setUpSlickCarouselDisplayOptions() {
@@ -300,7 +300,7 @@ function setUpSlickCarouselDisplayOptions() {
 
   });
 
-  
+
 }
 
 function assignOptionsToCarousel(carousel, options) {
@@ -309,17 +309,17 @@ function assignOptionsToCarousel(carousel, options) {
   for (let [objkey, objvalue] of Object.entries(options)) {
 
     // console.log(`key ${objkey}: value ${objvalue} AND ${options[objkey]}`);
-    
+
 
     if (options[objkey].value == slickitemsnum) {
 
 
       let optionsforthiscarousel = options[objkey].options;
-      for (let [key, value] of Object.entries(optionsforthiscarousel)){
+      for (let [key, value] of Object.entries(optionsforthiscarousel)) {
 
         console.log(key, ":", optionsforthiscarousel[key]);
 
-        
+
         $(carousel).slick('slickSetOption', key, optionsforthiscarousel[value], false);
       }
 

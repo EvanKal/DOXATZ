@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light py-1">
 
-        <div class="my-auto mx-2">
+        <div class="my-auto col-1 d-flex justify-content-center">
             <button class="navbar-toggler" type="button" aria-controls="#navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span><i class="fa fa-bars"></i></span>
@@ -26,15 +26,15 @@
         </div>
 
 
-        <div class="d-flex h-100 mx-2" id="logoContainer">
-            <a class="navbar-brand h-100" href="#"><img src="images/logo/promobooklogo.jpg" alt="logo"
-                    class="h-100"></a>
+        <div class="d-flex p-0 col-2 h-100" id="logoContainer">
+            <a class="navbar-brand p-0 d-flex align-items-center w-100 h-100" href="#"><img
+                    src="images/logo/promobooklogo.jpg" alt="logo" class=""></a>
         </div>
 
         <div class="ml-auto mt-auto mb-auto d-flex" id="navButtonsContainer">
 
             <!-- <div class="d-inline"> -->
-            <select class="custom-select custom-select-sm mx-1">
+            <select class="custom-select custom-select-sm">
                 <option selected>ΕΛΛΗΝΙΚΑ</option>
                 <option value="1">ENGLISH</option>
             </select>
@@ -46,29 +46,108 @@
         </div>
 
 
-        <div class="ml-auto position-fixed bg-light" id="navbarResponsive">
-            <!-- <div class="container-fluid">
-                        <div class="row p-2">
-                            <button type="button" class="close btn btn-secondary ml-auto" data-toggle="collapse"
-                                data-target="#navbarResponsive">&times;</button>
-                        </div>
-                        <div class="row p-2 justify-content-center">
-                            <a class="navbar-brand col-8" href="#"><img src="images/logo/dummylogo.jpg" alt="logo"
-                                    class="img-fluid"></a>
-                        </div>
-                    </div> -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+        <div class="ml-auto position-fixed bg-light slidein" id="navbarResponsive">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="accordion col-12 " id="navMenuLinks">
+                        <li class="border-0">
+                            <div class="p-1" id="headingOne">
+                                <a class="collapsed col d-flex align-items-center p-0" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo" href=#>
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">Facebook</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingTwo">
+                                <a class="collapsed col d-flex align-items-center p-0" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" href=#>
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">Facebook</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingThree">
+                                <a class="collapsed col d-flex align-items-center p-0" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo"
+                                    href=#>
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">Facebook</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="p-1">
+                        <p class="text-dark col-12 ">Νέος Χρήστης</p>
+                        <a class="btn btn-outline-dark btn-sm" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
         </div>
+        </div>
+
+
 
     </nav>
 
@@ -508,15 +587,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(15).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -570,15 +649,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -632,15 +711,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -694,15 +773,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -755,15 +834,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(3).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center  shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center  shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
                                             class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center  shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center  shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center  shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -816,15 +895,15 @@
                             <div class="card-top h-75 w-100">
                                 <div class="card-head w-100 h-50 d-flex justify-content-end"
                                     style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(37).jpg'); ">
-                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end p-1">
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-hourglass"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-eye"></i></div>
                                         <div
-                                            class="head-icon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            class="head-icon badge bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
                                             <i class="fa fa-car"></i></div>
                                     </div>
                                 </div>
@@ -1445,44 +1524,98 @@
         </div>
     </div>
 
-    <footer>
-        <div class="container-fluid">
-            <div class="row text-center">
-                <div class="col-3">
-                    <p>Ακολουθήστε μας</p>
-                    <a class="footer-link-to-site">
-                        <div class=""><i class="fa fa-facebook-square"></i></div>
-                        <p>Facebook</p>
+    <footer class="page-footer">
+        <div class="container-fluid bg-light text-secondary">
+            <div class="row text-center p-3">
+                <div class="col-3 justify-content-center">
+                    <h3 class="h5 display-6 text-dark col text-center">Ακολουθήστε μας:</h3>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <a class="footer-link-to-site btn col  d-flex align-items-center justify-content-around" href=#>
+                        <div class="w-25 text-right"><i class="fa fa-facebook-square"></i></div>
+                        <p class="w-50 m-0 text-left">Facebook</p>
                     </a>
-                    <a class="footer-link-to-site">
-                        <div class=""><i class="fa fa-twitter"></i></div>
-                        <p>Twitter</p>
+                    <a class="footer-link-to-site btn col  d-flex align-items-center justify-content-around" href=#>
+                        <div class="w-25 text-right"><i class="fa fa-twitter"></i></div>
+                        <p class="w-50 m-0 text-left">Twitter</p>
                     </a>
-                    <a class="footer-link-to-site">
-                        <div class=""><i class="fa fa-instagram"></i></div>
-                        <p>Instagram</p>
+                    <a class="footer-link-to-site btn col  d-flex align-items-center justify-content-around" href=#>
+                        <div class="w-25 text-right"><i class="fa fa-instagram"></i></div>
+                        <p class="w-50 m-0 text-left">Instagram</p>
                     </a>
                 </div>
                 <div class="col-3">
-                    <p>Σχετικά με</p>
+                    <h3 class="h5 display-6 text-dark col text-center">Σχετικά με</h3>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="col-3">
-                    <p>Προσφορές</p>
+                    <h3 class="h5 display-6 text-dark col text-center">Προσφορές</h3>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-3">
-                    <p>Κατεβάστε το PROMO BOOK στο κινητό σας!</p>
-                    <div class="col-12 h-100 d-flex flex-column">
-                        <div class="w-75 h-50 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" style="width: 85%" src="images/logo/google-play-badge.png"
+                <div class="col-3 h-auto">
+                    <h3 class="h5 display-7 h-25 text-dark col text-center m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
+                    </h3>
+                    <div class="col-12 h-75">
+                        <div class="col-12 h-50 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid w-50" src="images/logo/google-play-badge.png"
                                 alt="Get it on google play">
                         </div>
-                        <div class="w-75 h-50 d-flex align-items-center justify-content-center">
-                            <img class="w-75 img-fluid" src="images/logo/Download_on_the_App_Store_Badge.png"
-                                alt="Download on the app store">
+                        <div class="col-12 h-50 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid" style="width: 44%"
+                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
+                <div class="w-25 h-100 d-flex align-items-center">
+                </div>
+                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
+                <div class="w-50 h-100 text-center">
+                    <a href="https://mdbootstrap.com/education/bootstrap/"><span class="footer-copyright text-center">©
+                            2018 Copyright:</span>Promobook SA</a>
+                </div>
+                <div class="w-25 h-100 d-flex align-items-center">
+
+                    <div class="logo-container w-100 h-50 d-flex justify-content-end">
+                        <img src="images/logo/dummylogo.jpg" class="w-50 img-fluid">
+                    </div>
+
+                    <div class="w-75 d-flex">
+                        <div class="px-2 d-flex align-items-center">
+                            <span>DOERS SA Production</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         </div>
     </footer>
 
