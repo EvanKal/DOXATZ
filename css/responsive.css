@@ -1,0 +1,111 @@
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devic/es (landscape phones, 576px and up) */
+
+
+@media (min-width: 576px) { 
+    .carouselContainer img {
+        width: auto !important;
+        height: 100% !important;
+    }
+
+    #offerscontainer h1 {
+        font-size: 2.5rem;
+    }
+
+ }
+
+ 
+@media (min-width: 680px) { 
+    .carouselContainer img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    html {
+        font-size: calc(0.3em + 1vw);
+}
+
+nav #navbarResponsive {
+        width: 30%;
+        left: -30%;
+}
+
+    /* Carousel */
+
+.carouselContainer {
+    height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.carouselContainer #carouselExampleCaptions {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carouselContainer .carousel-indicators {
+    bottom: 10% !important;
+}
+
+.carouselContainer img {
+    width: auto !important;
+    height: 100% !important;
+}
+
+.carouselContainer .carousel-control-prev-icon,
+.carouselContainer .carousel-control-next-icon {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carouselContainer .carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+form {
+    top: -6vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    padding: 1em;
+    height: 12vh;
+    width: 700px;
+}
+
+.form-group {
+    height: 100%;
+    margin: 0;
+    width: 35%;
+    padding-right: 1.5em;
+    margin-bottom: 0 !important;
+}
+
+.form-group * {
+    margin: 0;
+}
+
+form button {
+    height: 100%;
+    margin: 0;
+    width: 20%;
+}
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    nav #navbarResponsive {
+        width: 20%;
+        left: -20%;
+    }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }

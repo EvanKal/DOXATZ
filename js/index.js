@@ -23,6 +23,26 @@ window.addEventListener('resize', () => {
   appendProperClassForSlidingSync();
 });
 
+//NavBar event Handlers
+
+window.addEventListener('click', (event) => {
+  menuLinkClickHandler(event);
+});
+
+function menuLinkClickHandler(event) {
+  if (event.target.parentElement.classList.contains("navmenulink")) {
+    collapseAllLinks(event.target.parentElement.querySelector("div i"));
+    event.target.parentElement.querySelector("div i").classList.toggle("menulinkiconrotate");
+  }
+}
+
+function collapseAllLinks(clicked) {
+  document.querySelectorAll("#navbarResponsive .navmenulink div i").forEach((elem) => {
+    if (elem != clicked) {
+      elem.classList.remove("menulinkiconrotate");
+    }
+  });
+}
 
 
 // mySlickCarousel set up
