@@ -31,7 +31,33 @@ body {
 }
 
 h1 {
-    color: red;
+    font-size: 2.2rem !important;
+    font-weight: 100 !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    font-weight: 100 !important;
+}
+
+h3 {
+    font-size: 1.8rem !important;
+    font-weight: 100 !important;
+}
+
+h4 {
+    font-size: 1.6rem !important;
+    font-weight: 100 !important;
+}
+
+h5 {
+    font-size: 1.4rem !important;
+    font-weight: 100 !important;
+}
+
+h6 {
+    font-size: 1.2rem !important;
+    font-weight: 100 !important;
 }
 
 
@@ -102,6 +128,11 @@ nav #navbarResponsive .navmenulink div i {
     height: 100% !important;
 }
 
+.carouselContainer .carousel-caption h3{
+    font-size: 4rem !important;
+    font-weight: 400 !important;
+}
+
 .carouselContainer img {
     width: auto !important;
     height: 100% !important;
@@ -113,14 +144,19 @@ nav #navbarResponsive .navmenulink div i {
 
 .carouselContainer .carousel-caption {
     position: absolute;
-    top: 60%;
-    transform: translateY(-60%);
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carouselContainer .carousel-caption p{
+    font-size: 1.5rem !important;
+    font-weight: 400 !important;
 }
 
 form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
-    height: 15vh;
+    height: 20vh;
     width: 100%;
 }
 
@@ -130,6 +166,10 @@ form {
     width: 35%;
     padding-right: 1.5em;
     margin-bottom: 0 !important;
+}
+
+.form-control {
+font-size: 1.3rem !important;
 }
 
 .form-group * {
@@ -153,10 +193,10 @@ form button span i{
     height: 30vh;
 }
 
-#offerscontainer h1 {
+/* #offerscontainer h1 {
     font-size: 2.2rem;
     font-weight: 100;
-}
+} */
 
 /* Collapse */
 
@@ -294,10 +334,10 @@ form button span i{
 /* ////////////////////////////////////////////////////////////// */
 /* Carousel heades */
 
-#newoffers h2 {
+/* #newoffers h2 {
     font-size: 1.5rem !important;
     font-weight: 100 !important;
-}
+} */
 
 
 /* Carousel handling */
@@ -551,8 +591,8 @@ form button span i{
 }
 
 .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
