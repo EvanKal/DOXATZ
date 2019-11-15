@@ -17,10 +17,14 @@
         left: -50%;
     }
 
-    .main-search form div:first-child {
+    .navbar-toggler-slidein {
+        transform: translateX(700%);
+    }
+
+    /* .main-search form div:first-child {
         border-bottom: 0!important;
         border-right: 1px solid #dee2e6!important;
-    }
+    } */
 
     .mySlickCarousel.large-coupon-carousel .card {
         width: 400px;
@@ -83,6 +87,14 @@ nav #navbarResponsive {
         left: -30%;
 }
 
+.navbar-toggler-slidein {
+    transform: translateX(500%);
+}
+
+.main-search form div:first-child {
+    border-bottom: 0!important;
+    border-right: 1px solid #dee2e6!important;
+}
     /* Carousel */
 
 .carouselContainer {
@@ -161,7 +173,6 @@ transform: translateY(-50%);
 /* Jumbotron */
 
 .jumbotron .jumbotron-hero {
-    height: auto;
     background-size: cover;
     background-position: center;
     /* background-size: 180%!important;
@@ -173,7 +184,7 @@ transform: translateY(-50%);
 .jumbotron .jumbotron-left {
     position: relative !important;
     padding: 5em;
-    left: 15%;
+    left: 10%;
     z-index: 1;
     align-items: center;
 }
@@ -192,6 +203,10 @@ transform: translateY(-50%);
 @media (min-width: 992px) { 
     html {
         font-size: calc(0.25em + 1vw) !important;
+    }
+
+    .navbar-toggler-slidein {
+        transform: translateX(600%);
     }
 
     .carouselContainer img {
@@ -214,6 +229,16 @@ transform: translateY(-50%);
 @media (min-width: 1200px) { 
     html {
         font-size: calc(0.1em + 1vw) !important;
+    }
+
+    nav #navbarResponsive {
+        width: 25%;
+        left: -25%;
+    }
+
+    .navbar-toggler-slidein {
+        /* left: 20% */
+        transform: translateX(650%);
     }
 
     .download-images .download-images-gp{

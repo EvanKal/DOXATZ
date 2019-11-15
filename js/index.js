@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('nav .navbar-toggler').addEventListener('click', () => {
     document.querySelector("#navbarResponsive").classList.toggle("slidein");
+    document.querySelector(".navbar-toggler").classList.toggle("navbar-toggler-slidein");
   });
 
 
