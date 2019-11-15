@@ -6,10 +6,20 @@
 
 
 @media (min-width: 576px) { 
+
+    html {
+        font-size: calc(0.4em + 1vw);
+    }
+
     
     nav #navbarResponsive {
         width: 50%;
         left: -50%;
+    }
+
+    .main-search form div:first-child {
+        border-bottom: 0!important;
+        border-right: 1px solid #dee2e6!important;
     }
 
     .mySlickCarousel.large-coupon-carousel .card {
@@ -35,7 +45,6 @@
     .mySlickCarousel.large-coupon-carousel .card .card-bottom .price,
     .mySlickCarousel.large-coupon-carousel .card .card-bottom .rating-display {
         font-size: 1.5rem !important;
-        font-weight: 300 !important;
     }
 
     .carouselContainer img {
@@ -43,31 +52,12 @@
         height: 100% !important;
     }
 
-    h1 {
-        font-size: 2.5rem !important;
-    }
-
-    h2 {
-        font-size: 2.1rem !important;
-    }
-    h3 {
-        font-size: 1.8rem !important;
-        font-weight: 100 !important;
+    .download-images .download-images-gp{
+        width: 55%;
     }
     
-    h4 {
-        font-size: 1.5rem !important;
-        font-weight: 100 !important;
-    }
-    
-    h5 {
-        font-size: 1.3rem !important;
-        font-weight: 100 !important;
-    }
-    
-    h6 {
-        font-size: 1.2rem !important;
-        font-weight: 100 !important;
+    .download-images .download-images-appst{
+        width: 50%;
     }
 
  }
@@ -84,7 +74,7 @@
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    html {
+html {
         font-size: calc(0.3em + 1vw);
 }
 
@@ -96,7 +86,7 @@ nav #navbarResponsive {
     /* Carousel */
 
 .carouselContainer {
-    height: 80vh;
+    height: 70vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -127,8 +117,17 @@ nav #navbarResponsive {
     transform: translateY(-50%);
 }
 
-form {
-    top: -6vh;
+#offerscontainer {
+    height: 20vh;
+}
+
+#offerscontainer div {
+transform: translateY(-50%);
+}
+
+.main-search form {
+    position: relative!important;
+    top: -6vh !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
     height: 12vh;
@@ -147,11 +146,17 @@ form {
     margin: 0;
 }
 
-form button {
-    height: 100%;
+.main-search form button {
+    height: 100% !important;
     margin: 0;
     width: 20%;
+    font-size: 1.2rem !important;
 }
+
+.main-search form button span i{
+    font-size: 1.5rem !important;
+}
+
 
 /* Jumbotron */
 
@@ -172,23 +177,54 @@ form button {
     z-index: 1;
     align-items: center;
 }
+
+ .download-images .download-images-gp{
+    width: 65%;
+}
+
+ .download-images .download-images-appst{
+    width: 60%;
+}
+
  }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     html {
-        font-size: calc(0.3em + 1vw) !important;
+        font-size: calc(0.25em + 1vw) !important;
+    }
+
+    .carouselContainer img {
+        width: 100% !important;
+        height: auto !important;
     }
 
     nav #navbarResponsive {
-        width: 20%;
-        left: -20%;
+        width: 30%;
+        left: -30%;
     }
+
+    footer .logo-container img {
+        width: 35% !important;
+    }
+
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     html {
         font-size: calc(0.1em + 1vw) !important;
+    }
+
+    .download-images .download-images-gp{
+        width: 55%;
+    }
+    
+     .download-images .download-images-appst{
+        width: 50%;
+    }
+
+    footer .logo-container img {
+        width: 25% !important;
     }
  }

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light py-1">
+    <nav class="navbar navbar-light py-1">
 
         <div class="my-auto col-2 col-md-1 d-flex">
             <button class="navbar-toggler" type="button" aria-controls="#navbarResponsive" aria-expanded="false"
@@ -35,14 +35,14 @@
         <div class="ml-auto mt-auto mb-auto d-none d-md-flex" id="navButtonsContainer">
 
             <!-- <div class="d-inline"> -->
-            <select class="custom-select custom-select-sm border-0 bg-light">
+            <select class="custom-select custom-select-sm border-0 bg-none">
                 <option selected>ΕΛΛΗΝΙΚΑ</option>
                 <option value="1">ENGLISH</option>
             </select>
             <!-- </div> -->
 
-            <a class="btn btn-primary btn-sm  mx-1" href="#" role="button">ΕΓΓΡΑΦΗ</a>
-            <a class="btn btn-outline-dark btn-sm  mx-1" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+            <a class="btn btn-light btn-sm  mx-1" href="#" role="button">ΕΓΓΡΑΦΗ</a>
+            <a class="btn btn-outline-light btn-sm  mx-1" href="#" role="button">ΣΥΝΔΕΣΗ</a>
 
         </div>
 
@@ -168,7 +168,7 @@
                 <div class="row nav-search">
                     <form action="" class="shadow-none h-100 d-flex align-items-center flex-wrap">
                         <div class="form-group col-6 p-1">
-                            <input type="search" class="h-75 form-control border-0 bg-light" placeholder="ΨΑΧΝΩ...">
+                            <input type="search" class="form-control border-0 bg-light" placeholder="ΨΑΧΝΩ...">
                         </div>
                         <div class="form-group col-6 p-1">
                             <input type="search" class="h-75 form-control border-0 bg-light" placeholder="ΠΕΡΙΟΧΗ">
@@ -186,7 +186,7 @@
     </nav>
 
     <div class="container-fluid position-relative">
-        <div class="row ">
+        <div class="row">
             <div class="carouselContainer d-flex position-relative m-0">
 
                 <!-- The carousel -->
@@ -199,21 +199,24 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/1.jpg" class="" alt="...">
+                            <div class="hero-image" style="background-image: url('images/1.jpg');"></div>
+                            <!-- <img src="images/1.jpg" class="" alt="..."> -->
                             <div class="carousel-caption ">
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/2.jpg" class="" alt="...">
+                                <div class="hero-image" style="background-image: url('images/2.jpg');"></div>
+                            <!-- <img src="images/2.jpg" class="" alt="..."> -->
                             <div class="carousel-caption ">
                                 <h3>Second slide label</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="images/3.jpg" class="" alt="...">
+                                <div class="hero-image" style="background-image: url('images/3.jpg');"></div>
+                            <!-- <img src="images/3.jpg" class="" alt="..."> -->
                             <div class="carousel-caption ">
                                 <h3>Third slide label</h3>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
@@ -236,12 +239,10 @@
 
 
         <!-- The search boxes on the bottom of the carousel -->
-        <div class="row 
-        <!-- position-relative d-flex justify-content-center -->
-        ">
+        <div class="row main-search position-relative d-md-flex bg-light justify-content-center">
 
             <form
-                class="bg-white ml-auto mr-auto position-md-absolute flex-wrap d-flex flex-md-row justify-content-between align-items-center p-1">
+                class="bg-white ml-auto mr-auto flex-md-nowrap flex-wrap d-flex flex-md-row justify-content-between align-items-center p-1">
                 <div
                     class="w-100 h-50 form-group d-flex flex-column justify-content-center border-bottom border-md-right">
                     <select class="form-control form-control-sm mx-md-1 border-0">
@@ -272,14 +273,14 @@
 
     <div class="container-fluid bg-light d-flex flex-column align-items-around justify-content-center"
         id="offerscontainer">
-        <div class="row w-100 text-center mb-2 ">
+        <div class="row w-100 text-center">
             <div class="col-12 padding">
                 <h1 class="text-dark">Δείτε τις προσφορές μας</h1>
             </div>
         </div>
         <div class="row w-100 text-center justify-content-center">
             <div class="col-12 padding justify-content-center d-flex">
-                <select class="form-control form-control-sm mx-1 col-6 border-0 bg-light">
+                <select class="form-control form-control-sm mx-1 col-6  col-md-4 border-0 bg-light">
                     <option selected>Επιλέξτε</option>
                 </select>
             </div>
@@ -332,7 +333,7 @@
     <div class="container-fluid">
         <div class="row">
             <div id="iconCarousel"
-                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center text-secondary"
+                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center text-secondary mb-2"
                 data-ride="carousel">
 
                 <!--Controls-->
@@ -350,7 +351,7 @@
                     <!--First item-->
                     <div class="carousel-item active">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-music col-12"></i>
                                 <div class="">ΔΙΑΣΚΕΔΑΣΗ</div>
                             </a>
@@ -359,7 +360,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-eye col-12"></i>
                                 <div class="">ΚΑΘΗΜΕΡΙΝΑ</div>
                             </a>
@@ -368,7 +369,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-shopping-bag col-12"></i>
                                 <div class="">ΕΝΔΥΣΗ</div>
                             </a>
@@ -377,7 +378,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-plane col-12"></i>
                                 <div class="">ΤΑΞΙΔΙ</div>
                             </a>
@@ -386,7 +387,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-microchip col-12"></i>
                                 <div class="">ΤΕΧΝΟΛΟΓΙΑ</div>
                             </a>
@@ -395,7 +396,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-car col-12"></i>
                                 <div class="">ΑΥΤΟΚΙΝΗΤΑ</div>
                             </a>
@@ -404,7 +405,7 @@
 
                     <div class="carousel-item">
                         <div class="col-md-3 col-lg-2 col-4">
-                            <a class="btn btn-default btn-lg col-12" role="button" aria-pressed="true">
+                            <a class="btn btn-default btn-lg col-12 p-0" role="button" aria-pressed="true">
                                 <i class="fa fa-eye col-12"></i>
                                 <div class="">ΕΒΔΟΜΟ</div>
                             </a>
@@ -1070,7 +1071,7 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="download-promo">
         <div class="row m-4">
             <div class="col-6 col-md-5 d-flex align-items-center">
                 <p class="m-0 h5">
@@ -1080,13 +1081,13 @@
             <div class="col-6 col-md-2  d-flex align-items-center justify-content-center">
                 <img src="images/logo/promobooklogo.jpg" alt="logo" class="w-100 img-fluid">
             </div>
-            <div class="col-12 col-md-5 d-flex p-2 p-md-0">
+            <div class="download-images col-12 col-md-5 d-flex p-2 p-md-0">
                 <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <img class="img-fluid" style="width: 85%" src="images/logo/google-play-badge.png"
+                    <img class="img-fluid download-images-gp" src="images/logo/google-play-badge.png"
                         alt="Get it on google play">
                 </div>
                 <div class="col-6 d-flex flex-column align-items-center justify-content-center">
-                    <img class="w-75 img-fluid" src="images/logo/Download_on_the_App_Store_Badge.png"
+                    <img class="img-fluid download-images-appst" src="images/logo/Download_on_the_App_Store_Badge.png"
                         alt="Download on the app store">
                 </div>
             </div>
@@ -1627,16 +1628,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 d-flex flex-wrap mb-3">
+                <div class="col-md-3 d-flex flex-wrap mb-3 download-images">
                     <h4 class="text-dark col text-center m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
                     </h4>
-                    <div class="col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class="col-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid w-75" src="images/logo/google-play-badge.png"
+                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
+                        <div class=" col-6 col-md-12 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid download-images-gp" src="images/logo/google-play-badge.png"
                                 alt="Get it on google play">
                         </div>
-                        <div class="col-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid" style="width: 70%"
+                        <div class=" col-6 col-md-12 d-flex align-items-center justify-content-center">
+                            <img class="img-fluid download-images-appst" style="width: 70%"
                                 src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
                         </div>
                     </div>

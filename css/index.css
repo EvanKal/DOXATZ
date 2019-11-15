@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap');
 
 
 html {
-    font-size: calc(0.6em + 1vw);
+    font-size: calc(0.5em + 1vw);
 }
 
 body {
@@ -70,6 +70,16 @@ h6 {
     position: fixed !important;
 }
 
+.navbar-toggler {
+    color: white !important;
+    border: rgba(255,255,255,.1) !important;
+}
+
+.navbar select {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .navbar-brand img {
     width: auto;
     height: 100%;
@@ -114,7 +124,7 @@ nav #navbarResponsive .navmenulink div i {
 /* Carousel */
 
 .carouselContainer {
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -137,14 +147,31 @@ nav #navbarResponsive .navmenulink div i {
     height: 100% !important;
 }
 
-.carouselContainer .carousel-caption h3{
-    font-size: 4rem !important;
-    font-weight: 400 !important;
+.carouselContainer .carousel-item:before {
+    z-index: 0;
+    background: radial-gradient(ellipse at center,transparent 0,#000 100%);
 }
 
-.carouselContainer img {
+.carouselContainer .carousel-caption h3{
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+}
+
+.carouselContainer .hero-image {
     width: auto !important;
     height: 100% !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.carouselContainer .hero-image:before {
+    position: absolute;
+    left: 0!important;
+    right: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-color: rgba(0,0,0,.4)!important;
+    content: ""!important;
 }
 
 .carouselContainer .carousel-indicators {
@@ -159,13 +186,13 @@ nav #navbarResponsive .navmenulink div i {
 
 .carouselContainer .carousel-caption p{
     font-size: 1.5rem !important;
-    font-weight: 400 !important;
+    font-weight: 100 !important;
 }
 
 form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
-    height: 20vh;
+    height: 15vh;
     width: 100%;
 }
 
@@ -185,13 +212,13 @@ font-size: 1.1rem !important;
     margin: 0;
 }
 
-form button {
+.main-search form button {
     height: 100%;
     margin: 0;
     width: 20%;
 }
 
-form button span i{
+.main-search form button span i{
     font-size: 1.7rem !important;
     font-weight: 100 !important;
 }
@@ -199,13 +226,13 @@ form button span i{
 /* Offers Icons */
 
 #offerscontainer {
-    height: 30vh;
+    height: 15vh;
 }
 
-/* #offerscontainer h1 {
-    font-size: 2.2rem;
-    font-weight: 100;
-} */
+#offerscontainer div {
+    transition: transform .5s ease-in-out;
+    -webkit-transition: transform .5s ease-in-out;
+}
 
 /* Collapse */
 
@@ -269,6 +296,8 @@ form button span i{
 
 #iconCarousel .carousel-item a i {
     font-size: 2em;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 
 .item {
@@ -518,9 +547,16 @@ form button span i{
     justify-content: center;
 }
 
+.mySlickCarousel .slick-carousel-item {
+    display: flex !important;
+    justify-content: center;
+}
+
 /* Small Coupon */
 
 .mySlickCarousel.small-coupon-carousel .card {
+    font-family: Roboto,sans-serif !important;
+
     width: 250px;
     height: 500px;
     min-height: 500px;
@@ -535,6 +571,11 @@ form button span i{
 
     transition: background-size .3s ease-in;
     -webkit-transition: background-size .3s ease-in;
+}
+
+.mySlickCarousel.small-coupon-carousel .card-head:before {
+    z-index: 0;
+    background: radial-gradient(ellipse at center,transparent 0,#000 100%);
 }
 
 .mySlickCarousel.small-coupon-carousel .slick-carousel-item:hover .card-head {
@@ -565,9 +606,17 @@ form button span i{
     height: 25px;
 }
 
+.mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .price,
+.mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .rating-display {
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
+}
+
 /* Large Coupon  */
 
 .mySlickCarousel.large-coupon-carousel .card {
+
+    font-family: Roboto,sans-serif !important;
     width: 300px;
     min-width: 300px;
     height: 300px;
@@ -583,7 +632,9 @@ form button span i{
 
     transition: background-size .3s ease-in;
     -webkit-transition: background-size .3s ease-in;
+
 }
+
 
 .mySlickCarousel.large-coupon-carousel .slick-carousel-item:hover .card {
     background-size: 200%!important;
@@ -609,7 +660,7 @@ form button span i{
 
 .mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h2 {
     font-size: 2.2rem !important;
-    font-weight: 300 !important;
+    font-weight: 100 !important;
 }
 .mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h3 {
     font-size: 1.8rem !important;
@@ -618,8 +669,19 @@ form button span i{
 .mySlickCarousel.large-coupon-carousel .card .card-bottom .price,
 .mySlickCarousel.large-coupon-carousel .card .card-bottom .rating-display {
     font-size: 1.3rem !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
 }
+
+/* Download Pomobook promo */
+
+.download-images .download-images-gp{
+    width: 85%;
+}
+
+.download-images .download-images-appst{
+    width: 75%;
+}
+
 
 /* Jumbotron */
 
@@ -645,6 +707,14 @@ form button span i{
 }
 
 /* Footer  */
+
+footer {
+    font-family: Roboto,sans-serif !important;
+}
+
+footer h4 {
+    font-size: 1.2rem !important;
+}
 
 footer a i {
     font-size: 1.5rem !important;
