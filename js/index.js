@@ -494,20 +494,20 @@ function nonSlidingCarousel() {
 //Check if card description is overflowing
 
 function checkIfCardDescriptionOverflows() {
-  let blockswithtextinlargecoupons = $('.mySlickCarousel.large-coupon-carousel p');
+  let blockswithtextinlargecoupons = $('.mySlickCarousel.large-coupon-carousel .card-middle-description p');
 
   blockswithtextinlargecoupons.each(function () {
     let elem = $(this);
     console.log(elem.parent().innerHeight());
     console.log(elem.prop("scrollHeight"));
 
-    if (elem.parent().innerHeight() < elem.innerHeight()) {
+    if ((elem.parent().innerHeight() < elem.innerHeight())) {
       elem.addClass("block-with-text");
       elem.addClass("twoline");
     }
   });
 
-  let blockswithtextinsmallcoupons = $('.mySlickCarousel.small-coupon-carousel p');
+  let blockswithtextinsmallcoupons = $('.mySlickCarousel.small-coupon-carousel .card-middle-description p');
   blockswithtextinsmallcoupons.each(function () {
     let elem = $(this);
     console.log(elem.parent().innerHeight());

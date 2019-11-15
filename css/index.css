@@ -76,13 +76,22 @@ h6 {
 }
 
 nav #navbarResponsive {
-    width: 50%;
+    width: 60%;
     height: 92vh;
     top: 8vh;
-    left: -50%;
+    left: -60%;
     z-index: 10;
     transition: 0.5s ease-in-out;
 }
+
+nav #navbarResponsive .nav-search .form-control{
+    font-size: 1rem !important;
+}
+
+nav #navbarResponsive .nav-search button i{
+    font-size: 0.8rem !important;
+}
+
 
 .slidein {
     transform: translateX(100%);
@@ -169,7 +178,7 @@ form {
 }
 
 .form-control {
-font-size: 1.3rem !important;
+font-size: 1.1rem !important;
 }
 
 .form-group * {
@@ -490,8 +499,8 @@ form button span i{
 }
 
 .slick-list {
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    /* margin-left: 3rem !important;
+    margin-right: 3rem !important; */
     width: 100% ;
     display: flex ;
 }
@@ -544,8 +553,8 @@ form button span i{
 }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .logo {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -559,16 +568,16 @@ form button span i{
 /* Large Coupon  */
 
 .mySlickCarousel.large-coupon-carousel .card {
-    width: 400px;
-    min-width: 400px;
-    height: 400px;
-    min-height: 400px;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    min-height: 300px;
 
     background-size: 180%!important;
     background-position: 50%!important;
     background-repeat: no-repeat;
 
-    text-shadow: black 0px 0px 2px;
+    text-shadow: black 0px 0px 5px;
     /* -webkit-text-stroke: 1px lightslategray; */
 
 
@@ -591,14 +600,32 @@ form button span i{
 }
 
 .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h2 {
+    font-size: 2.2rem !important;
+    font-weight: 300 !important;
+}
+.mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h3 {
+    font-size: 1.8rem !important;
+    font-weight: 100 !important;
+}
+.mySlickCarousel.large-coupon-carousel .card .card-bottom .price,
+.mySlickCarousel.large-coupon-carousel .card .card-bottom .rating-display {
+    font-size: 1.3rem !important;
+    font-weight: 300 !important;
+}
+
 /* Jumbotron */
+
+.jumbotron {
+    height: 100vh;
+}
 
 .jumbotron .jumbotron-hero {
     height: auto;
@@ -612,8 +639,19 @@ form button span i{
 }
 .jumbotron .jumbotron-left {
     padding: 5em;
-    left: 15%;
+    /* left: 15%; */
     z-index: 1;
+    
+}
+
+/* Footer  */
+
+footer a i {
+    font-size: 1.5rem !important;
+}
+
+footer .footer-production {
+    font-size: 0.5rem;
 }
 
 

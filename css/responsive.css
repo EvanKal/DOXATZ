@@ -6,6 +6,38 @@
 
 
 @media (min-width: 576px) { 
+    
+    nav #navbarResponsive {
+        width: 50%;
+        left: -50%;
+    }
+
+    .mySlickCarousel.large-coupon-carousel .card {
+        width: 400px;
+    min-width: 400px;
+    height: 400px;
+    min-height: 400px;
+    }
+
+    .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h2 {
+        font-size: 2.5rem !important;
+        font-weight: 300 !important;
+    }
+    .mySlickCarousel.large-coupon-carousel .card .card-middle-headers .h3 {
+        font-size: 2rem !important;
+        font-weight: 100 !important;
+    }
+    .mySlickCarousel.large-coupon-carousel .card .card-bottom .price,
+    .mySlickCarousel.large-coupon-carousel .card .card-bottom .rating-display {
+        font-size: 1.5rem !important;
+        font-weight: 300 !important;
+    }
+
     .carouselContainer img {
         width: auto !important;
         height: 100% !important;
@@ -16,25 +48,25 @@
     }
 
     h2 {
-        font-size: 2.3rem !important;
+        font-size: 2.1rem !important;
     }
     h3 {
-        font-size: 2.1rem !important;
+        font-size: 1.8rem !important;
         font-weight: 100 !important;
     }
     
     h4 {
-        font-size: 1.9rem !important;
+        font-size: 1.5rem !important;
         font-weight: 100 !important;
     }
     
     h5 {
-        font-size: 1.7rem !important;
+        font-size: 1.3rem !important;
         font-weight: 100 !important;
     }
     
     h6 {
-        font-size: 1.5rem !important;
+        font-size: 1.2rem !important;
         font-weight: 100 !important;
     }
 
@@ -120,10 +152,34 @@ form button {
     margin: 0;
     width: 20%;
 }
+
+/* Jumbotron */
+
+.jumbotron .jumbotron-hero {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    /* background-size: 180%!important;
+    background-position: 50%!important; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.jumbotron .jumbotron-left {
+    position: relative !important;
+    padding: 5em;
+    left: 15%;
+    z-index: 1;
+    align-items: center;
+}
  }
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+    html {
+        font-size: calc(0.3em + 1vw) !important;
+    }
+
     nav #navbarResponsive {
         width: 20%;
         left: -20%;
@@ -131,4 +187,8 @@ form button {
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) { 
+    html {
+        font-size: calc(0.1em + 1vw) !important;
+    }
+ }
