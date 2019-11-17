@@ -1,0 +1,27 @@
+{
+  "name": "doxatz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch main.scss -o css/main.css",
+    "build": "tsc --outFile typescript.js -w typescript.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvanKal/DOXATZ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvanKal/DOXATZ/issues"
+  },
+  "homepage": "https://github.com/EvanKal/DOXATZ#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.13.0",
+    "sass": "^1.23.6",
+    "typescript": "^3.7.2"
+  }
+}
