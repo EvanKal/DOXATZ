@@ -12,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   checkIfCardDescriptionOverflows();
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
+  assignRipleToAllBtn();
 
   $('.carousel').carousel({
     touch: true,
@@ -31,7 +32,8 @@ window.addEventListener('click', (event) => {
 });
 
 function menuLinkClickHandler(event) {
-  if (event.target.parentElement.classList.contains("navmenulink")) {
+  console.log(event.target);
+  if (event.target.parentElement.classList.contains("navmenulink") || event.target.classList.contains("navmenulink")) {
     collapseAllLinks(event.target.parentElement.querySelector("div i"));
     event.target.parentElement.querySelector("div i").classList.toggle("menulinkiconrotate");
   }
@@ -43,6 +45,24 @@ function collapseAllLinks(clicked) {
       elem.classList.remove("menulinkiconrotate");
     }
   });
+}
+
+//Assign ripple on click to all the elements with btn class
+
+function assignRipleToAllBtn() {
+  document.querySelectorAll(".btn").forEach((elem)=>{
+    elem.setAttribute("anim", "ripple");
+  });
+
+  [].map.call(document.querySelectorAll('[anim="ripple"]'), function (el) {
+    el.addEventListener('click', function (e) {
+        e = e.touches ? e.touches[0] : e;
+        var r = el.getBoundingClientRect(), d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
+        el.style.cssText = "--s: 0; --o: 1;";
+        el.offsetTop;
+        el.style.cssText = "--t: 1; --o: 0; --d: " + d + "; --x:" + (e.clientX - r.left) + "; --y:" + (e.clientY - r.top) + ";";
+    });
+});
 }
 
 
@@ -515,6 +535,7 @@ function checkIfCardDescriptionOverflows() {
     console.log(elem.prop("scrollHeight"));
 
     if (elem.parent().innerHeight() < elem.innerHeight()) {
+      console.log("In here");
       elem.addClass("block-with-text");
       elem.addClass("threeline");
     }

@@ -1,5 +1,114 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+
+$theme-colors: (
+    "dark-blue": #062B64,
+    "light-blue": #93A1BB,
+    "dark-gold": #CB9031,
+    "light-gold": #E6C65B,
+    "lighter-gold": #F1E5C9,
+    "primary": #CB9031,
+    "secondary": #E6C65B,
+    "dark": #062B64,
+    "light": white
+
+  );
+
+$body-bg: theme-color-level(light-blue, -10);
+
+
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body {
-    background: red !important;
+
+// .bg-dark {
+//     background-color: theme-color(dark-blue) !important;
+// }
+
+// .bg-light {
+//     background-color: theme-color-level(light-blue, -10) !important; }
+
+// .text-dark {
+//      color: theme-color(dark-blue) !important; }
+
+.btn:focus, .btn.focus {
+        outline: 0;
+        -webkit-box-shadow: 0 8px 6px -6px white;
+        -moz-box-shadow: 0 8px 6px -6px white;
+             box-shadow: 0 8px 6px -6px white;
+ }
+
+//Sidebar 
+
+nav #navbarResponsive {
+    background: linear-gradient(to right,  rgba(203, 144, 49, 1), rgba(230, 198, 91, 0.9));
 }
+
+
+
+
+// Ripple effect
+
+[anim="ripple"] {
+    
+    //  Customize effect by defining the following
+    //  variables on the parent element 
+    //  --ripple-background: white;
+    //  --ripple-opacity: 0.3;  
+    //  --ripple-duration: 600ms;      
+    //  --ripple-easing: linear;
+    
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position:absolute;
+        display: block;
+        background: var(--ripple-background, white);      
+        border-radius: 50%;
+        pointer-events: none; 
+        
+        //  position and size 
+        top: calc(var(--y) * 1px);
+        left: calc(var(--x) * 1px);
+        width:  calc(var(--d) * 1px);
+        height: calc(var(--d) * 1px);
+
+        //  animated properties
+        opacity: calc(var(--o, 1) * var(--ripple-opacity, 0.3));                
+        transition: calc(var(--t, 0) * var(--ripple-duration, 600ms)) var(--ripple-easing,linear);   
+        transform: translate(-50%, -50%) scale(var(--s, 1));
+        transform-origin: center;
+    }
+}
+
+//  Just some styling 
+button {
+    --ripple-background: white;
+    --ripple-opacity: 0.3;  
+    --ripple-duration: 600ms;      
+}
+a {
+    
+    --ripple-background: white;    
+    --ripple-opacity: 0.5;    
+    --ripple-duration: 600ms;
+}
+.rainbow {
+    --ripple-opacity: 1;
+    --ripple-background: radial-gradient(circle at center, rebeccapurple, dodgerblue, olive, gold, orange, tomato);
+    --ripple-duration: 2000ms;
+    --ripple-easing: cubic-bezier(0, .5, .5, 1);    
+    background-color: skyblue;
+    color: rgba(white, 0.7);
+
+    transition: background-color 300ms, color 300ms;
+    &:hover { background-color: darken(skyblue, 10%); color: rgba(white, 1);}
+}
+
+
+
+
+

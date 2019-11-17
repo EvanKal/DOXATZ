@@ -19,7 +19,7 @@
     <nav class="navbar navbar-light py-1">
 
         <div class="my-auto col-2 col-md-1 d-flex">
-            <button class="navbar-toggler" type="button" aria-controls="#navbarResponsive" aria-expanded="false"
+            <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span><i class="fa fa-bars"></i></span>
             </button>
@@ -40,8 +40,8 @@
             </select>
             <!-- </div> -->
 
-            <a class="btn btn-light btn-sm  mx-1" href="#" role="button">ΕΓΓΡΑΦΗ</a>
-            <a class="btn btn-outline-light btn-sm  mx-1" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+            <a class="btn btn-light btn-sm  mx-1 w-100" href="#" role="button" anim="ripple">ΕΓΓΡΑΦΗ</a>
+            <a class="btn btn-light btn-sm  mx-1 w-100" href="#" role="button" anim="ripple">ΣΥΝΔΕΣΗ</a>
 
         </div>
 
@@ -59,12 +59,12 @@
                 </div>
 
                 <div class="row">
-                    <ul class="accordion col-12" id="navMenuLinks">
+                    <ul class="accordion col-12 p-0" id="navMenuLinks">
                         <li class="border-0">
                             <div class="p-1" id="headingOne">
                                 <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
                                     data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                    aria-controls="collapseTwo" href=#>
+                                    aria-controls="collapseTwo" href=# anim="ripple">
                                     <div class="col-2"><i class="fa fa-chevron-right"></i></div>
                                     <p class="m-0">ΑΡΧΙΚΗ</p>
                                 </a>
@@ -90,7 +90,7 @@
                             <div class="p-1" id="headingTwo">
                                 <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
                                     data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo" href=#>
+                                    aria-controls="collapseTwo" href=# anim="ripple">
                                     <div class="col-2"><i class="fa fa-chevron-right"></i></div>
                                     <p class="m-0">ΣΧΕΤΙΚΑ ΜΕ</p>
                                 </a>
@@ -116,7 +116,7 @@
                             <div class="p-1" id="headingThree">
                                 <a class=" navmenulink text-light btn collapsed col d-flex align-items-center p-0"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseTwo" href=#>
+                                    aria-controls="collapseTwo" href=# anim="ripple">
                                     <div class="col-2"><i class="fa fa-chevron-right"></i></div>
                                     <p class="m-0">ΣΥΝΕΡΓΑΤΕΣ</p>
                                 </a>
@@ -148,7 +148,7 @@
                 <div class="row border-top border-bottom">
                     <div class="p-3 col-6 col-md-12 ">
                         <p class="text-light p-0 col-12">Νέος Χρήστης;</p>
-                        <a class="btn btn-outline-light btn-sm" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+                        <a class="btn btn-light btn-sm" href="#" role="button">ΣΥΝΔΕΣΗ</a>
                     </div>
 
 
@@ -170,12 +170,12 @@
                 <div class="row nav-search">
                     <form action="" class="shadow-none h-100 d-flex align-items-center flex-wrap">
                         <div class="form-group col-6 p-1">
-                            <input type="search" class="form-control border-0 bg-light" placeholder="ΨΑΧΝΩ...">
+                            <input type="search" class="form-control border-0" placeholder="ΨΑΧΝΩ...">
                         </div>
                         <div class="form-group col-6 p-1">
-                            <input type="search" class="form-control border-0 bg-light" placeholder="ΠΕΡΙΟΧΗ">
+                            <input type="search" class="form-control border-0" placeholder="ΠΕΡΙΟΧΗ">
                         </div>
-                        <button type="submit" class="btn btn-outline-light btn-sm w-100 mt-2">
+                        <button type="submit" class="btn btn-light btn-sm w-100 mt-2">
                             <span class="" aria-hidden="true"> <i class="fa fa-search"></i> </span> Search
                         </button>
 
@@ -241,7 +241,7 @@
 
 
         <!-- The search boxes on the bottom of the carousel -->
-        <div class="row main-search position-relative d-md-flex bg-light justify-content-center">
+        <div class="row main-search position-relative d-md-flex justify-content-center">
 
             <form
                 class="bg-white ml-auto mr-auto flex-md-nowrap flex-wrap d-flex flex-md-row justify-content-between align-items-center p-1">
@@ -273,7 +273,7 @@
         </div>
     </div>
 
-    <div class="container-fluid bg-light d-flex flex-column align-items-around justify-content-center"
+    <div class="container-fluid d-flex flex-column align-items-around justify-content-center"
         id="offerscontainer">
         <div class="row w-100 text-center">
             <div class="col-12 padding">
@@ -282,7 +282,7 @@
         </div>
         <div class="row w-100 text-center justify-content-center">
             <div class="col-12 padding justify-content-center d-flex">
-                <select class="form-control form-control-sm mx-1 col-6  col-md-4 border-0 bg-light">
+                <select class="form-control form-control-sm mx-1 col-6  col-md-4 border-0">
                     <option selected>Επιλέξτε</option>
                 </select>
             </div>
@@ -333,9 +333,9 @@
 
     <!-- Icon Carousel -->
     <div class="container-fluid">
-        <div class="row bg-light">
+        <div class="row">
             <div id="iconCarousel"
-                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 bg-light d-flex justify-content-center text-secondary mb-2"
+                class="singleItemSlideCarousel carousel slide carousel-multi-item col-12 d-flex justify-content-center text-secondary mb-2"
                 data-ride="carousel">
 
                 <!--Controls-->
@@ -437,7 +437,7 @@
                 <a class="btn-floating text-secondary next-arrow"><i class="fa fa-chevron-right"></i></a>
             </div>
 
-            <div class="mySlickCarousel my-4 large-coupon-carousel multiple-items w-100 d-flex bg-dark">
+            <div class="mySlickCarousel my-4 large-coupon-carousel multiple-items w-100 d-flex bg-dark-blue">
 
                 <div class="slick-carousel-item">
                     <div class="card mb-2 text-light rounded-0 border-0 shadow "
@@ -608,7 +608,7 @@
         </div>
 
         <div class="row justify-content-center pb-5">
-            <a class="btn btn-outline-light" href="#">
+            <a class="btn btn-light" href="#">
                 Περισσότερα
             </a>
         </div>
@@ -683,7 +683,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -745,7 +745,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -807,7 +807,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -869,7 +869,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -930,7 +930,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -991,7 +991,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -1052,7 +1052,7 @@
                                         </div>
                                     </div>
                                     <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                        <div class="logo border border-dark rounded-circle"
+                                        <div class="logo border border-dark-blue rounded-circle"
                                             style="background-image: url('images/logo/dummylogo.jpg');">
                                         </div>
                                     </div>
@@ -1066,14 +1066,14 @@
             </div>
 
             <div class="row justify-content-center pb-5">
-                <a class="btn btn-outline-dark" href="#">
+                <a class="btn btn-dark-blue" href="#">
                     Περισσότερα
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid" id="download-promo">
+    <div class="container-fluid bg-dark p-3 text-light" id="download-promo">
         <div class="row m-4">
             <div class="col-6 col-md-5 d-flex align-items-center">
                 <p class="m-0 h5">
@@ -1165,7 +1165,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1227,7 +1227,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1289,7 +1289,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1351,7 +1351,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1412,7 +1412,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1473,7 +1473,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1534,7 +1534,7 @@
                                             </div>
                                         </div>
                                         <div class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
-                                            <div class="logo border border-dark rounded-circle"
+                                            <div class="logo border border-dark-blue rounded-circle"
                                                 style="background-image: url('images/logo/dummylogo.jpg');">
                                             </div>
                                         </div>
@@ -1548,7 +1548,7 @@
                 </div>
     
                 <div class="row justify-content-center pb-5">
-                    <a class="btn btn-outline-dark" href="#">
+                    <a class="btn btn-dark-blue" href="#">
                         Περισσότερα
                     </a>
                 </div>
@@ -1566,7 +1566,7 @@
                 <p>It uses utility classes for typography and spacing to space content out within the larger container.
                 </p>
                 <p class="lead">
-                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Learn more</a>
+                    <a class="btn btn-light btn-lg" href="#" role="button">Learn more</a>
                 </p>
             </div>
             <div class="jumbotron-hero col-12 mh-100">
@@ -1575,7 +1575,7 @@
     </div>
 
     <footer class="page-footer">
-        <div class="container-fluid bg-light text-secondary">
+        <div class="container-fluid text-primary">
             <div class="row text-center p-3">
                 <div class="col-md-3 justify-content-center mb-3">
                     <h4 class="text-dark col text-center">Ακολουθήστε μας:</h4>
