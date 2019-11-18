@@ -21,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
     interval: 2000
   });
 
+
+
 });
 
 window.addEventListener('resize', () => {
@@ -52,19 +54,19 @@ function collapseAllLinks(clicked) {
 //Assign ripple on click to all the elements with btn class
 
 function assignRipleToAllBtn() {
-  document.querySelectorAll(".btn").forEach((elem)=>{
+  document.querySelectorAll(".btn").forEach((elem) => {
     elem.setAttribute("anim", "ripple");
   });
 
   [].map.call(document.querySelectorAll('[anim="ripple"]'), function (el) {
     el.addEventListener('click', function (e) {
-        e = e.touches ? e.touches[0] : e;
-        var r = el.getBoundingClientRect(), d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
-        el.style.cssText = "--s: 0; --o: 1;";
-        el.offsetTop;
-        el.style.cssText = "--t: 1; --o: 0; --d: " + d + "; --x:" + (e.clientX - r.left) + "; --y:" + (e.clientY - r.top) + ";";
+      e = e.touches ? e.touches[0] : e;
+      var r = el.getBoundingClientRect(), d = Math.sqrt(Math.pow(r.width, 2) + Math.pow(r.height, 2)) * 2;
+      el.style.cssText = "--s: 0; --o: 1;";
+      el.offsetTop;
+      el.style.cssText = "--t: 1; --o: 0; --d: " + d + "; --x:" + (e.clientX - r.left) + "; --y:" + (e.clientY - r.top) + ";";
     });
-});
+  });
 }
 
 
@@ -577,16 +579,15 @@ function fillStarsInCards(rating) {
 
 function toggleLogIn() {
   document.querySelectorAll('.loginbtn').forEach((elem) => {
-    elem.addEventListener('click', ()=> {
-      document.querySelectorAll('.signedout').forEach((elem) => {elem.classList.toggle("d-none")});
-      document.querySelectorAll('.signedin').forEach((elem) => {elem.classList.toggle("d-none")});
+    elem.addEventListener('click', () => {
+      document.querySelectorAll('.signedout').forEach((elem) => { elem.classList.toggle("d-none") });
+      document.querySelectorAll('.signedin').forEach((elem) => { elem.classList.toggle("d-none") });
     });
   });
 }
 
 function toggleuserDropdownMenuButtonArrow() {
-  let btn = document.querySelector("#userDropdownMenuButton");
-  btn.addEventListener('click', (event)=>{
-    btn.querySelector("i").classList.toggle("menulinkiconrotate");
+  $("#userDropdownMenu").on('hide.bs.dropdown', function (event) {
+    console.log("hi");
   });
 }

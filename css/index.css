@@ -117,9 +117,9 @@ nav.navbar #userDropdownMenuButton i  {
     transition: 0.5s ease-in-out;
 }
 
-nav.navbar #userDropdownMenuButton *  {
+/* nav.navbar #userDropdownMenuButton *  {
     pointer-events: none;
-}
+} */
 
 /* nav.navbar .dropdown-menu {
     left: 78%;
