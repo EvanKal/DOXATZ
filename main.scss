@@ -45,6 +45,24 @@ nav #navbarResponsive {
     background: linear-gradient(to right,  rgba(203, 144, 49, 1), rgba(230, 198, 91, 0.9));
 }
 
+//Dropdown menu
+
+.dropdown-menu {
+    // background-color: theme-color-level(light-blue, -10);
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0; 
+}
+
+.dropdown-item  {
+    color: theme-color(dark);
+}
+
+.dropdown-item:hover, .dropdown-item:focus,
+.dropdown-item.active, .dropdown-item:active {
+    color: theme-color(dark);
+    text-decoration: none;
+    background-color: theme-color(light); }
 
 
 

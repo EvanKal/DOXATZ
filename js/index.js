@@ -13,6 +13,8 @@ window.addEventListener('DOMContentLoaded', () => {
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
   assignRipleToAllBtn();
+  toggleLogIn();
+  toggleuserDropdownMenuButtonArrow();
 
   $('.carousel').carousel({
     touch: true,
@@ -33,7 +35,7 @@ window.addEventListener('click', (event) => {
 
 function menuLinkClickHandler(event) {
   console.log(event.target);
-  if (event.target.parentElement.classList.contains("navmenulink") || event.target.classList.contains("navmenulink")) {
+  if (event.target.classList.contains("navmenulink")) {
     collapseAllLinks(event.target.parentElement.querySelector("div i"));
     event.target.parentElement.querySelector("div i").classList.toggle("menulinkiconrotate");
   }
@@ -570,5 +572,21 @@ function fillStarsInCards(rating) {
 
     elem.appendChild(fragment);
 
+  });
+}
+
+function toggleLogIn() {
+  document.querySelectorAll('.loginbtn').forEach((elem) => {
+    elem.addEventListener('click', ()=> {
+      document.querySelectorAll('.signedout').forEach((elem) => {elem.classList.toggle("d-none")});
+      document.querySelectorAll('.signedin').forEach((elem) => {elem.classList.toggle("d-none")});
+    });
+  });
+}
+
+function toggleuserDropdownMenuButtonArrow() {
+  let btn = document.querySelector("#userDropdownMenuButton");
+  btn.addEventListener('click', (event)=>{
+    btn.querySelector("i").classList.toggle("menulinkiconrotate");
   });
 }

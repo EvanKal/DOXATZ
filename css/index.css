@@ -101,6 +101,40 @@ nav #navbarResponsive {
     /* background: #052c6b; */
 }
 
+nav.navbar .iconcontainer img{
+    width: 20px;
+    height: 20px;
+}
+
+nav.navbar .iconcontainer .badge{
+    height: 15px !important;
+    font-size: 0.6rem;
+    top: 50%;
+    left: 50%;
+}
+
+nav.navbar #userDropdownMenuButton i  {
+    transition: 0.5s ease-in-out;
+}
+
+nav.navbar #userDropdownMenuButton *  {
+    pointer-events: none;
+}
+
+/* nav.navbar .dropdown-menu {
+    left: 78%;
+} */
+
+nav #navbarResponsive .navbar-top {
+    height: 70%;
+}
+nav #navbarResponsive .navbar-middle {
+    height: 10%;
+}
+nav #navbarResponsive .navbar-search {
+    height: 20%;
+}
+
 nav #navbarResponsive .empty-banner {
     height: 8vh;
 }
@@ -122,8 +156,12 @@ nav #navbarResponsive .navmenulink div i {
     pointer-events: none;
     transition: 0.5s ease-in-out;
 }
+nav #navbarResponsive .navmenulink di {
+    pointer-events: none;
+    /* transition: 0.5s ease-in-out; */
+}
 nav #navbarResponsive .navmenulink p{
-    pointer-events: inherit;
+    pointer-events: none;
 }
 
 .menulinkiconrotate {
@@ -702,6 +740,7 @@ font-size: 1.1rem !important;
 
 .jumbotron {
     height: 100vh;
+    
 
 }
 
@@ -745,7 +784,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002d6e', end
 
 .jumbotron .jumbotron-left {
     padding: 5em;
-    left: 10%;
     z-index: 1;
     
 }

@@ -7586,6 +7586,20 @@ a.text-lighter-gold:hover, a.text-lighter-gold:focus {
 nav #navbarResponsive {
   background: linear-gradient(to right, #cb9031, rgba(230, 198, 91, 0.9)); }
 
+.dropdown-menu {
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0; }
+
+.dropdown-item {
+  color: #062B64; }
+
+.dropdown-item:hover, .dropdown-item:focus,
+.dropdown-item.active, .dropdown-item:active {
+  color: #062B64;
+  text-decoration: none;
+  background-color: white; }
+
 [anim="ripple"] {
   position: relative;
   overflow: hidden; }
