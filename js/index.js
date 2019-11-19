@@ -588,6 +588,13 @@ function toggleLogIn() {
 
 function toggleuserDropdownMenuButtonArrow() {
   $("#userDropdownMenu").on('hide.bs.dropdown', function (event) {
-    console.log("hi");
+    if($('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
+      $('#userDropdownMenuButton .iconcontainer i').removeClass("menulinkiconrotate");
+    }
+  });
+  $("#userDropdownMenu").on('show.bs.dropdown', function (event) {
+    if(!$('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
+      $('#userDropdownMenuButton .iconcontainer i').addClass("menulinkiconrotate");
+    }
   });
 }
