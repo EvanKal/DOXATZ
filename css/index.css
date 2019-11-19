@@ -113,6 +113,11 @@ nav.navbar .iconcontainer .badge{
     left: 60%;
 }
 
+.dropdown-menu {
+    right: 0% !important;
+    left: auto !important;
+}
+
 nav.navbar .dropdown-item .iconcontainer img{
     width: 15px;
     height: 15px;
@@ -141,15 +146,15 @@ nav.navbar .dropdown-item .coupon-contents h6 {
 
 nav.navbar .dropdown .messages-container {
     overflow-y: scroll !important;
-    height: 250px!important;
-    width: 250px !important;
+    height: 200px!important;
+    width: 200px !important;
     margin: 0 0!important;
 }
 
 nav.navbar .dropdown .coupons-container {
     overflow-y: scroll !important;
-    height: 300px!important;
-    width: 300px !important;
+    height: 250px!important;
+    width: 250px !important;
     margin: 0 0!important;
 }
 
@@ -170,11 +175,6 @@ nav.navbar .signedin   {
 
 nav.navbar #userDropdownMenuButton i  {
     transition: 0.5s ease-in-out;
-}
-
-.dropdown-menu {
-    right: 0% !important;
-    left: auto !important;
 }
 
 nav.navbar .dropdown > a {
