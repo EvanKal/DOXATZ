@@ -26,8 +26,8 @@
         </div>
 
 
-        <div class="d-flex p-0 col-10 col-md-2 h-100 align-items-center " id="logoContainer">
-            <a class="navbar-brand p-0 d-flex align-items-center w-100 h-75 h-md-100 justify-content-end" href="#"><img
+        <div class="d-none d-md-flex p-0 col-2 h-100 align-items-center " id="logoContainer">
+            <a class="navbar-brand p-0 d-flex align-items-center h-75 h-md-100" href="#"><img
                     src="images/logo/promobooklogo.jpg" alt="logo" class="h-100 w-auto"></a>
         </div>
 
@@ -35,10 +35,10 @@
 
         </div> -->
 
-        <div class="d-none d-md-flex col-md-9 justify-content-end align-items-center" id="navButtonsContainer">
+        <div class="d-flex col-8 col-md-9  justify-content-end align-items-center" id="navButtonsContainer">
 
 
-            <select class="col-md-2 custom-select custom-select-sm border-0 bg-none w-100">
+            <select class="col-2 d-none d-md-flex custom-select custom-select-sm border-0 bg-none w-100">
                 <option selected>ΕΛΛΗΝΙΚΑ</option>
                 <option value="1">ENGLISH</option>
             </select>
@@ -49,7 +49,7 @@
                     <a class="btn btn-light btn-sm  mx-1" href="#" role="button" anim="ripple">ΕΓΓΡΑΦΗ</a>
                     <a class="btn btn-light btn-sm  mx-1 loginbtn" href="#" role="button">ΣΥΝΔΕΣΗ</a>
                 </div>
-                <div class="signedin d-none align-items-center">
+                <div id="messagesDropdownMenu" class="signedin d-none align-items-center">
                     <div class="dropdown">
                         <a class=" btn text-light d-flex align-items-center" href=# role="button"
                             id="messagesDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -62,32 +62,57 @@
                                     <span>10</span></div>
                             </div>
 
-                            <div class="dropdown-menu text-dark mt-2"
-                                aria-labelledby="messagesDropdownMenuButton">
-                                <a class="btn dropdown-item" href="#">
-                                    <div class="iconcontainer position-relative d-flex align-items-center">
-                                        <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
-                                        <p class="m-0 text-left text-dark">MAil</p>
-                                    </div>
-                                </a>
-                                <a class="btn dropdown-item" href="#">
-                                    <div class="iconcontainer position-relative d-flex align-items-center">
-                                        <img class="mr-2 img-fluid" src="images/icons/coupon-blue.png" alt="">
-                                        <p class="m-0 text-left text-dark">MAil</p>
-                                    </div>
-                                </a>
-                                <a class="btn dropdown-item" href="#">
-                                    <div class="iconcontainer position-relative d-flex align-items-center">
-                                        <img class="mr-2 img-fluid" src="images/icons/envelope-blue.png" alt="">
-                                        <p class="m-0 text-left text-dark">MAil</p>
-                                    </div>
-                                </a>
-                                <a class="btn dropdown-item" href="#">
-                                    <div class="iconcontainer position-relative d-flex align-items-center">
-                                        <img class="mr-2 img-fluid" src="images/icons/sign-out-option-blue.png" alt="">
-                                        <p class="m-0 text-left text-dark">MAil</p>
-                                    </div>
-                                </a>
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="messagesDropdownMenuButton">
+                                <div class="messages-container dropdown-item d-flex flex-wrap">
+                                    <a class="btn" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="messages-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -100,8 +125,7 @@
                                     class="badge badge-light-gold text-light p-1 position-absolute d-flex align-items-center justify-content-center">
                                     <span>12</span></div>
                             </div>
-                            <div class="dropdown-menu text-dark mt-2"
-                                aria-labelledby="couponsDropdownMenuButton">
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="couponsDropdownMenuButton">
                                 <a class="btn dropdown-item" href="#">
                                     <div class="iconcontainer position-relative d-flex align-items-center">
                                         <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
@@ -116,8 +140,8 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="iconcontainer position-relative d-flex align-items-center">
                                 <img class="mr-2 img-fluid" src="images/icons/user.png" alt="">
-                                <p class="m-0 text-left text-light">Ευάγγελος Κ.</p>
-                                <div class="col-2 text-light"><i class="fa fa-chevron-right"></i></div>
+                                <p class="d-none d-md-block m-0 text-left text-light">Ευάγγελος Κ.</p>
+                                <div class="d-none d-md-block text-light ml-2"><i class="fa fa-chevron-right"></i></div>
                             </div>
 
                             <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
@@ -149,6 +173,7 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
 

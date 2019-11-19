@@ -7592,13 +7592,14 @@ nav #navbarResponsive {
   background-clip: padding-box;
   border: none;
   border-radius: 0;
-  width: 100%; }
+  width: auto; }
 
 .dropdown-item {
   width: 100%;
   color: #062B64;
   font-size: 0.8rem;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  margin: 0 1rem;
   position: relative;
   background-color: white;
   border-radius: 0; }

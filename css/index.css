@@ -109,8 +109,40 @@ nav.navbar .iconcontainer img{
 nav.navbar .iconcontainer .badge{
     height: 15px !important;
     font-size: 0.6rem;
-    top: 40%;
+    top: 30%;
     left: 60%;
+}
+
+nav.navbar .dropdown-item .iconcontainer img{
+    width: 15px;
+    height: 15px;
+}
+
+nav.navbar .dropdown-item .iconcontainer img{
+    width: 15px;
+    height: 15px;
+}
+
+nav.navbar #messagesDropdownMenu .dropdown-item .message-contents p{
+    max-width: 100%;
+    overflow-wrap: normal!important;
+    white-space: normal!important;
+    width: 100%!important;
+    font-size: 0.8rem;
+}
+
+nav.navbar #messagesDropdownMenu .dropdown .messages-container {
+    height: 200px!important;
+    width: 200px !important;
+    margin: 0 0!important;
+}
+
+nav.navbar #messagesDropdownMenu .dropdown .dropdown-menu .messages-container {
+    overflow-y: scroll;
+}
+
+nav.navbar #messagesDropdownMenu .dropdown .dropdown-item {
+    margin: 0 0!important;
 }
 
 nav.navbar .signedin   {
@@ -119,6 +151,11 @@ nav.navbar .signedin   {
 
 nav.navbar #userDropdownMenuButton i  {
     transition: 0.5s ease-in-out;
+}
+
+.dropdown-menu {
+    right: 0% !important;
+    left: auto !important;
 }
 
 nav.navbar .dropdown > a {
