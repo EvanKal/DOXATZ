@@ -49,8 +49,8 @@
                     <a class="btn btn-light btn-sm  mx-1" href="#" role="button" anim="ripple">ΕΓΓΡΑΦΗ</a>
                     <a class="btn btn-light btn-sm  mx-1 loginbtn" href="#" role="button">ΣΥΝΔΕΣΗ</a>
                 </div>
-                <div id="messagesDropdownMenu" class="signedin d-none align-items-center">
-                    <div class="dropdown">
+                <div class="signedin d-none align-items-center">
+                    <div id="messagesDropdownMenu" class="dropdown">
                         <a class=" btn text-light d-flex align-items-center" href=# role="button"
                             id="messagesDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
@@ -68,7 +68,8 @@
                                         <div class="message position-relative d-flex align-items-center">
                                             <div class="message-contents w-75">
                                                 <h6>Τίτλος ειδοποίησης</h6>
-                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAneratednerated content,
+                                                    then add a check for
                                                     exceptionall</p>
                                             </div>
                                             <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
@@ -108,7 +109,6 @@
                                                     class="fa fa-chevron-right"></i></div>
                                         </div>
                                     </a>
-
                                 </div>
                                 <div class="messages-button-container dropdown-item d-flex justify-content-center">
                                     <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
@@ -116,22 +116,40 @@
                             </div>
                         </a>
                     </div>
-                    <div class="dropdown">
+                    <div id="couponsDropdownMenu" class="dropdown">
                         <a class=" btn text-light d-flex align-items-center " href=# id="couponsDropdownMenuButton"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <div class="iconcontainer coupon position-relative d-flex flex-column align-items-center">
+                            <div class="iconcontainer coupons position-relative d-flex flex-column align-items-center">
                                 <img class="img-fluid" src="images/icons/coupon.png" alt="">
                                 <div
                                     class="badge badge-light-gold text-light p-1 position-absolute d-flex align-items-center justify-content-center">
                                     <span>12</span></div>
                             </div>
                             <div class="dropdown-menu text-dark mt-2" aria-labelledby="couponsDropdownMenuButton">
-                                <a class="btn dropdown-item" href="#">
-                                    <div class="iconcontainer position-relative d-flex align-items-center">
-                                        <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
-                                        <p class="m-0 text-left text-dark">coupons</p>
-                                    </div>
-                                </a>
+                                <div class="coupons-container dropdown-item d-flex flex-wrap">
+                                    <a class="btn w-100 h-50 p-0" href="#">
+                                        <div
+                                            class="coupon position-relative d-flex flex-wrap align-items-center w-100 h-100">
+                                            <div class="coupon-image-container w-50 h-100 p-3">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                </div>
+                                            </div>
+                                            <div class="coupon-contents w-50">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="coupon-redeem-button w-100">
+                                                <a class="btn-dark btn-sm text-light">Εξαργύρωση</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="coupons-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
+                                </div>
                             </div>
                         </a>
                     </div>

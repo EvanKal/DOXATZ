@@ -123,25 +123,37 @@ nav.navbar .dropdown-item .iconcontainer img{
     height: 15px;
 }
 
-nav.navbar #messagesDropdownMenu .dropdown-item .message-contents p{
+nav.navbar .dropdown-item .message-contents p,
+nav.navbar .dropdown-item .coupon-contents p {
     max-width: 100%;
-    overflow-wrap: normal!important;
+    overflow-wrap: break-word!important;
     white-space: normal!important;
     width: 100%!important;
     font-size: 0.8rem;
 }
 
-nav.navbar #messagesDropdownMenu .dropdown .messages-container {
+nav.navbar .dropdown .messages-container {
+    overflow-y: scroll !important;
     height: 200px!important;
     width: 200px !important;
     margin: 0 0!important;
 }
 
-nav.navbar #messagesDropdownMenu .dropdown .dropdown-menu .messages-container {
-    overflow-y: scroll;
+nav.navbar .dropdown .coupons-container {
+    overflow-y: scroll !important;
+    height: 200px!important;
+    width: 275px !important;
+    margin: 0 0!important;
 }
 
-nav.navbar #messagesDropdownMenu .dropdown .dropdown-item {
+nav.navbar .dropdown .coupon-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav.navbar  .dropdown .messages-button-container,
+nav.navbar  .dropdown .coupons-button-container {
     margin: 0 0!important;
 }
 
