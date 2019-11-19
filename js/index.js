@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   checkIfCardDescriptionOverflows();
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
-  assignRipleToAllBtn();
+  // assignRipleToAllBtn();
   toggleLogIn();
   toggleuserDropdownMenuButtonArrow();
 

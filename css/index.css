@@ -132,17 +132,24 @@ nav.navbar .dropdown-item .coupon-contents p {
     font-size: 0.8rem;
 }
 
+nav.navbar .dropdown-item .message-contents h6,
+nav.navbar .dropdown-item .coupon-contents h6 {
+    text-align: left;
+    white-space: normal!important;
+    overflow-wrap: break-word!important;
+}
+
 nav.navbar .dropdown .messages-container {
     overflow-y: scroll !important;
-    height: 200px!important;
-    width: 200px !important;
+    height: 250px!important;
+    width: 250px !important;
     margin: 0 0!important;
 }
 
 nav.navbar .dropdown .coupons-container {
     overflow-y: scroll !important;
-    height: 200px!important;
-    width: 275px !important;
+    height: 300px!important;
+    width: 300px !important;
     margin: 0 0!important;
 }
 
