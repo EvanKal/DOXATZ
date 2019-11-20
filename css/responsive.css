@@ -194,6 +194,10 @@ transform: translateY(-50%);
     font-size: 1.5rem !important;
 }
 
+.mySlickCarousel.icon-carousel .icon-item .icon-text  {
+    font-size: 0.6em;
+    font-family: 'Roboto Slab', serif !important;
+}
 
 /* Jumbotron */
 
@@ -252,6 +256,11 @@ transform: translateY(-50%);
     nav #navbarResponsive {
         width: 30%;
         left: -30%;
+    }
+
+    .mySlickCarousel.icon-carousel .icon-item .icon-text  {
+        font-size: 0.55em;
+        font-family: 'Roboto Slab', serif !important;
     }
 
     footer .logo-container img {

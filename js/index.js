@@ -379,6 +379,197 @@ function setUpSlickCarouselDisplayOptions() {
           responsive: []
         }
       }
+    },
+
+    iconcarousel: {
+      sixslides: {
+        value: 6,
+        options: {
+          slidesToShow: 6,
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                arrows: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 750,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 550,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 300,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        }
+      },
+      fiveslides: {
+        value: 5,
+        options: {
+          slidesToShow: 5,
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          responsive: [
+            {
+              breakpoint: 750,
+              settings: {
+                arrows: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 550,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 300,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        }
+      },
+      fourslides: {
+        value: 4,
+        options: {
+          slidesToShow: 4,
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          responsive: [
+            {
+              breakpoint: 550,
+              settings: {
+                arrows: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 300,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        }
+      },
+
+      threeslides: {
+        value: 3,
+        options: {
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 400,
+              settings: {
+                arrows: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 300,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        }
+      },
+
+      twoslides: {
+        value: 2,
+        options: {
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          slidesToShow: 2,
+          responsive: [
+            {
+              breakpoint: 300,
+              settings: {
+                arrows: true,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        }
+      },
+
+      oneslide: {
+        value: 1,
+        options: {
+          arrows: false,
+          autoplay: false,
+          infinite: false,
+          slidesToShow: 1,
+          responsive: []
+        }
+      }
     }
 
 
@@ -393,13 +584,15 @@ function setUpSlickCarouselDisplayOptions() {
     // console.log(carousel);
 
     if (carousel.classList.contains("large-coupon-carousel")) {
-      console.log("large");
       assignOptionsToCarousel(carousel, optionsByMaxNumberOfSlidesToBeDisplayed.largecouponcarousel);
     }
 
     if (carousel.classList.contains("small-coupon-carousel")) {
-      console.log("small");
       assignOptionsToCarousel(carousel, optionsByMaxNumberOfSlidesToBeDisplayed.smallcouponcarousel);
+    }
+
+    if (carousel.classList.contains("icon-carousel")) {
+      assignOptionsToCarousel(carousel, optionsByMaxNumberOfSlidesToBeDisplayed.iconcarousel);
     }
 
   });
