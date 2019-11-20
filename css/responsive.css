@@ -21,6 +21,16 @@
         transform: translateX(700%);
     }
 
+    nav.navbar .dropdown .messages-container {
+        height: 250px!important;
+        width: 250px !important;
+    }
+    
+    nav.navbar .dropdown .coupons-container {
+        height: 300px!important;
+        width: 300px !important;
+    }
+
     /* .main-search form div:first-child {
         border-bottom: 0!important;
         border-right: 1px solid #dee2e6!important;
@@ -85,6 +95,16 @@ html {
 nav #navbarResponsive {
         width: 30%;
         left: -30%;
+}
+
+nav.navbar .dropdown .messages-container {
+    height: 300px!important;
+    width: 300px !important;
+}
+
+nav.navbar .dropdown .coupons-container {
+    height: 350px!important;
+    width: 350px !important;
 }
 
 .navbar-toggler-slidein {
@@ -207,6 +227,16 @@ transform: translateY(-50%);
 
     .navbar-toggler-slidein {
         transform: translateX(600%);
+    }
+
+    nav.navbar .dropdown .messages-container {
+        height: 350px!important;
+        width: 350px !important;
+    }
+    
+    nav.navbar .dropdown .coupons-container {
+        height: 350px!important;
+        width: 400px !important;
     }
 
     .carouselContainer img {
