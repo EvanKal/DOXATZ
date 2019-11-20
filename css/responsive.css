@@ -78,10 +78,10 @@
 
  
 @media (min-width: 680px) { 
-    .mainCarouselContainer img {
+    /* .mainCarouselContainer img {
         width: 100% !important;
         height: auto !important;
-    }
+    } */
 
 
  }
@@ -115,6 +115,11 @@ nav.navbar .dropdown .coupons-container {
     border-bottom: 0!important;
     border-right: 1px solid #dee2e6!important;
 }
+
+.main-search form div:last-child {
+    border-right: 0!important;
+    
+}
     /* Carousel */
 
 .mainCarouselContainer {
@@ -132,10 +137,10 @@ nav.navbar .dropdown .coupons-container {
     bottom: 10% !important;
 }
 
-.mainCarouselContainer img {
+/* .mainCarouselContainer img {
     width: auto !important;
     height: 100% !important;
-}
+} */
 
 .mainCarouselContainer .carousel-control-prev-icon,
 .mainCarouselContainer .carousel-control-next-icon {
