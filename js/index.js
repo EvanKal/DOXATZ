@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   checkIfCardDescriptionOverflows();
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
-  // assignRipleToAllBtn();
+  assignRipleToAllBtn();
   toggleLogIn();
   toggleuserDropdownMenuButtonArrow();
 
@@ -388,7 +388,7 @@ function appendProperClassForSlidingSync() {
   let carousels = document.querySelectorAll('.singleItemSlideCarousel');
 
   carousels.forEach((elem) => {
-    let firstitem = elem.querySelector(".carousel-item").querySelector(".carousel-item > div");
+    let firstitem = elem.querySelector(".carousel-item > div");
 
     let flexbasis = window.getComputedStyle(firstitem).getPropertyValue("flex-basis");
 
