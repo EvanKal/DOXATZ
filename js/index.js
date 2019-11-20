@@ -77,6 +77,61 @@ function assignRipleToAllBtn() {
 // mySlickCarousel set up
 
 function initializeCarousels() {
+  $('.mySlickCarousel.icon-carousel').slick({
+    infinite: true,
+    prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+    nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+    appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 300,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
   $('.mySlickCarousel.small-coupon-carousel').slick({
     infinite: true,
     prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
@@ -373,13 +428,7 @@ function assignOptionsToCarousel(carousel, options) {
       }
 
     }
-
-
-
   }
-
-
-
 }
 
 

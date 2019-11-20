@@ -727,7 +727,26 @@ font-size: 1.1rem !important;
     justify-content: center;
 }
 
+/* Slick Icon Carousel */
+
+.mySlickCarousel.icon-carousel .icon-item  {
+    font-family: Roboto,sans-serif !important;
+
+    width: 100px;
+    height: 100px;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.mySlickCarousel.icon-carousel .icon-item .icon-text  {
+    font-size: 0.7em;
+}
+
+
+
 /* Small Coupon */
+
+
 
 .mySlickCarousel.small-coupon-carousel .card {
     font-family: Roboto,sans-serif !important;
