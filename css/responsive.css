@@ -61,7 +61,7 @@
         font-size: 1.5rem !important;
     }
 
-    .carouselContainer img {
+    .mainmainCarouselContainer img {
         width: auto !important;
         height: 100% !important;
     }
@@ -78,7 +78,7 @@
 
  
 @media (min-width: 680px) { 
-    .carouselContainer img {
+    .mainCarouselContainer img {
         width: 100% !important;
         height: auto !important;
     }
@@ -117,33 +117,33 @@ nav.navbar .dropdown .coupons-container {
 }
     /* Carousel */
 
-.carouselContainer {
+.mainCarouselContainer {
     height: 70vh;
     width: 100vw;
     overflow: hidden;
 }
 
-.carouselContainer #carouselExampleCaptions {
+.mainCarouselContainer #carouselExampleCaptions {
     width: 100% !important;
     height: 100% !important;
 }
 
-.carouselContainer .carousel-indicators {
+.mainCarouselContainer .carousel-indicators {
     bottom: 10% !important;
 }
 
-.carouselContainer img {
+.mainCarouselContainer img {
     width: auto !important;
     height: 100% !important;
 }
 
-.carouselContainer .carousel-control-prev-icon,
-.carouselContainer .carousel-control-next-icon {
+.mainCarouselContainer .carousel-control-prev-icon,
+.mainCarouselContainer .carousel-control-next-icon {
     top: 50%;
     transform: translateY(-50%);
 }
 
-.carouselContainer .carousel-caption {
+.mainCarouselContainer .carousel-caption {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -239,7 +239,7 @@ transform: translateY(-50%);
         width: 400px !important;
     }
 
-    .carouselContainer img {
+    .mainCarouselContainer img {
         width: 100% !important;
         height: auto !important;
     }

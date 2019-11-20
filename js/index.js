@@ -29,6 +29,10 @@ window.addEventListener('resize', () => {
   appendProperClassForSlidingSync();
 });
 
+window.addEventListener('scroll', () => {
+  checkIfMainCarouselHasBeenScrolledOutOfView();
+});
+
 //NavBar event Handlers
 
 window.addEventListener('click', (event) => {
@@ -597,4 +601,33 @@ function toggleuserDropdownMenuButtonArrow() {
       $('#userDropdownMenuButton .iconcontainer i').addClass("menulinkiconrotate");
     }
   });
+}
+
+function checkIfMainCarouselHasBeenScrolledOutOfView() {
+
+  let maincarousel= document.querySelector(".mainCarouselContainer");
+  let navbar = document.querySelector(".navbar");
+  let navbarrect = navbar.getBoundingClientRect();
+    var rect = maincarousel.getBoundingClientRect();
+    // var maincarouselTop = rect.top;
+    var maincarouselBottom = rect.bottom;
+    var navbarBottom = navbarrect.bottom;
+
+    // Only completely visible elements return true:
+    
+    console.log("maincarouselBottom", maincarouselBottom);
+    console.log("navbarBottom", navbarBottom);
+    // console.log("Navbar height", navbarheight);
+    // Partially visible elements return true:
+    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
+    // console.log(isVisible);
+    var notVisible = (maincarouselBottom - navbarBottom) < 0;
+    if(notVisible) {
+      navbar.classList.add("shownavbackground");
+      navbar.classList.remove("hidenavbackground");
+    } else {
+      navbar.classList.add("hidenavbackground");
+      navbar.classList.remove("shownavbackground");
+    }
+
 }
