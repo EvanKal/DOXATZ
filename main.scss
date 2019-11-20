@@ -21,17 +21,6 @@ $body-bg: theme-color-level(light-blue, -10);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
-// .bg-dark {
-//     background-color: theme-color(dark-blue) !important;
-// }
-
-// .bg-light {
-//     background-color: theme-color-level(light-blue, -10) !important; }
-
-// .text-dark {
-//      color: theme-color(dark-blue) !important; }
-
 .btn:focus, .btn.focus {
         outline: 0;
         -webkit-box-shadow: 0 8px 6px -6px white;
