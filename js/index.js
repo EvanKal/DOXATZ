@@ -7,8 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-  initiateIconCarousel();
-  modifyCarouselsToSingleSlideCarousel();
+  // initiateIconCarousel();
+  // modifyCarouselsToSingleSlideCarousel();
   checkIfCardDescriptionOverflows();
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
@@ -76,12 +76,143 @@ function assignRipleToAllBtn() {
 
 // mySlickCarousel set up
 
+// function initializeCarousels() {
+//   $('.mySlickCarousel.icon-carousel').slick({
+//     infinite: true,
+//     prevArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+//     nextArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".next-arrow"),
+//     appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [
+//       {
+//         breakpoint: 1400,
+//         settings: {
+//           slidesToShow: 6,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 1000,
+//         settings: {
+//           slidesToShow: 5,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 750,
+//         settings: {
+//           slidesToShow: 4,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 550,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 400,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 300,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }
+//     ]
+//   });
+
+//   $('.mySlickCarousel.small-coupon-carousel').each(function () {
+//     console.log(this);
+//     $(this).slick({
+//       infinite: true,
+//       prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
+//       nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
+//       appendArrows: $(this).siblings(".slick-controls"),
+//       slidesToShow: 4,
+//       slidesToScroll: 1,
+//       autoplay: true,
+//       autoplaySpeed: 2000,
+//       responsive: [
+//         {
+//           breakpoint: 1400,
+//           settings: {
+//             slidesToShow: 4,
+//             slidesToScroll: 1
+//           }
+//         },
+//         {
+//           breakpoint: 1200,
+//           settings: {
+//             slidesToShow: 3,
+//             slidesToScroll: 1
+//           }
+//         },
+//         {
+//           breakpoint: 890,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 1
+//           }
+//         },
+//         {
+//           breakpoint: 590,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1
+//           }
+//         }
+//       ]
+//     });
+//   });
+
+
+//   $('.mySlickCarousel.large-coupon-carousel').slick({
+//     infinite: true,
+//     prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+//     nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+//     appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [
+//       {
+//         breakpoint: 1330,
+//         settings: {
+//           slidesToShow: 2,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 910,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }
+//     ]
+//   });
+// }
+
+
+
 function initializeCarousels() {
   $('.mySlickCarousel.icon-carousel').slick({
     infinite: true,
-    prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
+    prevArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+    nextArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".next-arrow"),
+    // appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
@@ -132,45 +263,47 @@ function initializeCarousels() {
     ]
   });
 
-  $('.mySlickCarousel.small-coupon-carousel').slick({
-    infinite: true,
-    prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1
+  $('.mySlickCarousel.small-coupon-carousel').each(function(){
+    $(this).slick({
+      infinite: true,
+      prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(this).siblings(".slick-controls"),
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 590,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+      ]
+    });
   });
 
 
@@ -609,16 +742,12 @@ function assignOptionsToCarousel(carousel, options) {
 
 
     if (options[objkey].value == slickitemsnum) {
-
-
       let optionsforthiscarousel = options[objkey].options;
       for (let [key, value] of Object.entries(optionsforthiscarousel)) {
-
-        console.log(key, ":", optionsforthiscarousel[key]);
-
-
         $(carousel).slick('slickSetOption', key, optionsforthiscarousel[value], false);
       }
+
+      // $(carousel).siblings(".slick-controls").addClass("hidecontrols");
 
     }
   }
@@ -769,8 +898,6 @@ function checkIfCardDescriptionOverflows() {
 
   blockswithtextinlargecoupons.each(function () {
     let elem = $(this);
-    console.log(elem.parent().innerHeight());
-    console.log(elem.prop("scrollHeight"));
 
     if ((elem.parent().innerHeight() < elem.innerHeight())) {
       elem.addClass("block-with-text");
@@ -781,11 +908,7 @@ function checkIfCardDescriptionOverflows() {
   let blockswithtextinsmallcoupons = $('.mySlickCarousel.small-coupon-carousel .card-middle-description p');
   blockswithtextinsmallcoupons.each(function () {
     let elem = $(this);
-    console.log(elem.parent().innerHeight());
-    console.log(elem.prop("scrollHeight"));
-
     if (elem.parent().innerHeight() < elem.innerHeight()) {
-      console.log("In here");
       elem.addClass("block-with-text");
       elem.addClass("threeline");
     }
@@ -833,13 +956,13 @@ function toggleLogIn() {
 }
 
 function toggleuserDropdownMenuButtonArrow() {
-  $("#userDropdownMenu").on('hide.bs.dropdown', function (event) {
-    if($('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
+  $("#userDropdownMenu").on('hide.bs.my-dropdown', function (event) {
+    if ($('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
       $('#userDropdownMenuButton .iconcontainer i').removeClass("menulinkiconrotate");
     }
   });
-  $("#userDropdownMenu").on('show.bs.dropdown', function (event) {
-    if(!$('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
+  $("#userDropdownMenu").on('show.bs.my-dropdown', function (event) {
+    if (!$('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
       $('#userDropdownMenuButton .iconcontainer i').addClass("menulinkiconrotate");
     }
   });
@@ -847,29 +970,40 @@ function toggleuserDropdownMenuButtonArrow() {
 
 function checkIfMainCarouselHasBeenScrolledOutOfView() {
 
-  let maincarousel= document.querySelector(".mainCarouselContainer");
+  let maincarousel = document.querySelector(".mainCarouselContainer");
   let navbar = document.querySelector(".navbar");
   let navbarrect = navbar.getBoundingClientRect();
-    var rect = maincarousel.getBoundingClientRect();
-    // var maincarouselTop = rect.top;
-    var maincarouselBottom = rect.bottom;
-    var navbarBottom = navbarrect.bottom;
-
-    // Only completely visible elements return true:
-    
-    console.log("maincarouselBottom", maincarouselBottom);
-    console.log("navbarBottom", navbarBottom);
-    // console.log("Navbar height", navbarheight);
-    // Partially visible elements return true:
-    //isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    // console.log(isVisible);
-    var notVisible = (maincarouselBottom - navbarBottom) < 0;
-    if(notVisible) {
-      navbar.classList.add("shownavbackground");
-      navbar.classList.remove("hidenavbackground");
-    } else {
-      navbar.classList.add("hidenavbackground");
-      navbar.classList.remove("shownavbackground");
-    }
+  var rect = maincarousel.getBoundingClientRect();
+  var maincarouselBottom = rect.bottom;
+  var navbarBottom = navbarrect.bottom;
+  var notVisible = (maincarouselBottom - navbarBottom) < 0;
+  if (notVisible) {
+    navbar.classList.add("shownavbackground");
+    navbar.classList.remove("hidenavbackground");
+  } else {
+    navbar.classList.add("hidenavbackground");
+    navbar.classList.remove("shownavbackground");
+  }
 
 }
+
+
+//Select Element Javascript
+
+/*Dropdown Menu*/
+$('.my-dropdown').click(function () {
+  $(this).attr('tabindex', 1).focus();
+  $(this).toggleClass('active');
+  console.log($(this).find('.my-dropdown-menu'));
+  $(this).find('.my-dropdown-menu').slideToggle(300);
+});
+$('.my-dropdown').focusout(function () {
+  $(this).removeClass('active');
+  $(this).find('.my-dropdown-menu').slideUp(300);
+});
+$('.my-dropdown .my-dropdown-menu li').click(function () {
+  $(this).parents('.my-dropdown').find('span').text($(this).text());
+  $(this).parents('.my-dropdown').find('input').attr('value', $(this).attr('id'));
+});
+/*End Dropdown Menu*/
+

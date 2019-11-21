@@ -111,12 +111,12 @@ nav.navbar .dropdown .coupons-container {
     transform: translateX(500%);
 }
 
-.main-search form div:first-child {
+.main-search form > div:first-child {
     border-bottom: 0!important;
     border-right: 1px solid #dee2e6!important;
 }
 
-.main-search form div:last-child {
+.main-search form > div:last-child {
     border-right: 0!important;
     
 }
@@ -158,7 +158,7 @@ nav.navbar .dropdown .coupons-container {
     height: 20vh;
 }
 
-#offerscontainer div {
+#offerscontainer > div {
 transform: translateY(-50%);
 }
 
