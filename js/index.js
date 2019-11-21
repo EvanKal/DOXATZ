@@ -16,10 +16,10 @@ window.addEventListener('DOMContentLoaded', () => {
   toggleLogIn();
   toggleuserDropdownMenuButtonArrow();
 
-  $('.carousel').carousel({
-    touch: true,
-    interval: 2000
-  });
+  // $('.carousel').carousel({
+  //   touch: true,
+  //   interval: 2000
+  // });
 
 
 
@@ -215,7 +215,7 @@ function initializeCarousels() {
     appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
       {
@@ -271,7 +271,7 @@ function initializeCarousels() {
       appendArrows: $(this).siblings(".slick-controls"),
       slidesToShow: 4,
       slidesToScroll: 1,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
         {
@@ -314,9 +314,16 @@ function initializeCarousels() {
     appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
       {
         breakpoint: 1330,
         settings: {

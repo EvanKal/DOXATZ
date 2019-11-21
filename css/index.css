@@ -771,14 +771,14 @@ nav.navbar .my-dropdown .my-dropdown-menu {
     height: 100%;
 }
 
-.slick-controls.hidecontrols {
+/* .slick-controls.hidecontrols {
     display: none !important;
-}
+} */
 
 .slick-list {
     /* margin-left: 3rem !important;
     margin-right: 3rem !important; */
-    width: 90% ;
+    width: 95% ;
     display: flex ;
 }
 
