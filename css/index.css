@@ -247,10 +247,10 @@ nav #navbarResponsive .navbar-top {
     height: 70%;
 }
 nav #navbarResponsive .navbar-middle {
-    height: 10%;
+    /* height: 10%; */
 }
 nav #navbarResponsive .navbar-search {
-    height: 20%;
+    /* height: 20%; */
 }
 
 nav #navbarResponsive .empty-banner {
@@ -279,6 +279,7 @@ nav #navbarResponsive .navmenulink i {
     /* transition: 0.5s ease-in-out; */
 }
 nav #navbarResponsive .navmenulink p{
+    font-weight: 700!important;
     pointer-events: none;
 }
 
@@ -408,13 +409,31 @@ font-size: 1.1rem !important;
 /* The selct elements */
 
 nav.navbar .my-dropdown .my-dropdown-menu {
-    bottom: 100%;
+    bottom: 50%;
 }
+
+nav.navbar .my-dropdown.active:hover,
+nav.navbar .my-dropdown.active {
+    border-radius: 0 0 0.2rem 0.2rem;
+}
+
+nav.navbar .my-dropdown .my-dropdown-menu {
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+
+nav.navbar .my-dropdown {
+    font-size: 0.875rem;
+}
+
+nav.navbar .my-dropdown.active .select > i {
+    transform: rotate(90deg)
+}
+
 .my-dropdown {
     width: 300px;
     display: inline-block;
     background-color: #fff;
-    /* border-radius: 5px; */
+    border-radius: 0.2rem;
     box-shadow: 0 0 2px rgb(204, 204, 204);
     transition: all .5s ease;
     position: relative;
@@ -448,7 +467,7 @@ nav.navbar .my-dropdown .my-dropdown-menu {
   .my-dropdown.active {
     outline: 0;
       /* box-shadow: 0 0 4px rgb(204, 204, 204); */
-      /* border-radius: 5px 5px 0 0; */
+      border-radius: 0.2rem 0.2rem 0 0;
       background-color: #f8f8f8
   }
   .my-dropdown.active .select > i {
@@ -461,7 +480,7 @@ nav.navbar .my-dropdown .my-dropdown-menu {
       left: 0;
       margin-top: 1px;
       box-shadow: 0 1px 2px rgb(204, 204, 204);
-      /* border-radius: 0 1px 5px 5px; */
+      border-radius: 0 0px 0.2rem 0.2rem;
       overflow: hidden;
       display: none;
       max-height: 144px;
