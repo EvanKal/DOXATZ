@@ -212,7 +212,7 @@ function initializeCarousels() {
     infinite: true,
     prevArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".prev-arrow"),
     nextArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    // appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
+    appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,

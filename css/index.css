@@ -132,6 +132,7 @@ nav #navbarResponsive {
 nav.navbar  .language-selection a {
     font-size: 0.9rem!important;
     font-weight: 700!important;
+    cursor: pointer;
 }
 
 
