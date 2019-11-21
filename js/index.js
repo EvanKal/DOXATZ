@@ -76,259 +76,25 @@ function assignRipleToAllBtn() {
 
 // mySlickCarousel set up
 
-// function initializeCarousels() {
-//   $('.mySlickCarousel.icon-carousel').slick({
-//     infinite: true,
-//     prevArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-//     nextArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".next-arrow"),
-//     appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     responsive: [
-//       {
-//         breakpoint: 1400,
-//         settings: {
-//           slidesToShow: 6,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 1000,
-//         settings: {
-//           slidesToShow: 5,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 750,
-//         settings: {
-//           slidesToShow: 4,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 550,
-//         settings: {
-//           slidesToShow: 3,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 400,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 300,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1
-//         }
-//       }
-//     ]
-//   });
-
-//   $('.mySlickCarousel.small-coupon-carousel').each(function () {
-//     console.log(this);
-//     $(this).slick({
-//       infinite: true,
-//       prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
-//       nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
-//       appendArrows: $(this).siblings(".slick-controls"),
-//       slidesToShow: 4,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 2000,
-//       responsive: [
-//         {
-//           breakpoint: 1400,
-//           settings: {
-//             slidesToShow: 4,
-//             slidesToScroll: 1
-//           }
-//         },
-//         {
-//           breakpoint: 1200,
-//           settings: {
-//             slidesToShow: 3,
-//             slidesToScroll: 1
-//           }
-//         },
-//         {
-//           breakpoint: 890,
-//           settings: {
-//             slidesToShow: 2,
-//             slidesToScroll: 1
-//           }
-//         },
-//         {
-//           breakpoint: 590,
-//           settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1
-//           }
-//         }
-//       ]
-//     });
-//   });
-
-
-//   $('.mySlickCarousel.large-coupon-carousel').slick({
-//     infinite: true,
-//     prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-//     nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-//     appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
-//     slidesToShow: 3,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     responsive: [
-//       {
-//         breakpoint: 1330,
-//         settings: {
-//           slidesToShow: 2,
-//           slidesToScroll: 1
-//         }
-//       },
-//       {
-//         breakpoint: 910,
-//         settings: {
-//           slidesToShow: 1,
-//           slidesToScroll: 1
-//         }
-//       }
-//     ]
-//   });
-// }
-
-
 
 function initializeCarousels() {
-
-  $('.mySlickCarousel.large-coupon-carousel').slick({
-    infinite: true,
-    prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 300,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
-  $('.mySlickCarousel.small-coupon-carousel').slick({
-    infinite: true,
-    prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1300,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 1000,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 550,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 300,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
   $('.mySlickCarousel.icon-carousel').slick({
     infinite: true,
-    prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
+    prevArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+    nextArrow: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls").find(".next-arrow"),
+    appendArrows: $(".mySlickCarousel.icon-carousel").siblings(".slick-controls"),
     slidesToShow: 6,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1
+        }
+      },
       {
         breakpoint: 1000,
         settings: {
@@ -366,22 +132,79 @@ function initializeCarousels() {
       }
     ]
   });
-}
 
-function addCarouselListeners() {
-  $('.mySlickCarousel.icon-carousel').on('init', function (event, slick, slidesToShow) {
-    console.log(slick);
-    console.log(event.target);
-    console.log(slick.activeBreakpoint);
-    console.log(slick.breakpointSettings[slick.activeBreakpoint]);
-    $('.mySlickCarousel.large-coupon-carousel').slick('slickSetOption', "slidesToShow", slick.breakpointSettings[slick.activeBreakpoint].slidesToShow, false);
+  $('.mySlickCarousel.small-coupon-carousel').slick({
+    infinite: true,
+    prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+    nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+    appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 890,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
-  })
+
+  $('.mySlickCarousel.large-coupon-carousel').slick({
+    infinite: true,
+    prevArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
+    nextArrow: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
+    appendArrows: $(".mySlickCarousel.large-coupon-carousel").siblings(".slick-controls"),
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1330,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 910,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 }
 
 
 function setUpSlickCarouselDisplayOptions() {
-  addCarouselListeners();
   initializeCarousels();
 
   let optionsByMaxNumberOfSlidesToBeDisplayed = {
@@ -799,6 +622,7 @@ function assignOptionsToCarousel(carousel, options) {
 
     }
   }
+
 }
 
 
