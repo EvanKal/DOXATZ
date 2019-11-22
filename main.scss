@@ -10,16 +10,25 @@ $theme-colors: (
     "light-gold": #E6C65B,
     "lighter-gold": #F1E5C9,
     "primary": #CB9031,
-    "secondary": #E6C65B,
+    "secondary": #88754D,
     "dark": #062B64,
-    "light": white
+    "light": white,
+    "danger": #D7291E,
+    "promo-gray": #9C9C9C
 
   );
 
-$body-bg: theme-color-level(light-blue, -10);
+$body-bg: theme-color-level(promo-gray, -10);
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
+.btn {
+    font-weight: 400;
+}
+.btn-light {
+    color: theme-color(dark-blue); 
+}
+
 
 .btn:focus, .btn.focus {
         outline: 0;
@@ -33,6 +42,13 @@ $body-bg: theme-color-level(light-blue, -10);
 nav #navbarResponsive {
     background: linear-gradient(to right,  rgba(203, 144, 49, 1), rgba(230, 198, 91, 0.9));
 }
+
+//Select elements
+
+.my-dropdown {
+    color: theme-color(dark); 
+}
+
 
 //Dropdown menu
 
@@ -90,6 +106,16 @@ nav #navbarResponsive {
   }
     
 }
+
+//
+
+.mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon i,
+.mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon .expiration-text,
+.mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i
+
+ {
+    color: theme-color(danger);
+   }
   
 
 // Ripple effect

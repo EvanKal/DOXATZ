@@ -133,45 +133,47 @@ function initializeCarousels() {
     ]
   });
 
-  $('.mySlickCarousel.small-coupon-carousel').slick({
-    infinite: true,
-    prevArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".prev-arrow"),
-    nextArrow: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls").find(".next-arrow"),
-    appendArrows: $(".mySlickCarousel.small-coupon-carousel").siblings(".slick-controls"),
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1
+  $('.mySlickCarousel.small-coupon-carousel').each(function(elem) {
+    $(this).slick({
+      infinite: true,
+      prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(this).siblings(".slick-controls"),
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
         }
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 890,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 590,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+      ]
+    });
   });
 
 

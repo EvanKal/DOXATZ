@@ -111,13 +111,14 @@ nav.navbar .dropdown .coupons-container {
     transform: translateX(500%);
 }
 
-.main-search form > div:first-child {
+.main-search form > div:first-of-type {
     border-bottom: 0!important;
     border-right: 1px solid #dee2e6!important;
 }
 
-.main-search form > div:last-child {
+.main-search form > div:last-of-type {
     border-right: 0!important;
+    width: 100%!important;
     
 }
     /* Carousel */

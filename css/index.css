@@ -103,6 +103,10 @@ h6 {
     transform: translateX(0%);
 }
 
+.navbar-toggler:focus {
+    outline: 0;
+}
+
 .navbar-toggler-slidein {
     transform: translateX(550%);
 }
@@ -152,6 +156,7 @@ nav.navbar .iconcontainer .badge{
     right: 0% !important;
     left: auto !important;
 }
+
 
 nav.navbar .dropdown-item .iconcontainer img{
     width: 15px;
@@ -208,6 +213,10 @@ nav.navbar .signedin   {
     display: flex;
 }
 
+nav.navbar #userDropdownMenu .dropdown-menu .dropdown-item {
+    margin: 0!important;
+}
+
 nav.navbar #userDropdownMenuButton i  {
     transition: 0.5s ease-in-out;
 }
@@ -233,6 +242,18 @@ nav.navbar .dropdown > a {
     border-radius: 0;
     outline: 1;
     box-shadow: none;
+}
+
+nav.navbar .dropdown-menu:before {
+    content:"";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    right: 0%;
+    top: 0%
 }
 
 /* nav.navbar #userDropdownMenuButton *  {
@@ -409,7 +430,7 @@ font-size: 1.1rem !important;
 /* The selct elements */
 
 nav.navbar .my-dropdown .my-dropdown-menu {
-    bottom: 50%;
+    bottom: 60%;
 }
 
 nav.navbar .my-dropdown.active:hover,
@@ -426,7 +447,7 @@ nav.navbar .my-dropdown {
 }
 
 nav.navbar .my-dropdown.active .select > i {
-    transform: rotate(90deg)
+    transform: rotate(-90deg)
 }
 
 .my-dropdown {
@@ -471,7 +492,7 @@ nav.navbar .my-dropdown.active .select > i {
       background-color: #f8f8f8
   }
   .my-dropdown.active .select > i {
-      transform: rotate(-90deg)
+      transform: rotate(90deg)
   }
   .my-dropdown .my-dropdown-menu {
       position: absolute;
@@ -886,12 +907,21 @@ nav.navbar .my-dropdown.active .select > i {
   top: -62%;
 }
 
+
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .logo {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.mySlickCarousel.small-coupon-carousel .card .card-bottom .price-discounted{
+    font-size: 1.6rem!important;
+}
+
+.mySlickCarousel.small-coupon-carousel .card .card-bottom .price-original{
+    font-weight: 100!important;
 }
 
 .mySlickCarousel.small-coupon-carousel .card-head .head-icons-container .head-icon {
@@ -926,6 +956,10 @@ nav.navbar .my-dropdown.active .select > i {
     transition: background-size .3s ease-in;
     -webkit-transition: background-size .3s ease-in;
 
+}
+
+.mySlickCarousel.large-coupon-carousel .card-body {
+    z-index: 1;
 }
 
 
@@ -963,6 +997,45 @@ nav.navbar .my-dropdown.active .select > i {
 .mySlickCarousel.large-coupon-carousel .card .card-bottom .rating-display {
     font-size: 1.3rem !important;
     font-weight: 400 !important;
+}
+
+.mySlickCarousel.large-coupon-carousel .card .card-bottom .price-discounted{
+    font-size: 1.6rem!important;
+}
+
+.mySlickCarousel.large-coupon-carousel .card .card-bottom .price-original{
+    font-weight: 100!important;
+}
+
+.mySlickCarousel.large-coupon-carousel .card:before {
+    position: absolute;
+    left: 0!important;
+    right: 0!important;
+    width: 100%!important;
+    height: 100%!important;
+    background-color: rgba(0,0,0,.1)!important;
+    content: ""!important;
+}
+
+.mySlickCarousel.large-coupon-carousel .slick-carousel-item:before {
+    z-index: 0;
+    background: radial-gradient(ellipse at center,transparent 0,#000 100%);
+}
+
+.mainCarouselContainer .carousel-caption h3{
+    font-size: 3rem !important;
+    font-weight: 300 !important;
+}
+
+.mainCarouselContainer .hero-image {
+    width: auto !important;
+    height: 100% !important;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainCarouselContainer .hero-image:before {
+
 }
 
 /* Download Pomobook promo */
@@ -1042,10 +1115,13 @@ footer a i {
     font-size: 1.5rem !important;
 }
 
-footer .footer-production {
+/* footer .footer-production {
     font-size: 0.5rem;
-}
+} */
 
+footer .footer-copyright {
+    font-size: 0.8rem;
+}
 
 /* Class to deal with text truncation 2 lines */
 
