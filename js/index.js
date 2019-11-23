@@ -55,6 +55,15 @@ function collapseAllLinks(clicked) {
   });
 }
 
+function toggleLogIn() {
+  document.querySelectorAll('.loginbtn').forEach((elem) => {
+    elem.addEventListener('click', () => {
+      document.querySelectorAll('.signedout').forEach((elem) => { elem.classList.toggle("d-none") });
+      document.querySelectorAll('.signedin').forEach((elem) => { elem.classList.toggle("d-none") });
+    });
+  });
+}
+
 //Assign ripple on click to all the elements with btn class
 
 function assignRipleToAllBtn() {
@@ -820,14 +829,7 @@ function fillStarsInCards(rating) {
   });
 }
 
-function toggleLogIn() {
-  document.querySelectorAll('.loginbtn').forEach((elem) => {
-    elem.addEventListener('click', () => {
-      document.querySelectorAll('.signedout').forEach((elem) => { elem.classList.toggle("d-none") });
-      document.querySelectorAll('.signedin').forEach((elem) => { elem.classList.toggle("d-none") });
-    });
-  });
-}
+
 
 function toggleuserDropdownMenuButtonArrow() {
   $("#userDropdownMenu").on('hide.bs.my-dropdown', function (event) {

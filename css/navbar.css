@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap');
+
+
+html {
+    font-size: calc(0.5em + 1vw);
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif !important; */
+    font-family: 'Roboto Slab', serif !important;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    font-size: 2.2rem !important;
+    font-weight: 100 !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    font-weight: 100 !important;
+}
+
+h3 {
+    font-size: 1.8rem !important;
+    font-weight: 100 !important;
+}
+
+h4 {
+    font-size: 1.6rem !important;
+    font-weight: 100 !important;
+}
+
+h5 {
+    font-size: 1.4rem !important;
+    font-weight: 100 !important;
+}
+
+h6 {
+    font-size: 1.2rem !important;
+    font-weight: 100 !important;
+}
+
+
+/* burger menu icon */
+
+.navbar {
+    width: 100vw;
+    height: 8vh;
+    z-index: 100;
+    position: fixed !important;
+    
+}
+
+.navbar:before {
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    outline: none;
+    box-shadow: none;
+    left: 0%;
+    top: 0%;
+    transform: translateY(-100%);
+    /* transition: transform 0.5s ease-in-out; */
+    transform-origin: bottom;
+    
+}
+
+.navbar.shownavbackground:before {
+    background-color: #062B64 !important;
+    transform: translateY(0%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar.hidenavbackground:before {
+    background-color: #062B64 !important;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.navbar-toggler {
+    color: white !important;
+    border: rgba(255,255,255,.1) !important;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+    /* transition-property: left; */
+    transform: translateX(0%);
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+}
+
+.navbar-toggler-slidein {
+    transform: translateX(550%);
+}
+
+.navbar select {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.navbar-brand img {
+    width: auto;
+    height: 100%;
+}
+
+nav #navbarResponsive {
+    width: 60%;
+    height: 100vh;
+    top: 0vh;
+    left: -60%;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+
+    /* background: linear-gradient(rgba(10,49,110),rgba(10,49,110,0.9)); */
+    /* background: #052c6b; */
+}
+
+nav.navbar  .language-selection a {
+    font-size: 0.9rem!important;
+    font-weight: 700!important;
+    cursor: pointer;
+}
+
+
+nav.navbar .iconcontainer img{
+    width: 20px;
+    height: 20px;
+}
+
+nav.navbar .iconcontainer .badge{
+    height: 15px !important;
+    font-size: 0.6rem;
+    top: 30%;
+    left: 60%;
+}
+
+.dropdown-menu {
+    right: 0% !important;
+    left: auto !important;
+}
+
+
+nav.navbar .dropdown-item .iconcontainer img{
+    width: 15px;
+    height: 15px;
+}
+
+nav.navbar .dropdown-item .iconcontainer img{
+    width: 15px;
+    height: 15px;
+}
+
+nav.navbar .dropdown-item .message-contents p,
+nav.navbar .dropdown-item .coupon-contents p {
+    max-width: 100%;
+    overflow-wrap: break-word!important;
+    white-space: normal!important;
+    width: 100%!important;
+    font-size: 0.8rem;
+}
+
+nav.navbar .dropdown-item .message-contents h6,
+nav.navbar .dropdown-item .coupon-contents h6 {
+    text-align: left;
+    white-space: normal!important;
+    /* overflow-wrap: break-word!important; */
+}
+
+nav.navbar .dropdown .messages-container {
+    overflow-y: scroll !important;
+    height: 200px!important;
+    width: 200px !important;
+    margin: 0 0!important;
+}
+
+nav.navbar .dropdown .coupons-container {
+    overflow-y: scroll !important;
+    height: 250px!important;
+    width: 250px !important;
+    margin: 0 0!important;
+}
+
+nav.navbar .dropdown .coupon-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav.navbar  .dropdown .messages-button-container,
+nav.navbar  .dropdown .coupons-button-container {
+    margin: 0 0!important;
+}
+
+nav.navbar .signedin   {
+    display: flex;
+}
+
+nav.navbar #userDropdownMenu .dropdown-menu .dropdown-item {
+    margin: 0!important;
+}
+
+nav.navbar #userDropdownMenuButton i  {
+    transition: 0.5s ease-in-out;
+}
+
+nav.navbar .dropdown > a {
+    border-radius: 0;
+}
+
+nav.navbar .dropdown > a:focus:after,
+nav.navbar .dropdown > a:hover:after {
+    content:"";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 3px solid white !important;
+    outline: none;
+    box-shadow: none;
+    left: 0%;
+    top: 0%;
+}
+
+nav.navbar .dropdown > a {
+    border-radius: 0;
+    outline: 1;
+    box-shadow: none;
+}
+
+nav.navbar .dropdown-menu:before {
+    content:"";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    right: 0%;
+    top: 0%
+}
+
+/* nav.navbar #userDropdownMenuButton *  {
+    pointer-events: none;
+} */
+
+/* nav.navbar .dropdown-menu {
+    left: 78%;
+} */
+
+nav #navbarResponsive .navbar-top {
+    height: 70%;
+}
+/* nav #navbarResponsive .navbar-middle {
+    height: 10%;
+} */
+/* nav #navbarResponsive .navbar-search {
+    height: 20%;
+} */
+
+nav #navbarResponsive .empty-banner {
+    height: 8vh;
+}
+
+nav #navbarResponsive .nav-search .form-control{
+    font-size: 1rem !important;
+}
+
+nav #navbarResponsive .nav-search button i{
+    font-size: 0.8rem !important;
+}
+
+
+.slidein {
+    transform: translateX(100%);
+}
+
+nav #navbarResponsive .navmenulink div i {
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+nav #navbarResponsive .navmenulink i {
+    pointer-events: none;
+    /* transition: 0.5s ease-in-out; */
+}
+nav #navbarResponsive .navmenulink p{
+    font-weight: 700!important;
+    pointer-events: none;
+}
+
+.menulinkiconrotate {
+    transform: rotate(90deg);
+}
+
+.navbar ul {
+    list-style: none;
+}

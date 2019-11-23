@@ -11,17 +11,6 @@ body {
     font-family: 'Roboto Slab', serif !important;
 }
 
-
-/* * {
-  border: 1px solid #f00 !important;
-} */
-
-
-/* .slide-content .scroller {
-  width: 1024px;
-} */
-
-
 body {
     background-color: var(--main-bg-color);
 }
@@ -61,7 +50,7 @@ h6 {
 
 .navbar {
     width: 100vw;
-    height: 8vh;
+    height: 3.75rem;
     z-index: 100;
     position: fixed !important;
     
@@ -264,6 +253,10 @@ nav.navbar .dropdown-menu:before {
     left: 78%;
 } */
 
+nav #navbarResponsive {
+    overflow-y: auto;
+}
+
 nav #navbarResponsive .navbar-top {
     height: 70%;
 }
@@ -275,7 +268,7 @@ nav #navbarResponsive .navbar-search {
 }
 
 nav #navbarResponsive .empty-banner {
-    height: 8vh;
+    height: 3.75rem;
 }
 
 nav #navbarResponsive .nav-search .form-control{
@@ -317,7 +310,7 @@ nav #navbarResponsive .navmenulink p{
 /* Carousel */
 
 .mainCarouselContainer {
-    height: 50vh;
+    height: 26.5rem;
     width: 100vw;
     overflow: hidden;
 }
@@ -385,7 +378,7 @@ nav #navbarResponsive .navmenulink p{
 form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
-    height: 15vh;
+    height: 8rem;
     width: 100%;
 }
 
@@ -419,7 +412,7 @@ font-size: 1.1rem !important;
 /* Offers Icons */
 
 #offerscontainer {
-    height: 15vh;
+    height: 8rem;
 }
 
 #offerscontainer > div {
