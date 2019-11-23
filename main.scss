@@ -39,9 +39,10 @@ $body-bg: theme-color-level(promo-gray, -10);
 
 //Sidebar 
 
-nav #navbarResponsive {
-    background: linear-gradient(to right,  rgba(203, 144, 49, 1), rgba(230, 198, 91, 0.9));
-}
+// nav #navbarResponsive {
+//     background: linear-gradient(to right,  rgba(203, 144, 49, 1), rgba(230, 198, 91, 0.9));
+// }
+
 
 //Select elements
 
@@ -111,7 +112,8 @@ nav #navbarResponsive {
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon i,
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon .expiration-text,
-.mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i
+.mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i,
+#couponsDropdownMenu .coupon .head-icon.expires-soon i
 
  {
     color: theme-color(danger);

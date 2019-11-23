@@ -7698,9 +7698,6 @@ a.text-promo-gray:hover, a.text-promo-gray:focus {
   -moz-box-shadow: 0 8px 6px -6px white;
   box-shadow: 0 8px 6px -6px white; }
 
-nav #navbarResponsive {
-  background: linear-gradient(to right, #cb9031, rgba(230, 198, 91, 0.9)); }
-
 .my-dropdown {
   color: #062B64; }
 
@@ -7783,7 +7780,8 @@ nav #navbarResponsive {
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon i,
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon .expiration-text,
-.mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i {
+.mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i,
+#couponsDropdownMenu .coupon .head-icon.expires-soon i {
   color: #D7291E; }
 
 [anim="ripple"] {

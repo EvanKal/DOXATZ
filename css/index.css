@@ -902,7 +902,7 @@ nav.navbar .my-dropdown.active .select > i {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #E6C65B;
+  border-bottom: 5px solid #88754D;
   pointer-events: none;
   top: -62%;
 }
@@ -973,7 +973,7 @@ nav.navbar .my-dropdown.active .select > i {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #E6C65B;
+  border-bottom: 5px solid #88754D;
   pointer-events: none;
 }
 
@@ -1034,9 +1034,6 @@ nav.navbar .my-dropdown.active .select > i {
     background-position: center;
 }
 
-.mainCarouselContainer .hero-image:before {
-
-}
 
 /* Download Pomobook promo */
 
