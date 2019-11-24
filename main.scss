@@ -502,6 +502,14 @@ nav #navbarResponsive .navmenulink p{
 // Footer
 ///////////////////////////////////////////////////////
 
+.download-images .download-images-gp{
+    width: 75%;
+}
+
+.download-images .download-images-appst{
+    width: 75%;
+}
+
 footer {
     font-family: Roboto,sans-serif !important;
 }
@@ -668,8 +676,8 @@ nav.navbar .my-dropdown.active .select > i {
 //Other elements
 ///////////////////////////////////////////////////////
 
-.categories-dropdown .categories-dropdown-menu .categories-dropdown-item{
-    background-color: theme-color-level(promo-gray, -10);
+.categories-accordion-container .categories-accordion-dropdown-menu a{
+    // background-color: theme-color-level(promo-gray, -10);
 }
 
 
@@ -703,7 +711,7 @@ nav.navbar .my-dropdown.active .select > i {
     }
 
     .download-images .download-images-gp{
-        width: 55%;
+        width: 50%;
     }
     
     .download-images .download-images-appst{
@@ -738,7 +746,7 @@ nav.navbar .dropdown .coupons-container {
 }
 
  .download-images .download-images-gp{
-    width: 65%;
+    width: 60%;
 }
 
  .download-images .download-images-appst{
@@ -795,7 +803,7 @@ nav.navbar .dropdown .coupons-container {
     }
 
     .download-images .download-images-gp{
-        width: 55%;
+        width: 50%;
     }
     
      .download-images .download-images-appst{

@@ -1,5 +1,25 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+    // togglecategoriesDropdownMenuArrow();
+
+});
+
+
+
+
+
+
+
+// Not used
+
+function togglecategoriesAccordionDropdown() {
+
+    document.querySelector("#categoriesAccordion").addEventListener("click", function() {
+        
+    });
+}
+
+function togglecategoriesDropdownMenuArrow {
     $("#categoriesDropdownMenu").on('hide.bs.dropdown', function (event) {
 
         if ($('#categoriesDropdownMenu .iconcontainer i').hasClass("menulinkiconrotate")) {
@@ -13,5 +33,4 @@ window.addEventListener('DOMContentLoaded', () => {
             $('#categoriesDropdownMenu .iconcontainer i').addClass("menulinkiconrotate");
         }
     });
-
-});
+}

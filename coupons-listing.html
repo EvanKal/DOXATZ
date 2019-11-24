@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light py-1 shownavbackground sticky-top">
+    <nav class="navbar navbar-light py-1 shownavbackground sticky-top w-auto">
 
         <div class="my-auto col-2 col-md-1 d-flex">
             <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive"
@@ -453,7 +453,7 @@
 
     <!-- Categories menu -->
 
-    <div class="container-fluid categories-container bg-secondary d-flex align-items-center">
+    <!-- <div class="container-fluid categories-container bg-secondary d-flex align-items-center">
         <div class="row d-flex col-12 align-items-center h-100">
             <div id="categoriesDropdownMenu" class="categories-dropdown dropdown">
 
@@ -537,7 +537,7 @@
 
 
 
-                <!-- <div id="" class="dropdown-menu categories-dropdown-menu text-dark"
+                <div id="" class="dropdown-menu categories-dropdown-menu text-dark"
                     aria-labelledby="categoriesDropdownMenuButton">
                     <a class="col-12 btn dropdown-item categories-dropdown-item" href="#">
                         <div class="iconcontainer position-relative d-flex align-items-center">
@@ -594,803 +594,314 @@
                         </div>
                     </a>
 
-                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Categories menu -->
 
-    <div class="container-fluid categories-accordion-container bg-dark d-flex align-items-center">
+    <div class="container-fluid categories-accordion-container bg-secondary d-flex align-items-center">
         <div class="row d-flex col-12 align-items-center h-100">
             <div id="categoriesAccordion" class="">
 
-                <a class=" btn btn-light d-flex justify-content-center" href=#>
+                <a id="categoriesAccordionButton" class=" btn btn-light d-flex justify-content-center" href=#
+                    data-toggle="collapse" data-target="#accordionDropdownMenuContainer" aria-expanded="true"
+                    aria-controls="accordionDropdownMenuContainer">
                     <div class="iconcontainer position-relative d-flex align-items-center">
                         <p class="m-0 text-left">Κατηγορία</p>
                         <div class=" ml-2"><i class="fa fa-chevron-right"></i></div>
                     </div>
                 </a>
 
-                <ul id="" class=" text-dark" aria-labelledby="">
-                    <li id="submenuheading1" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu1" aria-expanded="true" aria-controls="submenu1">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/theater (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΔΙΑΣΚΕΔΑΣΗ</p>
-                        </div>
+                <div id="accordionDropdownMenuContainer"
+                    class="categories-accordion-dropdown-menu-container position-absolute collapse"
+                    aria-labelledby="categoriesAccordionButton" data-parent="#categoriesAccordion">
+                    <ul id="" class="list-group categories-accordion-dropdown-menu p-0 text-dark col-12"
+                        aria-labelledby="">
+                        <a id="submenuheading1"
+                            class="list-group-item-action list-group-item col-12 btn dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu1" aria-expanded="true"
+                            aria-controls="submenu1">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/theater (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΔΙΑΣΚΕΔΑΣΗ</p>
+                            </div>
 
-                        <ul id="submenu1" class="collapse show" aria-labelledby="submenuheading1"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
+                            <ul id="submenu1" class="list-group collapse" aria-labelledby="submenuheading1"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
 
-                    </li>
-                    <li id="submenuheading2" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu2" aria-expanded="true" aria-controls="submenu2">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/shopping-bag (2).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΚΑΘΗΜΕΡΙΝΑ</p>
-                        </div>
+                        </a>
+                        <a id="submenuheading2"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu2" aria-expanded="true"
+                            aria-controls="submenu2">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/shopping-bag (2).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΚΑΘΗΜΕΡΙΝΑ</p>
+                            </div>
 
-                        <ul id="submenu2" class="collapse" aria-labelledby="submenuheading2"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading3" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu3" aria-expanded="true" aria-controls="submenu3">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/house (5).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΣΠΙΤΙ-ΓΡΑΦΕΙΟ</p>
-                        </div>
+                            <ul id="submenu2" class="list-group collapse" aria-labelledby="submenuheading2"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading3"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu3" aria-expanded="true"
+                            aria-controls="submenu3">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/house (5).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΣΠΙΤΙ-ΓΡΑΦΕΙΟ</p>
+                            </div>
 
-                        <ul id="submenu3" class="collapse" aria-labelledby="submenuheading3"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading4" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu4" aria-expanded="true" aria-controls="submenu4">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/makeup (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΓΥΝΑΙΚΑ</p>
-                        </div>
+                            <ul id="submenu3" class="list-group collapse" aria-labelledby="submenuheading3"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading4"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu4" aria-expanded="true"
+                            aria-controls="submenu4">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/makeup (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΓΥΝΑΙΚΑ</p>
+                            </div>
 
-                        <ul id="submenu4" class="collapse" aria-labelledby="submenuheading4"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading5" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu5" aria-expanded="true" aria-controls="submenu5">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/kids (2).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΠΑΙΔΙ</p>
-                        </div>
+                            <ul id="submenu4" class="list-group collapse" aria-labelledby="submenuheading4"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading5"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu5" aria-expanded="true"
+                            aria-controls="submenu5">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/kids (2).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΠΑΙΔΙ</p>
+                            </div>
 
-                        <ul id="submenu5" class="collapse" aria-labelledby="submenuheading5"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading6" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu6" aria-expanded="true" aria-controls="submenu6">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/car (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΑΥΤΟΚΙΝΗΤΟ-ΜΗΧΑΝΗ</p>
-                        </div>
+                            <ul id="submenu5" class="list-group collapse" aria-labelledby="submenuheading5"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading6"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu6" aria-expanded="true"
+                            aria-controls="submenu6">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/car (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΑΥΤΟΚΙΝΗΤΟ-ΜΗΧΑΝΗ</p>
+                            </div>
 
-                        <ul id="submenu6" class="collapse" aria-labelledby="submenuheading6"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading7" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu7" aria-expanded="true" aria-controls="submenu7">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/smartwatch (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΥΓΕΙΑ & ΑΘΛΗΣΗ</p>
-                        </div>
+                            <ul id="submenu6" class="list-group collapse" aria-labelledby="submenuheading6"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading7"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu7" aria-expanded="true"
+                            aria-controls="submenu7">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/smartwatch (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΥΓΕΙΑ & ΑΘΛΗΣΗ</p>
+                            </div>
 
-                        <ul id="submenu7" class="collapse" aria-labelledby="submenuheading7"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading8" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu8" aria-expanded="true" aria-controls="submenu8">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/theater (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΨΥΧΑΓΩΓΙΑ</p>
-                        </div>
+                            <ul id="submenu7" class="list-group collapse" aria-labelledby="submenuheading7"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading8"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu8" aria-expanded="true"
+                            aria-controls="submenu8">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/theater (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΨΥΧΑΓΩΓΙΑ</p>
+                            </div>
 
-                        <ul id="submenu8" class="collapse" aria-labelledby="submenuheading8"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
-                    <li id="submenuheading9" class="col-12 btn dropdown-item categories-dropdown-item" href="#"
-                        data-toggle="collapse" data-target="#submenu9" aria-expanded="true" aria-controls="submenu9">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="col-4 img-fluid" src="images/icons/veterinary (1).png" alt="">
-                            <p class="col-8 m-0 text-left text-dark">ΚΑΤΟΙΚΙΔΙΑ</p>
-                        </div>
+                            <ul id="submenu8" class="list-group collapse" aria-labelledby="submenuheading8"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
+                        <a id="submenuheading9"
+                            class="list-group-item-action list-group-item col-12 dropdown-item categories-dropdown-item"
+                            href="#" data-toggle="collapse" data-target="#submenu9" aria-expanded="true"
+                            aria-controls="submenu9">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="col-4 img-fluid" src="images/icons/veterinary (1).png" alt="">
+                                <p class="col-8 m-0 text-left text-dark">ΚΑΤΟΙΚΙΔΙΑ</p>
+                            </div>
 
-                        <ul id="submenu9" class="collapse" aria-labelledby="submenuheading9"
-                            data-parent="#categoriesAccordion">
-                            <li>Όλα</li>
-                            <li>Supermarket</li>
-                            <li>Κρεοπωλεία</li>
-                            <li>Ιχθυοπωλεία</li>
-                            <li>Fast food</li>
-                            <li>Karate</li>
-                        </ul>
-                    </li>
+                            <ul id="submenu9" class="list-group collapse" aria-labelledby="submenuheading9"
+                                data-parent="#accordionDropdownMenuContainer">
+                                <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                            </ul>
+                        </a>
 
-                </ul>
+                    </ul>
+                </div>
+
             </div>
         </div>
     </div>
 
 
     <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
+            <div class="container-fluid text-primary">
+                <div class="row text-center p-3">
+                    <div
+                        class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
+                        <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
+                        <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                        <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div
+                                class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
+                                <p class="m-0 text-left text-secondary w-50">Facebook</p>
+                            </div>
+                        </a>
+                        <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div
+                                class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
+                                <p class="m-0 text-left text-secondary w-50">Twitter</p>
+                            </div>
+                        </a>
+                        <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div
+                                class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
+                                <p class="m-0 text-left text-secondary w-50">Instagram</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
+                        <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
+                        <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                        <ul class="list-unstyled col-8 p-3">
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 1</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 2</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 3</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
+                        <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
+                        <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                        <ul class="list-unstyled col-8 p-3">
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 1</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 2</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 3</a>
+                            </li>
+                            <li class="d-flex justify-content-center justify-content-sm-start">
+                                <a href="#!" class="text-secondary">Link 4</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
+                        <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
+                        </h4>
+                        <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
+                            <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
+                                <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
+                                    src="images/logo/google-play-badge.png" alt="Get it on google play">
+                            </div>
+                            <div class=" col-12 col-md-6 col-md-12 mt-2 d-flex align-items-center justify-content-center">
+                                <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
+                                    src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
+                <div class="row justify-content-center border-top p-2 m-0 align-items-center">
+                    <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
                     </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </footer>
-    <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
+                    <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
+                    <div class="col-md-6 col-12 h-100 text-center">
+                        <span class="footer-copyright text-center text-dark ">©
+                            2019 Copyright:Promobook SA</span>
+                    </div>
+                    <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
+                        <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
+                            <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
                         </div>
                     </div>
+    
                 </div>
             </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
-                    </div>
-                </div>
-
             </div>
-        </div>
-        </div>
-    </footer>
-    <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </footer>
-    <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </footer>
-    <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </footer>
-    <footer class="page-footer">
-        <div class="container-fluid text-primary">
-            <div class="row text-center p-3">
-                <div
-                    class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
-                    <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Facebook</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Twitter</p>
-                        </div>
-                    </a>
-                    <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div
-                            class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
-                            <p class="m-0 text-left text-secondary w-50">Instagram</p>
-                        </div>
-                    </a>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div
-                    class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
-                    <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
-                    <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
-                    <ul class="list-unstyled col-8 p-3">
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 1</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 2</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 3</a>
-                        </li>
-                        <li class="d-flex justify-content-center justify-content-sm-start">
-                            <a href="#!" class="text-secondary">Link 4</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
-                    <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
-                    </h4>
-                    <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/google-play-badge.png" alt="Get it on google play">
-                        </div>
-                        <div class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
-                            <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
-                                src="images/logo/Download_on_the_App_Store_Badge.png" alt="Download on the app store">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-center border-top p-2 m-0 align-items-center">
-                <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
-                </div>
-                <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
-                <div class="col-md-6 col-12 h-100 text-center">
-                    <span class="footer-copyright text-center text-dark ">©
-                        2019 Copyright:Promobook SA</span>
-                </div>
-                <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
-                    <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
-                        <img src="images/logo/doers-logo.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </footer>
+        </footer>
 
     <script src="js/coupons-listing.js "></script>
     <script src="js/app.js "></script>

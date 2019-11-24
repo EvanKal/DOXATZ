@@ -103,7 +103,7 @@ font-size: 1.1rem !important;
 /* Offers Icons */
 
 #offerscontainer {
-    height: 8rem;
+    height: 10rem;
 }
 
 #offerscontainer > div {
@@ -629,7 +629,7 @@ font-size: 1.1rem !important;
 /* Download Pomobook promo */
 
 .download-images .download-images-gp{
-    width: 85%;
+    width: 75%;
 }
 
 .download-images .download-images-appst{
