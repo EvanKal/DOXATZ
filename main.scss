@@ -91,13 +91,6 @@ h6 {
 // }
 
 
-//Select elements
-
-.my-dropdown {
-    color: theme-color(dark); 
-}
-
-
 //Dropdown menu
 
 .dropdown-menu {
@@ -115,7 +108,7 @@ h6 {
     color: theme-color(dark);
     font-size: 0.8rem;
     padding: 1rem 0.5rem 1rem 0.5rem;
-    margin: 0 1rem;
+    // margin: 0 1rem;
     position: relative;
     background-color: theme-color(light); 
     border-radius: 0;
@@ -187,7 +180,7 @@ h6 {
         display: block;
         background: var(--ripple-background, white);      
         border-radius: 50%;
-        pointer-events: none; 
+        // pointer-events: none; 
         
         //  position and size 
         top: calc(var(--y) * 1px);
@@ -233,7 +226,7 @@ form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
     height: 8rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .form-group {
@@ -259,7 +252,12 @@ font-size: 1.1rem !important;
     width: 100vw;
     height: 3.75rem;
     z-index: 100;
-    position: fixed !important;
+    // position: sticky !important;
+    // position: -webkit-sticky;
+    // position: -moz-sticky;
+    // position: -ms-sticky;
+    // position: -o-sticky;
+    // top: 0;
     
 }
 
@@ -413,12 +411,12 @@ nav.navbar #userDropdownMenu .dropdown-menu .dropdown-item {
     margin: 0!important;
 }
 
-nav.navbar #userDropdownMenuButton i  {
-    transition: 0.5s ease-in-out;
+nav.navbar #userDropdownMenu .dropdown-menu .user-menu-elements-container {
+    width: 15rem!important;
 }
 
-nav.navbar .dropdown > a {
-    border-radius: 0;
+nav.navbar #userDropdownMenuButton i  {
+    transition: 0.5s ease-in-out;
 }
 
 nav.navbar .dropdown > a:focus:after,
@@ -493,7 +491,7 @@ nav #navbarResponsive .navmenulink p{
 }
 
 .menulinkiconrotate {
-    transform: rotate(90deg);
+    transform: rotate(90deg) !important;
 }
 
 .navbar ul {
@@ -525,8 +523,12 @@ footer .footer-copyright {
 }
 
 //////////////////////////////////////////////////
-//My-Dropdown
+//My-Dropdown (Select elements)
 /////////////////////////////////////////////////
+
+.my-dropdown {
+    color: theme-color(dark); 
+}
 
 .my-dropdown {
     width: 300px;
@@ -660,6 +662,14 @@ nav.navbar .my-dropdown.active .select > i {
     height: 1em;
     margin-top: 0.2em;
     background: white;
+}
+
+////////////////////////////////////////////////////
+//Other elements
+///////////////////////////////////////////////////////
+
+.categories-dropdown .categories-dropdown-menu .categories-dropdown-item{
+    background-color: theme-color-level(promo-gray, -10);
 }
 
 
@@ -796,4 +806,3 @@ nav.navbar .dropdown .coupons-container {
         width: 25% !important;
     }
  }
-

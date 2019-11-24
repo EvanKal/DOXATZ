@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="images/logo/PROMOBOOK_favicon.PNG" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/index-responsive.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main/main.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light py-1">
+    <nav class="navbar navbar-light py-1 fixed-top">
 
         <div class="my-auto col-2 col-md-1 d-flex">
             <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive"
@@ -212,6 +212,7 @@
                         </a>
                     </div>
                     <div id="userDropdownMenu" class="dropdown">
+
                         <a class=" btn text-light d-flex" href=# id="userDropdownMenuButton" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="iconcontainer position-relative d-flex align-items-center">
@@ -219,34 +220,37 @@
                                 <p class="d-none d-md-block m-0 text-left text-light">Ευάγγελος Κ.</p>
                                 <div class="d-none d-md-block text-light ml-2"><i class="fa fa-chevron-right"></i></div>
                             </div>
+                        </a>
 
-                            <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
-                                <a class="btn dropdown-item pl-1 pr-2" href="#">
+
+                        <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
+                            <div class="user-menu-elements-container">
+                                <a class="btn dropdown-item" href="#">
                                     <div class="iconcontainer position-relative d-flex align-items-center">
                                         <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
                                         <p class="m-0 text-left text-dark">Ο λογαριασμός μου</p>
                                     </div>
                                 </a>
-                                <a class="btn dropdown-item pl-1 pr-2" href="#">
+                                <a class="btn dropdown-item" href="#">
                                     <div class="iconcontainer position-relative d-flex align-items-center">
                                         <img class="mr-2 img-fluid" src="images/icons/coupon-blue.png" alt="">
                                         <p class="m-0 text-left text-dark">Τα κουπόνια μου</p>
                                     </div>
                                 </a>
-                                <a class="btn dropdown-item pl-1 pr-2" href="#">
+                                <a class="btn dropdown-item" href="#">
                                     <div class="iconcontainer position-relative d-flex align-items-center">
                                         <img class="mr-2 img-fluid" src="images/icons/envelope-blue.png" alt="">
                                         <p class="m-0 text-left text-dark">Διαχ. Ειδοποιήσεων</p>
                                     </div>
                                 </a>
-                                <a class="btn dropdown-item pl-1 pr-2" href="#">
+                                <a class="btn dropdown-item" href="#">
                                     <div class="iconcontainer position-relative d-flex align-items-center">
                                         <img class="mr-2 img-fluid" src="images/icons/sign-out-option-blue.png" alt="">
                                         <p class="m-0 text-left text-dark">Αποσύνδεση</p>
                                     </div>
                                 </a>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
 
@@ -254,7 +258,8 @@
         </div>
 
 
-        <div class="ml-auto position-fixed d-flex flex-column justify-content-between bg-secondary" id="navbarResponsive">
+        <div class="ml-auto position-fixed d-flex flex-column justify-content-between bg-secondary"
+            id="navbarResponsive">
             <div class="container-fluid flex-column d-flex navbar-top">
                 <div class="row empty-banner">
 
@@ -397,7 +402,8 @@
             <div class="row navbar-search align-items-end p-1">
                 <div class="col-12 d-flex justify-content-center">
 
-                    <form action="" class="shadow-none d-flex align-items-center flex-wrap justify-content-center w-100">
+                    <form action=""
+                        class="shadow-none d-flex align-items-center flex-wrap justify-content-center w-100">
                         <div class="col-6  pl-0">
                             <div class="my-dropdown w-100 p-1">
                                 <div class="select mx-1 border-0 p-1">
@@ -2069,8 +2075,7 @@
                         href=#>
                         <div
                             class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
-                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png"
-                                alt="">
+                            <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
                             <p class="m-0 text-left text-secondary w-50">Twitter</p>
                         </div>
                     </a>
@@ -2141,8 +2146,8 @@
                 </div>
                 <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
                 <div class="col-md-6 col-12 h-100 text-center">
-                   <span class="footer-copyright text-center text-dark ">©
-                            2019 Copyright:Promobook SA</span>
+                    <span class="footer-copyright text-center text-dark ">©
+                        2019 Copyright:Promobook SA</span>
                 </div>
                 <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
                     <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
@@ -2164,9 +2169,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
         crossorigin="anonymous "></script>
-
+<!-- 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>

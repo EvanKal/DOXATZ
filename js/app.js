@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
 window.addEventListener('resize', () => {
   appendProperClassForSlidingSync();
 });
@@ -832,16 +833,21 @@ function fillStarsInCards(rating) {
 
 
 function toggleuserDropdownMenuButtonArrow() {
-  $("#userDropdownMenu").on('hide.bs.my-dropdown', function (event) {
-    if ($('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
-      $('#userDropdownMenuButton .iconcontainer i').removeClass("menulinkiconrotate");
+
+  $("#userDropdownMenu").on('hide.bs.dropdown', function (event) {
+
+    if ($('#userDropdownMenu .iconcontainer i').hasClass("menulinkiconrotate")) {
+        $('#userDropdownMenu .iconcontainer i').removeClass("menulinkiconrotate");
     }
-  });
-  $("#userDropdownMenu").on('show.bs.my-dropdown', function (event) {
-    if (!$('#userDropdownMenuButton .iconcontainer i').hasClass("menulinkiconrotate")) {
-      $('#userDropdownMenuButton .iconcontainer i').addClass("menulinkiconrotate");
+});
+
+
+$("#userDropdownMenu").on('show.bs.dropdown', function (event) {
+    if (!$('#userDropdownMenu .iconcontainer i').hasClass("menulinkiconrotate")) {
+        $('#userDropdownMenu .iconcontainer i').addClass("menulinkiconrotate");
     }
-  });
+});
+
 }
 
 function checkIfMainCarouselHasBeenScrolledOutOfView() {

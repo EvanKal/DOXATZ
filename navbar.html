@@ -1,425 +1,427 @@
-<nav class="navbar navbar-light py-1 shownavbackground">
+<nav class="navbar navbar-light py-1 fixed-top">
 
-    <div class="my-auto col-2 col-md-1 d-flex">
-        <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span><i class="fa fa-bars"></i></span>
-        </button>
-    </div>
-
-
-    <div class="d-none d-md-flex p-0 col-2 h-100 align-items-center " id="logoContainer">
-        <a class="navbar-brand p-0 d-flex align-items-center h-75 h-md-100" href="#"><img
-                src="images/logo/PROMOBOOK_LOGO_WHITE.png" alt="logo" class="h-100 w-auto"></a>
-    </div>
-
-    <!-- <div class="col-">
-
-    </div> -->
-
-    <div class="d-flex col-8 col-md-9  h-100 justify-content-end align-items-center" id="navButtonsContainer">
-
-
-        <!-- <select class="col-2 d-none d-md-flex custom-select custom-select-sm border-0 bg-none w-100">
-            <option selected>ΕΛΛΗΝΙΚΑ</option>
-            <option value="1">ENGLISH</option>
-        </select> -->
-
-        <div
-            class="language-selection col-2 h-100 d-none d-md-flex border-0 bg-none w-100 text-light align-items-center justify-content-center">
-            <a class="btn col-5 p-0">
-                EL
-            </a>
-            <div class="h-50 border-right p-0"></div>
-            <a class="btn col-5 p-0">
-                EN
-            </a>
+        <div class="my-auto col-2 col-md-1 d-flex">
+            <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars"></i></span>
+            </button>
         </div>
 
-        <div class="">
-            <div class="signedout justify-content-end">
-                <!-- this needs to be d-flex -->
-                <a class="btn btn-light btn-sm  mx-1" href="#" role="button" anim="ripple">ΕΓΓΡΑΦΗ</a>
-                <a class="btn btn-secondary btn-sm  mx-1 loginbtn" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+
+        <div class="d-none d-md-flex p-0 col-2 h-100 align-items-center " id="logoContainer">
+            <a class="navbar-brand p-0 d-flex align-items-center h-75 h-md-100" href="#"><img
+                    src="images/logo/PROMOBOOK_LOGO_WHITE.png" alt="logo" class="h-100 w-auto"></a>
+        </div>
+
+        <!-- <div class="col-">
+
+        </div> -->
+
+        <div class="d-flex col-8 col-md-9  h-100 justify-content-end align-items-center" id="navButtonsContainer">
+
+
+            <!-- <select class="col-2 d-none d-md-flex custom-select custom-select-sm border-0 bg-none w-100">
+                <option selected>ΕΛΛΗΝΙΚΑ</option>
+                <option value="1">ENGLISH</option>
+            </select> -->
+
+            <div
+                class="language-selection col-2 h-100 d-none d-md-flex border-0 bg-none w-100 text-light align-items-center justify-content-center">
+                <a class="btn col-5 p-0">
+                    EL
+                </a>
+                <div class="h-50 border-right p-0"></div>
+                <a class="btn col-5 p-0">
+                    EN
+                </a>
             </div>
-            <div class="signedin d-none align-items-center">
-                <div id="messagesDropdownMenu" class="dropdown">
-                    <a class=" btn text-light d-flex align-items-center" href=# role="button"
-                        id="messagesDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <div
-                            class="iconcontainer messages position-relative col-12 d-flex flex-column align-items-center">
-                            <img class="img-fluid" src="images/icons/envelope.png" alt="">
-                            <div
-                                class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
-                                <span>10</span></div>
-                        </div>
 
-                        <div class="dropdown-menu text-dark mt-2" aria-labelledby="messagesDropdownMenuButton">
-                            <div class="messages-container dropdown-item d-flex flex-wrap">
-                                <a class="btn w-100" href="#">
-                                    <div class="message position-relative d-flex align-items-center">
-                                        <div class="message-contents w-75">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAneratednerated content,
-                                                then add a check for
-                                                exceptionall</p>
-                                        </div>
-                                        <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
-                                                class="fa fa-chevron-right"></i></div>
-                                    </div>
-                                </a>
-                                <a class="btn w-100" href="#">
-                                    <div class="message position-relative d-flex align-items-center">
-                                        <div class="message-contents w-75">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">nerated content, then add a check for
-                                                exceptionall</p>
-                                        </div>
-                                        <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
-                                                class="fa fa-chevron-right"></i></div>
-                                    </div>
-                                </a>
-                                <a class="btn w-100" href="#">
-                                    <div class="message position-relative d-flex align-items-center">
-                                        <div class="message-contents w-75">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">nerated content, then add a check for
-                                                exceptionall</p>
-                                        </div>
-                                        <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
-                                                class="fa fa-chevron-right"></i></div>
-                                    </div>
-                                </a>
-                                <a class="btn w-100" href="#">
-                                    <div class="message position-relative d-flex align-items-center">
-                                        <div class="message-contents w-75">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">nerated content, then add a check for
-                                                exceptionall</p>
-                                        </div>
-                                        <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
-                                                class="fa fa-chevron-right"></i></div>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="messages-button-container dropdown-item d-flex justify-content-center">
-                                <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
-                            </div>
-                        </div>
-                    </a>
+            <div class="">
+                <div class="signedout justify-content-end">
+                    <!-- this needs to be d-flex -->
+                    <a class="btn btn-light btn-sm  mx-1" href="#" role="button" anim="ripple">ΕΓΓΡΑΦΗ</a>
+                    <a class="btn btn-secondary btn-sm  mx-1 loginbtn" href="#" role="button">ΣΥΝΔΕΣΗ</a>
                 </div>
-                <div id="couponsDropdownMenu" class="dropdown">
-                    <a class=" btn text-light d-flex align-items-center " href=# id="couponsDropdownMenuButton"
-                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="iconcontainer coupons position-relative d-flex flex-column align-items-center">
-                            <img class="img-fluid" src="images/icons/coupon.png" alt="">
+                <div class="signedin d-none align-items-center">
+                    <div id="messagesDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex align-items-center" href=# role="button"
+                            id="messagesDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
                             <div
-                                class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
-                                <span>12</span></div>
-                        </div>
+                                class="iconcontainer messages position-relative col-12 d-flex flex-column align-items-center">
+                                <img class="img-fluid" src="images/icons/envelope.png" alt="">
+                                <div
+                                    class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
+                                    <span>10</span></div>
+                            </div>
 
-                        <div class="dropdown-menu text-dark mt-2" aria-labelledby="couponsDropdownMenuButton">
-                            <div class="coupons-container dropdown-item d-flex flex-wrap">
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="messagesDropdownMenuButton">
+                                <div class="messages-container dropdown-item d-flex flex-wrap">
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAneratednerated content,
+                                                    then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="messages-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="couponsDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex align-items-center " href=# id="couponsDropdownMenuButton"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="iconcontainer coupons position-relative d-flex flex-column align-items-center">
+                                <img class="img-fluid" src="images/icons/coupon.png" alt="">
+                                <div
+                                    class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
+                                    <span>12</span></div>
+                            </div>
 
-                                <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
-                                    <a class="btn p-0 d-flex flex-wrap" href="#">
-                                        <div class="coupon-image-container p-3 w-50">
-                                            <div class="coupon-image w-100 h-100"
-                                                style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
-                                                <div
-                                                    class="head-icons-container d-flex w-100 h-100 justify-content-end align-items-start">
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="couponsDropdownMenuButton">
+                                <div class="coupons-container dropdown-item d-flex flex-wrap">
+
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
                                                     <div
-                                                        class="head-icon expires-soon bg-light mx-1 p-1 d-flex justify-content-center align-items-center shadow-sm">
-                                                        <i class="fa fa-hourglass"></i></div>
+                                                        class="head-icons-container d-flex w-100 h-100 justify-content-end align-items-start">
+                                                        <div
+                                                            class="head-icon expires-soon bg-light mx-1 p-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="coupon-contents w-50 h-100 p-3">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
-                                                add a check for
-                                                exceptionall</p>
-                                        </div>
-                                    </a>
-                                    <div class="coupon-redeem-button w-100 d-flex justify-content-end">
-                                        <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
-                                    </div>
-                                </div>
-                                <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
-                                    <a class="btn p-0 d-flex flex-wrap" href="#">
-                                        <div class="coupon-image-container p-3 w-50">
-                                            <div class="coupon-image w-100 h-100"
-                                                style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
                                             </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
                                         </div>
-                                        <div class="coupon-contents w-50 h-100 p-3">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
-                                                add a check for
-                                                exceptionall</p>
-                                        </div>
-                                    </a>
-                                    <div class="coupon-redeem-button w-100 d-flex justify-content-end">
-                                        <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
                                     </div>
-                                </div>
-                                <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
-                                    <a class="btn p-0 d-flex flex-wrap" href="#">
-                                        <div class="coupon-image-container p-3 w-50">
-                                            <div class="coupon-image w-100 h-100"
-                                                style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                </div>
                                             </div>
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
                                         </div>
-                                        <div class="coupon-contents w-50 h-100 p-3">
-                                            <h6>Τίτλος ειδοποίησης</h6>
-                                            <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
-                                                add a check for
-                                                exceptionall</p>
-                                        </div>
-                                    </a>
-                                    <div class="coupon-redeem-button w-100 d-flex justify-content-end">
-                                        <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
                                     </div>
-                                </div>
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                </div>
+                                            </div>
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
+                                        </div>
+                                    </div>
 
+                                </div>
+                                <div class="coupons-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλα τα κουπόνια μου</a>
+                                </div>
                             </div>
-                            <div class="coupons-button-container dropdown-item d-flex justify-content-center">
-                                <a class="btn-dark btn-sm text-light">Όλα τα κουπόνια μου</a>
+                        </a>
+                    </div>
+                    <div id="userDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex" href=# id="userDropdownMenuButton" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="img-fluid" src="images/icons/user.png" alt="">
+                                <p class="d-none d-md-block m-0 text-left text-light">Ευάγγελος Κ.</p>
+                                <div class="d-none d-md-block text-light ml-2"><i class="fa fa-chevron-right"></i></div>
                             </div>
-                        </div>
-                    </a>
+
+                            <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
+                                <div class="user-menu-elements-container">
+                                        <a class="btn dropdown-item" href="#">
+                                                <div class="iconcontainer position-relative d-flex align-items-center">
+                                                    <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
+                                                    <p class="m-0 text-left text-dark">Ο λογαριασμός μου</p>
+                                                </div>
+                                            </a>
+                                            <a class="btn dropdown-item" href="#">
+                                                <div class="iconcontainer position-relative d-flex align-items-center">
+                                                    <img class="mr-2 img-fluid" src="images/icons/coupon-blue.png" alt="">
+                                                    <p class="m-0 text-left text-dark">Τα κουπόνια μου</p>
+                                                </div>
+                                            </a>
+                                            <a class="btn dropdown-item" href="#">
+                                                <div class="iconcontainer position-relative d-flex align-items-center">
+                                                    <img class="mr-2 img-fluid" src="images/icons/envelope-blue.png" alt="">
+                                                    <p class="m-0 text-left text-dark">Διαχ. Ειδοποιήσεων</p>
+                                                </div>
+                                            </a>
+                                            <a class="btn dropdown-item" href="#">
+                                                <div class="iconcontainer position-relative d-flex align-items-center">
+                                                    <img class="mr-2 img-fluid" src="images/icons/sign-out-option-blue.png" alt="">
+                                                    <p class="m-0 text-left text-dark">Αποσύνδεση</p>
+                                                </div>
+                                            </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div id="userDropdownMenu" class="dropdown">
-                    <a class=" btn text-light d-flex" href=# id="userDropdownMenuButton" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="iconcontainer position-relative d-flex align-items-center">
-                            <img class="img-fluid" src="images/icons/user.png" alt="">
-                            <p class="d-none d-md-block m-0 text-left text-light">Ευάγγελος Κ.</p>
-                            <div class="d-none d-md-block text-light ml-2"><i class="fa fa-chevron-right"></i></div>
-                        </div>
 
-                        <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
-                            <a class="btn dropdown-item pl-1 pr-2" href="#">
-                                <div class="iconcontainer position-relative d-flex align-items-center">
-                                    <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
-                                    <p class="m-0 text-left text-dark">Ο λογαριασμός μου</p>
-                                </div>
-                            </a>
-                            <a class="btn dropdown-item pl-1 pr-2" href="#">
-                                <div class="iconcontainer position-relative d-flex align-items-center">
-                                    <img class="mr-2 img-fluid" src="images/icons/coupon-blue.png" alt="">
-                                    <p class="m-0 text-left text-dark">Τα κουπόνια μου</p>
-                                </div>
-                            </a>
-                            <a class="btn dropdown-item pl-1 pr-2" href="#">
-                                <div class="iconcontainer position-relative d-flex align-items-center">
-                                    <img class="mr-2 img-fluid" src="images/icons/envelope-blue.png" alt="">
-                                    <p class="m-0 text-left text-dark">Διαχ. Ειδοποιήσεων</p>
-                                </div>
-                            </a>
-                            <a class="btn dropdown-item pl-1 pr-2" href="#">
-                                <div class="iconcontainer position-relative d-flex align-items-center">
-                                    <img class="mr-2 img-fluid" src="images/icons/sign-out-option-blue.png" alt="">
-                                    <p class="m-0 text-left text-dark">Αποσύνδεση</p>
-                                </div>
-                            </a>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="ml-auto position-fixed d-flex flex-column justify-content-between bg-secondary" id="navbarResponsive">
-        <div class="container-fluid flex-column d-flex navbar-top">
-            <div class="row empty-banner">
-
-            </div>
-
-            <div class="row">
-                <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
-                <div class="logo-container w-100 d-flex justify-content-center p-3">
-                    <img src="images/logo/PROMOBOOK_LOGO_WHITE.png" class="w-75 img-fluid">
-                </div>
-                <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
-            </div>
-
-            <div class="row">
-                <ul class="accordion col-12" id="navMenuLinks">
-                    <li class="border-0">
-                        <div class="p-1" id="headingOne">
-                            <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
-                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
-                                aria-controls="collapseTwo" href=# anim="ripple">
-                                <div class="col-2"><i class="fa fa-chevron-right"></i></div>
-                                <p class="m-0">ΑΡΧΙΚΗ</p>
-                            </a>
-                        </div>
-
-                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
-                            data-parent="#navMenuLinks">
-                            <ul>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="border-0">
-                        <div class="p-1" id="headingTwo">
-                            <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
-                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                aria-controls="collapseTwo" href=# anim="ripple">
-                                <div class="col-2"><i class="fa fa-chevron-right"></i></div>
-                                <p class="m-0">ΣΧΕΤΙΚΑ ΜΕ</p>
-                            </a>
-                        </div>
-
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#navMenuLinks">
-                            <ul>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="border-0">
-                        <div class="p-1" id="headingThree">
-                            <a class=" navmenulink text-light btn collapsed col d-flex align-items-center p-0"
-                                data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                aria-controls="collapseTwo" href=# anim="ripple">
-                                <div class="col-2"><i class="fa fa-chevron-right"></i></div>
-                                <p class="m-0">ΣΥΝΕΡΓΑΤΕΣ</p>
-                            </a>
-                        </div>
-
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#navMenuLinks">
-                            <ul>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                                <li class="p-1">
-                                    <a class="text-light btn col d-flex align-items-center p-0" href="#">
-                                        <p class="m-0">Facebook</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
             </div>
         </div>
 
-        <div class="container-fluid flex-column d-flex justify-content-end navbar-middle">
-            <div class="signedout">
+
+        <div class="ml-auto position-fixed d-flex flex-column justify-content-between bg-secondary" id="navbarResponsive">
+            <div class="container-fluid flex-column d-flex navbar-top">
+                <div class="row empty-banner">
+
+                </div>
+
                 <div class="row">
-                    <hr class="my-2-4 mt-0 d-inline-block mx-auto w-75 bg-light">
-                    <div class="loginbuttonsinsidebar-container col-12 d-flex">
-                        <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
-                            <p class="text-light p-0 col-12">Νέος Χρήστης;</p>
-                            <a class="btn btn-light btn-sm col-12" href="#" role="button">ΕΓΓΡΑΦΗ</a>
-                        </div>
-
-
-                        <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
-                            <a class="btn btn-light btn-sm loginbtn col-12" href="#" role="button">ΣΥΝΔΕΣΗ</a>
-                        </div>
+                    <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
+                    <div class="logo-container w-100 d-flex justify-content-center p-3">
+                        <img src="images/logo/PROMOBOOK_LOGO_WHITE.png" class="w-75 img-fluid">
                     </div>
                     <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
                 </div>
+
+                <div class="row">
+                    <ul class="accordion col-12" id="navMenuLinks">
+                        <li class="border-0">
+                            <div class="p-1" id="headingOne">
+                                <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΑΡΧΙΚΗ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingTwo">
+                                <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΣΧΕΤΙΚΑ ΜΕ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingThree">
+                                <a class=" navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΣΥΝΕΡΓΑΤΕΣ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
 
-            <div class="signedin d-none">
-                <!-- <div class="row">
-                    <a class=" btn text-light col-12  d-flex align-items-center" href=#>
-                        <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
-                        <p class="m-0 text-left">Ευάγγελος Κ.</p>
-                    </a>
-                    <a class=" btn text-light col-12  d-flex align-items-center" href=#>
-                        <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
-                        <p class="m-0 text-left">Τα κουπόνια μου</p>
-                    </a>
-                    <a class=" btn text-light col-12  d-flex align-items-center" href=#>
-                        <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
-                        <p class="m-0 text-left">Αποσύνδεση</p>
-                    </a>
-                </div> -->
+            <div class="container-fluid flex-column d-flex justify-content-end navbar-middle">
+                <div class="signedout">
+                    <div class="row">
+                        <hr class="my-2-4 mt-0 d-inline-block mx-auto w-75 bg-light">
+                        <div class="loginbuttonsinsidebar-container col-12 d-flex">
+                            <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
+                                <p class="text-light p-0 col-12">Νέος Χρήστης;</p>
+                                <a class="btn btn-light btn-sm col-12" href="#" role="button">ΕΓΓΡΑΦΗ</a>
+                            </div>
 
 
+                            <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
+                                <a class="btn btn-light btn-sm loginbtn col-12" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+                            </div>
+                        </div>
+                        <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
+                    </div>
+                </div>
+
+                <div class="signedin d-none">
+                    <!-- <div class="row">
+                        <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                            <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                            <p class="m-0 text-left">Ευάγγελος Κ.</p>
+                        </a>
+                        <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                            <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                            <p class="m-0 text-left">Τα κουπόνια μου</p>
+                        </a>
+                        <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                            <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                            <p class="m-0 text-left">Αποσύνδεση</p>
+                        </a>
+                    </div> -->
+
+
+
+                </div>
+            </div>
+
+
+            <div class="row navbar-search align-items-end p-1">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <form action="" class="shadow-none d-flex align-items-center flex-wrap justify-content-center w-100">
+                        <div class="col-6  pl-0">
+                            <div class="my-dropdown w-100 p-1">
+                                <div class="select mx-1 border-0 p-1">
+                                    <span>Επιλέξτε</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="male">Male</li>
+                                    <li id="female">Female</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <div class="my-dropdown w-100 p-1">
+                                <div class="select mx-1 border-0 p-1">
+                                    <span>Επιλέξτε</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="male">Male</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="col-10 btn btn-light btn-sm mt-2 col-12">
+                            <div
+                                class="iconcontainer position-relative d-flex align-items-center w-100 justify-content-center">
+                                <img class="mr-2 img-fluid" src="images/icons/search.png" alt="">
+                                <p class="m-0 text-left text-dark">Search</p>
+                            </div>
+                        </button>
+
+                    </form>
+                </div>
 
             </div>
         </div>
 
-
-        <div class="row navbar-search align-items-end p-1">
-            <div class="col-12 d-flex justify-content-center">
-
-                <form action="" class="shadow-none d-flex align-items-center flex-wrap justify-content-center w-100">
-                    <div class="col-6  pl-0">
-                        <div class="my-dropdown w-100 p-1">
-                            <div class="select mx-1 border-0 p-1">
-                                <span>Επιλέξτε</span>
-                                <i class="fa fa-chevron-right"></i>
-                            </div>
-                            <input type="hidden" name="gender">
-                            <ul class="my-dropdown-menu">
-                                <li id="male">Male</li>
-                                <li id="female">Female</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-6 pr-0">
-                        <div class="my-dropdown w-100 p-1">
-                            <div class="select mx-1 border-0 p-1">
-                                <span>Επιλέξτε</span>
-                                <i class="fa fa-chevron-right"></i>
-                            </div>
-                            <input type="hidden" name="gender">
-                            <ul class="my-dropdown-menu">
-                                <li id="male">Male</li>
-                                <li id="female">Female</li>
-                                <li id="female">Female</li>
-                                <li id="female">Female</li>
-                                <li id="female">Female</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button type="submit" class="col-10 btn btn-light btn-sm mt-2 col-12">
-                        <div
-                            class="iconcontainer position-relative d-flex align-items-center w-100 justify-content-center">
-                            <img class="mr-2 img-fluid" src="images/icons/search.png" alt="">
-                            <p class="m-0 text-left text-dark">Search</p>
-                        </div>
-                    </button>
-
-                </form>
-            </div>
-
         </div>
-    </div>
-
-    </div>
-    </div>
-</nav>
+        </div>
+    </nav>
