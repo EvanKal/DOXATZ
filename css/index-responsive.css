@@ -100,8 +100,8 @@
 }
 
 #offerscontainer {
-    /* height: 20vh;
-} */
+    /* height: 20vh; */
+}
 
 #offerscontainer > div {
 transform: translateY(-50%);

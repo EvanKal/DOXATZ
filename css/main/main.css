@@ -8279,13 +8279,13 @@ nav.navbar .my-dropdown.active .select > i {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   html {
-    font-size: calc(0.1em + 1vw) !important; }
+    font-size: calc(0.1rem + 15px) !important; }
   nav #navbarResponsive {
-    width: 25%;
-    left: -25%; }
+    width: 30rem;
+    left: -30rem; }
   .navbar-toggler-slidein {
     /* left: 20% */
-    transform: translateX(650%); }
+    transform: translateX(24rem); }
   .download-images .download-images-gp {
     width: 50%; }
   .download-images .download-images-appst {
