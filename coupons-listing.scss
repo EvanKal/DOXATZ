@@ -8,16 +8,16 @@
 
 .categories-accordion-container .categories-accordion-dropdown-menu-container {
     // width: 20rem;
-    height: 45rem;
+    height: 30rem;
     // top: 3.75rem !important;
     overflow-y: auto;
 }
 
-.categories-accordion-container .categories-accordion-dropdown-menu {
-    // overflow-y: auto;
-    // height: 20rem;
-    // top: 3.75rem !important;
+.categories-accordion-container .categories-accordion-dropdown-menu > div .dropdown-item{
+    height: 10rem;
 }
+
+
 
 .categories-accordion-container .categories-accordion-dropdown-menu a p{
 white-space: normal!important;
@@ -30,7 +30,6 @@ white-space: normal!important;
 .categories-accordion-dropdown-menu ul a:first-child {
     display: none;
 }
-
 
 // .categories-accordion-container .categories-accordion-dropdown-menu-container::-webkit-scrollbar {
 //     width: 9px;

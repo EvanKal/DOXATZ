@@ -5,8 +5,11 @@
   height: 3.75rem; }
 
 .categories-accordion-container .categories-accordion-dropdown-menu-container {
-  height: 45rem;
+  height: 30rem;
   overflow-y: auto; }
+
+.categories-accordion-container .categories-accordion-dropdown-menu > div .dropdown-item {
+  height: 10rem; }
 
 .categories-accordion-container .categories-accordion-dropdown-menu a p {
   white-space: normal !important; }
