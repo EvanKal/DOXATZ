@@ -23,3 +23,15 @@
 #web-submenu-container .tab-content .list-group .list-group-item {
   border: none !important;
   border-radius: 0 !important; }
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+  font-size: 0.9rem; }
+
+#web-submenu-container .nav-item .iconcontainer p {
+  font-size: 0.8rem; }
+
+#web-submenu-container .nav-item .nav-link {
+  height: 100%; }
+
+.six-tab-container.order1 {
+  order: 1; }

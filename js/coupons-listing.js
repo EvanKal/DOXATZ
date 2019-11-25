@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     togglecategoriesDropdownMenuArrow();
+    toggleSixTabContainers();
 
 });
 
@@ -26,7 +27,26 @@ function togglecategoriesDropdownMenuArrow() {
     });
 }
 
+function toggleSixTabContainers() {
+    document.querySelectorAll(".six-tab-container").forEach((elem)=>{
+        elem.addEventListener('click', (event)=>{
 
+            let children = elem.parentNode.children;
+
+            for(let i of children) {
+                if(i==elem) {
+                    i.classList.add("order1");
+                } else {
+                    i.classList.remove("order1");
+                    i.querySelectorAll(".nav-link").forEach((navlink)=>{
+                        navlink.classList.remove("active");
+                    })
+                }
+
+            }
+        })
+    });
+}
 
 
 // Not used

@@ -18,7 +18,7 @@
 }
 
 .categories-accordion-container .categories-accordion-dropdown-menu a p{
-white-space: normal!important;
+    white-space: normal!important;
 }
 
 .categories-accordion-container .iconcontainer i {
@@ -35,9 +35,32 @@ white-space: normal!important;
 }
 
 #web-submenu-container .tab-content .list-group .list-group-item {
-    border: none!important;
-    border-radius: 0!important;
+ font-size: 0.9rem;
+
 }
+
+#web-submenu-container .nav-item .iconcontainer p {
+    font-size: 0.8rem;
+}
+
+#web-submenu-container .nav-item .nav-link {
+    height: 100%;
+}
+
+
+//////////////////////////////////////////////////////////
+// Classes for changing the order of the six-tab-container elements
+////////////////////////////////////////////////////////////@at-root
+
+.six-tab-container.order1 {
+    order: 1;
+}
+
+// .six-tab-container.order2 {
+//     order: 2;
+// }
+
+
 
 // .categories-accordion-container .categories-accordion-dropdown-menu-container::-webkit-scrollbar {
 //     width: 9px;
