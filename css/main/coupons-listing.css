@@ -19,3 +19,7 @@
 
 .categories-accordion-dropdown-menu ul a:first-child {
   display: none; }
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+  border: none !important;
+  border-radius: 0 !important; }
