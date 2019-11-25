@@ -8413,7 +8413,7 @@ form {
   outline: 0; }
 
 .navbar-toggler-slidein {
-  transform: translateX(550%); }
+  transform: translateX(15rem); }
 
 .navbar select {
   color: white !important;
@@ -8424,10 +8424,10 @@ form {
   height: 100%; }
 
 nav #navbarResponsive {
-  width: 60%;
+  width: 20rem;
+  left: -20rem;
   height: 100vh;
   top: 0vh;
-  left: -60%;
   z-index: 10;
   transition: 0.5s ease-in-out;
   /* background: linear-gradient(rgba(10,49,110),rgba(10,49,110,0.9)); */
@@ -8720,10 +8720,10 @@ nav.navbar .my-dropdown.active .select > i {
   html {
     font-size: calc(0.4em + 1vw); }
   nav #navbarResponsive {
-    width: 50%;
-    left: -50%; }
+    width: 20rem;
+    left: -20rem; }
   .navbar-toggler-slidein {
-    transform: translateX(700%); }
+    transform: translateX(15rem); }
   nav.navbar .dropdown .messages-container {
     height: 250px !important;
     width: 250px !important; }
@@ -8740,8 +8740,8 @@ nav.navbar .my-dropdown.active .select > i {
   html {
     font-size: calc(0.3em + 1vw); }
   nav #navbarResponsive {
-    width: 30%;
-    left: -30%; }
+    width: 20rem;
+    left: -20rem; }
   nav.navbar .dropdown .messages-container {
     height: 300px !important;
     width: 300px !important; }
@@ -8749,7 +8749,7 @@ nav.navbar .my-dropdown.active .select > i {
     height: 350px !important;
     width: 350px !important; }
   .navbar-toggler-slidein {
-    transform: translateX(500%); }
+    transform: translateX(15rem); }
   .download-images .download-images-gp {
     width: 60%; }
   .download-images .download-images-appst {
@@ -8760,7 +8760,7 @@ nav.navbar .my-dropdown.active .select > i {
   html {
     font-size: calc(0.25em + 1vw) !important; }
   .navbar-toggler-slidein {
-    transform: translateX(600%); }
+    transform: translateX(15rem); }
   nav.navbar .dropdown .messages-container {
     height: 350px !important;
     width: 350px !important; }
@@ -8768,8 +8768,8 @@ nav.navbar .my-dropdown.active .select > i {
     height: 350px !important;
     width: 400px !important; }
   nav #navbarResponsive {
-    width: 30%;
-    left: -30%; }
+    width: 20rem;
+    left: -20rem; }
   footer .logo-container img {
     width: 35% !important; } }
 

@@ -302,7 +302,7 @@ font-size: 1.1rem !important;
 }
 
 .navbar-toggler-slidein {
-    transform: translateX(550%);
+    transform: translateX(15rem);
 }
 
 .navbar select {
@@ -316,10 +316,10 @@ font-size: 1.1rem !important;
 }
 
 nav #navbarResponsive {
-    width: 60%;
+    width: 20rem;
+    left: -20rem;
     height: 100vh;
     top: 0vh;
-    left: -60%;
     z-index: 10;
     transition: 0.5s ease-in-out;
 
@@ -692,12 +692,12 @@ nav.navbar .my-dropdown.active .select > i {
 
     
     nav #navbarResponsive {
-        width: 50%;
-        left: -50%;
+        width: 20rem;
+        left: -20rem;
     }
 
     .navbar-toggler-slidein {
-        transform: translateX(700%);
+        transform: translateX(15rem);
     }
 
     nav.navbar .dropdown .messages-container {
@@ -727,8 +727,8 @@ html {
 }
 
 nav #navbarResponsive {
-        width: 30%;
-        left: -30%;
+    width: 20rem;
+    left: -20rem;
 }
 
 nav.navbar .dropdown .messages-container {
@@ -742,7 +742,7 @@ nav.navbar .dropdown .coupons-container {
 }
 
 .navbar-toggler-slidein {
-    transform: translateX(500%);
+    transform: translateX(15rem);
 }
 
  .download-images .download-images-gp{
@@ -762,7 +762,7 @@ nav.navbar .dropdown .coupons-container {
     }
 
     .navbar-toggler-slidein {
-        transform: translateX(600%);
+        transform: translateX(15rem);
     }
 
     nav.navbar .dropdown .messages-container {
@@ -776,8 +776,8 @@ nav.navbar .dropdown .coupons-container {
     }
 
     nav #navbarResponsive {
-        width: 30%;
-        left: -30%;
+        width: 20rem;
+        left: -20rem;
     }
 
     footer .logo-container img {
