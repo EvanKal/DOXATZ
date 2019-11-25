@@ -5,7 +5,7 @@
   height: 3.75rem; }
 
 .categories-accordion-container .categories-accordion-dropdown-menu-container {
-  top: 3.75rem !important;
+  height: 45rem;
   overflow-y: auto; }
 
 .categories-accordion-container .categories-accordion-dropdown-menu a p {
