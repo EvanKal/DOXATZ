@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     toggleSixTabContainers();
     toggleFilters();
     checkIfCardDescriptionOverflowsInCouponListing();
+    draggableSubmenu();
 
 });
 
@@ -30,17 +31,17 @@ function togglecategoriesDropdownMenuArrow() {
 }
 
 function toggleSixTabContainers() {
-    document.querySelectorAll(".six-tab-container").forEach((elem)=>{
-        elem.addEventListener('click', (event)=>{
+    document.querySelectorAll(".six-tab-container").forEach((elem) => {
+        elem.addEventListener('click', (event) => {
 
             let children = elem.parentNode.children;
 
-            for(let i of children) {
-                if(i==elem) {
+            for (let i of children) {
+                if (i == elem) {
                     i.classList.add("order1");
                 } else {
                     i.classList.remove("order1");
-                    i.querySelectorAll(".nav-link").forEach((navlink)=>{
+                    i.querySelectorAll(".nav-link").forEach((navlink) => {
                         navlink.classList.remove("active");
                     })
                 }
@@ -51,44 +52,68 @@ function toggleSixTabContainers() {
 }
 
 function toggleFilters() {
-    document.querySelector(".filters-toggle-button-container button").addEventListener("click", ()=>{
+    document.querySelector(".filters-toggle-button-container button").addEventListener("click", () => {
         console.log("clicked");
         document.querySelector(".filters-container").classList.toggle("slidein");
     });
 
-    document.querySelector(".filters-container .close").addEventListener("click", ()=> {
+    document.querySelector(".filters-container .close").addEventListener("click", () => {
         document.querySelector(".filters-container").classList.toggle("slidein");
     });
 }
 
 function checkIfCardDescriptionOverflowsInCouponListing() {
     let blockswithtextinlargecoupons = $('.coupons-display-container .card-middle-description p');
-  
+
     blockswithtextinlargecoupons.each(function () {
-      let elem = $(this);
-  
-      if ((elem.parent().innerHeight() < elem.innerHeight())) {
-        elem.addClass("block-with-text");
-        elem.addClass("twoline");
-      }
+        let elem = $(this);
+
+        if ((elem.parent().innerHeight() < elem.innerHeight())) {
+            elem.addClass("block-with-text");
+            elem.addClass("twoline");
+        }
     });
-  
+
     let blockswithtextinsmallcoupons = $('.coupons-display-container .card-middle-description p');
     blockswithtextinsmallcoupons.each(function () {
-      let elem = $(this);
-      if (elem.parent().innerHeight() < elem.innerHeight()) {
-        elem.addClass("block-with-text");
-        elem.addClass("threeline");
-      }
+        let elem = $(this);
+        if (elem.parent().innerHeight() < elem.innerHeight()) {
+            elem.addClass("block-with-text");
+            elem.addClass("threeline");
+        }
     });
-  }
+}
 
+function draggableSubmenu() {
+
+    
+    $('#sixTabRow1 ul').draggable({
+        axis: "x",
+        distance: 5,
+        drag: function( event, ui ) {
+            // ui.helper.draggable("enable");
+            let helperScrollWidth = ui.helper.get(0).scrollWidth;
+            let clientWidth = ui.helper.get(0).clientWidth;
+
+            let difference = clientWidth-helperScrollWidth;
+
+            if(ui.position.left < difference) {
+                ui.position.left = difference;
+            }
+
+            if(ui.position.left > 0) {
+                ui.position.left = 0;
+            }
+            
+        }
+    });
+}
 // Not used
 
 // function togglecategoriesAccordionDropdown() {
 
 //     document.querySelector("#categoriesAccordion").addEventListener("click", function() {
-        
+
 //     });
 // }
 

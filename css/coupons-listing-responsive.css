@@ -16,15 +16,15 @@
         z-index: 1;
         width: auto !important;
         height: auto !important;
-    right: auto;
-    top:auto;
-    transition: none;
-    overflow-y: unset;
+        right: auto;
+        top:auto;
+        transition: none;
+        overflow-y: unset;
     }
 
 
     .filters-container * {
-        font-size: 0.7rem!important;
+        font-size: 0.75rem!important;
     }
 
  }
@@ -33,7 +33,7 @@
 @media (min-width: 768px) { 
 
     .filters-container * {
-        font-size: 0.65rem!important;
+        font-size: 0.7rem!important;
     }
 
  }

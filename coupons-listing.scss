@@ -47,6 +47,11 @@
     height: 100%;
 }
 
+#sixTabRow1 {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
 .filters-container * {
     font-size: 0.8rem!important;
 }

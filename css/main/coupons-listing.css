@@ -32,6 +32,10 @@
 #web-submenu-container .nav-item .nav-link {
   height: 100%; }
 
+#sixTabRow1 {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
 .filters-container * {
   font-size: 0.8rem !important; }
 
