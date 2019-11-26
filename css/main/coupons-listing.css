@@ -1,8 +1,7 @@
 .categories-accordion-container {
   position: sticky !important;
   top: 3.75rem !important;
-  z-index: 10;
-  height: 3.75rem; }
+  z-index: 10; }
 
 .categories-accordion-container .categories-accordion-dropdown-menu-container {
   height: 40rem;
@@ -32,6 +31,82 @@
 
 #web-submenu-container .nav-item .nav-link {
   height: 100%; }
+
+.filters-container * {
+  font-size: 0.8rem !important; }
+
+.filters-container {
+  position: fixed !important;
+  z-index: 100;
+  width: 20rem !important;
+  height: 100vh !important;
+  overflow-y: auto;
+  right: -20rem;
+  top: 0;
+  transition: 0.5s ease-in-out; }
+
+.filters-container .close span {
+  font-size: 2rem !important; }
+
+.filters-container.slidein {
+  transform: translateX(-100%); }
+
+.coupon-in-display {
+  display: flex !important;
+  justify-content: center; }
+
+.coupon-in-display .card {
+  font-family: Roboto,sans-serif !important;
+  width: 250px;
+  height: 500px;
+  min-height: 500px;
+  min-width: 250px; }
+
+.coupon-in-display .card .card-head {
+  background-size: 180% !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease-in;
+  -webkit-transition: background-size .3s ease-in; }
+
+.coupon-in-display .card .card-head:before {
+  z-index: 0;
+  background: radial-gradient(ellipse at center, transparent 0, #000 100%); }
+
+.coupon-in-display .card:hover .card-head {
+  background-size: 200% !important; }
+
+.coupon-in-display .card:hover .card-head:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #88754D;
+  pointer-events: none;
+  top: -62%; }
+
+.coupon-in-display .card .card-bottom-footer .logo {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.coupon-in-display .card .card-bottom .price-discounted {
+  font-size: 1.6rem !important; }
+
+.coupon-in-display .card .card-bottom .price-original {
+  font-weight: 100 !important; }
+
+.coupon-in-display .card .card-head .head-icons-container .head-icon {
+  width: 25px;
+  height: 25px; }
+
+.coupon-in-display .card .card-bottom-footer .price,
+.coupon-in-display .card .card-bottom-footer .rating-display {
+  font-size: 1.3rem !important;
+  font-weight: 900 !important; }
 
 .six-tab-container.order1 {
   order: 1; }

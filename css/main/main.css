@@ -64,7 +64,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #ebebeb; }
+  background-color: white; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -7813,6 +7813,9 @@ h6 {
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon i,
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon .expiration-text,
 .mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i,
+.coupon-in-display .card .card-bottom-info .expiration.expires-soon i,
+.coupon-in-display .card .card-bottom-info .expiration.expires-soon .expiration-text,
+.coupon-in-display .card .card-head .head-icon.expires-soon i,
 #couponsDropdownMenu .coupon .head-icon.expires-soon i {
   color: #D7291E; }
 

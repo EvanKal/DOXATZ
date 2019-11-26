@@ -21,7 +21,8 @@ $theme-colors: (
 
   );
 
-$body-bg: theme-color-level(promo-gray, -10);
+$body-bg: theme-color(light);
+// $body-bg: theme-color-level(promo-gray, -10);
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -153,11 +154,15 @@ h6 {
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon i,
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-info .expiration.expires-soon .expiration-text,
 .mySlickCarousel.small-coupon-carousel .card .card-head .head-icon.expires-soon i,
+.coupon-in-display .card .card-bottom-info .expiration.expires-soon i,
+.coupon-in-display .card .card-bottom-info .expiration.expires-soon .expiration-text,
+.coupon-in-display .card .card-head .head-icon.expires-soon i,
 #couponsDropdownMenu .coupon .head-icon.expires-soon i
 
  {
     color: theme-color(danger);
-   }
+}
+
   
 
 // Ripple effect

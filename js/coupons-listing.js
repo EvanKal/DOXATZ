@@ -2,6 +2,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     togglecategoriesDropdownMenuArrow();
     toggleSixTabContainers();
+    toggleFilters();
+    checkIfCardDescriptionOverflowsInCouponListing();
 
 });
 
@@ -48,6 +50,38 @@ function toggleSixTabContainers() {
     });
 }
 
+function toggleFilters() {
+    document.querySelector(".filters-toggle-button-container button").addEventListener("click", ()=>{
+        console.log("clicked");
+        document.querySelector(".filters-container").classList.toggle("slidein");
+    });
+
+    document.querySelector(".filters-container .close").addEventListener("click", ()=> {
+        document.querySelector(".filters-container").classList.toggle("slidein");
+    });
+}
+
+function checkIfCardDescriptionOverflowsInCouponListing() {
+    let blockswithtextinlargecoupons = $('.coupons-display-container .card-middle-description p');
+  
+    blockswithtextinlargecoupons.each(function () {
+      let elem = $(this);
+  
+      if ((elem.parent().innerHeight() < elem.innerHeight())) {
+        elem.addClass("block-with-text");
+        elem.addClass("twoline");
+      }
+    });
+  
+    let blockswithtextinsmallcoupons = $('.coupons-display-container .card-middle-description p');
+    blockswithtextinsmallcoupons.each(function () {
+      let elem = $(this);
+      if (elem.parent().innerHeight() < elem.innerHeight()) {
+        elem.addClass("block-with-text");
+        elem.addClass("threeline");
+      }
+    });
+  }
 
 // Not used
 
