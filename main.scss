@@ -681,8 +681,21 @@ nav.navbar .my-dropdown.active .select > i {
 //Other elements
 ///////////////////////////////////////////////////////
 
-.categories-accordion-container .categories-accordion-dropdown-menu a{
-    // background-color: theme-color-level(promo-gray, -10);
+#mobile-submenu {
+    background-color: theme-color-level(secondary, -5);
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: theme-color-level(promo-gray, -7);
+    border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -7);
+}
+
+.tab-content .tab-pane.active, 
+.tab-content .tab-pane.show,
+.tab-content .tab-pane .list-group-item
+
+{
+    background-color: theme-color-level(promo-gray, -7);
 }
 
 

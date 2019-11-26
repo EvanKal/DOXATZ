@@ -8222,6 +8222,19 @@ nav.navbar .my-dropdown.active .select > i {
   margin-top: 0.2em;
   background: white; }
 
+#mobile-submenu {
+  background-color: #b8ac94; }
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: lightgray;
+  border-color: #dee2e6 #dee2e6 lightgray; }
+
+.tab-content .tab-pane.active,
+.tab-content .tab-pane.show,
+.tab-content .tab-pane .list-group-item {
+  background-color: lightgray; }
+
 @media (min-width: 576px) {
   html {
     font-size: calc(0.4em + 1vw); }

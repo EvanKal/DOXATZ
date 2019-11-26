@@ -452,17 +452,17 @@
     </nav>
 
     <div id="mobile-submenu" class="container-fluid categories-accordion-container d-md-none">
-        <div class="row d-flex align-items-center bg-secondary py-4">
+        <div class="row d-flex align-items-center py-2">
             <div id="categoriesAccordion" class="col-12">
 
-                <a id="categoriesAccordionButton" class=" btn btn-light d-flex justify-content-center" href=#
+                <div id="categoriesAccordionButton" class="btn d-flex justify-content-center pointer-cursor text-light" href=#
                     data-toggle="collapse" data-target="#accordionDropdownMenuContainer" aria-expanded="true"
                     aria-controls="accordionDropdownMenuContainer">
-                    <div class="iconcontainer position-relative d-flex align-items-center">
-                        <p class="m-0 text-left">Κατηγορία</p>
-                        <div class=" ml-2"><i class="fa fa-chevron-right"></i></div>
+                    <div class="iconcontainer position-relative d-flex align-items-center col-12 p-0 justify-content-end">
+                        <h6 class="col-10 m-0 text-center">ΚΑΤΗΓΟΡΙΑ</h6>
+                        <div class="col-1 ml-2"><i class="fa fa-chevron-right"></i></div>
                     </div>
-                </a>
+                </div>
 
                 <div id="accordionDropdownMenuContainer" class="mt-3 categories-accordion-dropdown-menu-container
                      collapse" aria-labelledby="categoriesAccordionButton" data-parent="#categoriesAccordion">
@@ -483,7 +483,7 @@
 
                                 <ul id="submenu1" class="list-group collapse" aria-labelledby="submenuheading1"
                                     data-parent="#accordionDropdownMenuContainer">
-                                    <a class="list-group-item-action list-group-item" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
                                     <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
                                     <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
                                     <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
@@ -800,9 +800,9 @@
 
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <ul class="list-group d-flex flex-row flex-wrap bg-light">
+                        <ul class="list-group d-flex flex-row flex-wrap">
                             <li class="w-auto list-group-item list-group-item-action">Όλα</li>
-                            <li class="w-auto list-group-item list-group-item-action">Supermarket</li>
+                            <li class="w-auto list-group-item list-group-item-action active">Supermarket</li>
                             <li class="w-auto list-group-item list-group-item-action">Κρεοπωλεία</li>
                             <li class="w-auto list-group-item list-group-item-action">Fast-food</li>
                             <li class="w-auto list-group-item list-group-item-action">Karate</li>
@@ -873,6 +873,8 @@
 
             <div class="category-container col-md-12 col-lg-3 align-items-center d-flex justify-content-center">
                 <h1 class="text-center m-0">ΚΑΘΗΜΕΡΙΝΑ</h1>
+                <h1 class="slash mx-3 d-none">/</h1>
+                <h2 class="text-center m-0 d-md-none"></h2>
             </div>
 
             <div class="filters-container col-md-12 col-lg-8 d-flex flex-wrap flex-sm-row justify-content-around justify-content-lg-end align-items-start align-items-sm-center 
@@ -886,10 +888,10 @@
                 <div class="buttongroup-container col-12 col-sm-4 p-4 d-flex justify-content-center">
                     <div class="btn-group btn-group-toggle col-12" data-toggle="buttons" role="group"
                         aria-label="Button proup">
-                        <label class="btn btn-secondary active">
+                        <label class="btn btn-secondary active d-flex align-items-center">
                             <input type="radio" name="options" id="option1" autocomplete="off" checked> Όλα
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-secondary d-flex align-items-center">
                             <input type="radio" name="options" id="option2" autocomplete="off"> Λήγει Σύντομα
                         </label>
                     </div>
@@ -944,7 +946,7 @@
     <div class="container-fluid">
         <div class="row d-flex justify-content-center mx-5">
 
-            <main class="coupons-display-container my-5 mx-2 d-flex flex-wrap justify-content-around">
+            <main class="coupons-display-container my-5 mx-2 d-flex flex-wrap justify-content-center">
 
                 <div class="coupon-in-display m-3">
                     <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
@@ -1117,6 +1119,118 @@
                     </div>
                 </div>
 
+                <div class="coupon-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <div
+                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            <i class="fa fa-hourglass"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration expires-soon w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σύντομα!</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coupon-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <div
+                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            <i class="fa fa-hourglass"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration expires-soon w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σύντομα!</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="coupon-in-display m-3">
                     <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
                         <div class="card-body p-0 w-100">

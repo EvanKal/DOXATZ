@@ -78,6 +78,11 @@
     transform: translateX(-100%);
 }
 
+.coupons-display-container {
+    width: 72rem;
+}
+
+
 .coupon-in-display {
     display: flex !important;
     justify-content: center;    
@@ -86,10 +91,10 @@
 .coupon-in-display .card {
     font-family: Roboto,sans-serif !important;
 
-    width: 250px;
-    height: 500px;
-    min-height: 500px;
-    min-width: 250px;
+    width: 16rem;
+    height: 30rem;
+    min-height: 30rem;
+    min-width: 16rem;
 }
 
 .coupon-in-display .card .card-head {
