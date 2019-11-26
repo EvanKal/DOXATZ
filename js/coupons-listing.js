@@ -93,16 +93,24 @@ function draggableSubmenu() {
         drag: function( event, ui ) {
             // ui.helper.draggable("enable");
             let helperScrollWidth = ui.helper.get(0).scrollWidth;
-            let clientWidth = ui.helper.get(0).clientWidth;
+            let parentclientWidth = ui.helper.get(0).parentNode.clientWidth;
 
-            let difference = clientWidth-helperScrollWidth;
+            let difference = parentclientWidth-helperScrollWidth;
+
+            console.log("helperScrollWidth", helperScrollWidth);
+            console.log("clientWidth", parentclientWidth);
+            console.log("difference", difference);
+
+            console.log(ui.helper.get(0).parentNode.clientWidth);
 
             if(ui.position.left < difference) {
                 ui.position.left = difference;
+                console.log("true");
             }
 
             if(ui.position.left > 0) {
                 ui.position.left = 0;
+                console.log("false");
             }
             
         }

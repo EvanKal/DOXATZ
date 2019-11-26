@@ -8284,11 +8284,11 @@ nav.navbar .my-dropdown.active .select > i {
   html {
     font-size: calc(0.1rem + 15px) !important; }
   nav #navbarResponsive {
-    width: 30rem;
-    left: -30rem; }
+    width: 20rem;
+    left: -20rem; }
   .navbar-toggler-slidein {
     /* left: 20% */
-    transform: translateX(24rem); }
+    transform: translateX(15rem); }
   .download-images .download-images-gp {
     width: 50%; }
   .download-images .download-images-appst {
