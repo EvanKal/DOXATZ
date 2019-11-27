@@ -8048,9 +8048,6 @@ nav #navbarResponsive {
   overflow-y: auto;
   overflow-x: hidden; }
 
-nav #navbarResponsive .navbar-top {
-  height: 70%; }
-
 nav #navbarResponsive .empty-banner {
   height: 3.75rem; }
 
@@ -8245,6 +8242,22 @@ nav.navbar .my-dropdown.active .select > i {
 
 .tab-content .tab-pane .list-group-item {
   background: none; }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px; }
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: white; }
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #cccccc;
+  border-radius: 6px; }
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 6px; }
 
 @media (min-width: 576px) {
   html {

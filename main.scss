@@ -466,9 +466,9 @@ nav #navbarResponsive {
     overflow-x: hidden;
 }
 
-nav #navbarResponsive .navbar-top {
-    height: 70%;
-}
+// nav #navbarResponsive .navbar-top {
+//     height: 70%;
+// }
 
 
 nav #navbarResponsive .empty-banner {
@@ -482,6 +482,23 @@ nav #navbarResponsive .nav-search .form-control{
 nav #navbarResponsive .nav-search button i{
     font-size: 0.8rem !important;
 }
+
+// #navbarResponsive::-webkit-scrollbar {
+//     width: 11px;
+//   }
+//   #navbarResponsive {
+//     scrollbar-width: thin;
+//     scrollbar-color: theme-color(light);
+//   }
+//   #navbarResponsive::-webkit-scrollbar-track {
+//     background: theme-color-level(promo-gray, -6);
+//     border-radius: 6px;  
+//   }
+//   #navbarResponsive::-webkit-scrollbar-thumb {
+//     background-color: theme-color(light);
+//     border: 3px solid theme-color(light);
+//     border-radius: 6px;
+//   }
 
 
 .slidein {
@@ -508,6 +525,8 @@ nav #navbarResponsive .navmenulink p{
 .navbar ul {
     list-style: none;
 }
+
+
 
 /////////////////////////////////////////////////////
 // Footer
@@ -711,6 +730,28 @@ nav.navbar .my-dropdown.active .select > i {
 .tab-content .tab-pane .list-group-item {
     background:none;
 }
+
+
+/////////////////////////////////////////////////////////////////
+// Custom scrollbar for the mobile-menu
+////////////////////////////////////////////////////////////////
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme-color(light);
+  }
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: theme-color-level(promo-gray, -6);
+    border-radius: 6px;  
+  }
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: theme-color(light);
+    border: 3px solid theme-color(light);
+    border-radius: 6px;
+  }
 
 
 ////////////////////////////////////////////////////////////

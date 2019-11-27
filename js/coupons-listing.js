@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // toggleSixTabContainers();
     toggleFilters();
     checkIfCardDescriptionOverflowsInCouponListing();
-    draggableSubmenu();
+    // draggableSubmenu();
     changeHeaderToCategoryName();
     toggleCollapseOnListGroupItemClick();
     toggleActiveClassInListGroup();
@@ -67,38 +67,7 @@ function checkIfCardDescriptionOverflowsInCouponListing() {
     });
 }
 
-function draggableSubmenu() {
 
-
-    $('#sixTabRow1 ul').draggable({
-        axis: "x",
-        distance: 5,
-        drag: function (event, ui) {
-            // ui.helper.draggable("enable");
-            let helperScrollWidth = ui.helper.get(0).scrollWidth;
-            let parentclientWidth = ui.helper.get(0).parentNode.clientWidth;
-
-            let difference = parentclientWidth - helperScrollWidth;
-
-            console.log("helperScrollWidth", helperScrollWidth);
-            console.log("clientWidth", parentclientWidth);
-            console.log("difference", difference);
-
-            console.log(ui.helper.get(0).parentNode.clientWidth);
-
-            if (ui.position.left < difference) {
-                ui.position.left = difference;
-                console.log("true");
-            }
-
-            if (ui.position.left > 0) {
-                ui.position.left = 0;
-                console.log("false");
-            }
-
-        }
-    });
-}
 
 function changeHeaderToCategoryName() {
     document.querySelectorAll("#web-submenu .nav-link").forEach((elem) => {
@@ -217,5 +186,38 @@ function toggleSpinner() {
 
 //             }
 //         })
+//     });
+// }
+
+// function draggableSubmenu() {
+
+
+//     $('#sixTabRow1 ul').draggable({
+//         axis: "x",
+//         distance: 5,
+//         drag: function (event, ui) {
+//             // ui.helper.draggable("enable");
+//             let helperScrollWidth = ui.helper.get(0).scrollWidth;
+//             let parentclientWidth = ui.helper.get(0).parentNode.clientWidth;
+
+//             let difference = parentclientWidth - helperScrollWidth;
+
+//             console.log("helperScrollWidth", helperScrollWidth);
+//             console.log("clientWidth", parentclientWidth);
+//             console.log("difference", difference);
+
+//             console.log(ui.helper.get(0).parentNode.clientWidth);
+
+//             if (ui.position.left < difference) {
+//                 ui.position.left = difference;
+//                 console.log("true");
+//             }
+
+//             if (ui.position.left > 0) {
+//                 ui.position.left = 0;
+//                 console.log("false");
+//             }
+
+//         }
 //     });
 // }

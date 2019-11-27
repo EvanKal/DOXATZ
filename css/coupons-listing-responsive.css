@@ -45,6 +45,9 @@
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
  
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.9rem;
+    }
 
     #web-submenu-container .nav-item .iconcontainer p {
         font-size: 0.8rem;
