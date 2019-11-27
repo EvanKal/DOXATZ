@@ -1,0 +1,70 @@
+//Submenu
+.categories-accordion-container {
+    position: sticky !important;
+    top: 3.75rem!important;
+    z-index: 10;
+    // height: 3.75rem;
+}
+
+.categories-accordion-container .categories-accordion-dropdown-menu-container {
+    // width: 20rem;
+    height: 40rem;
+    // top: 3.75rem !important;
+    overflow-y: auto;
+}
+
+.categories-accordion-container .categories-accordion-dropdown-menu > div .dropdown-item{
+    height: 10rem;
+}
+
+.categories-accordion-container .categories-accordion-dropdown-menu a p{
+    white-space: normal!important;
+}
+
+.categories-accordion-container .iconcontainer i {
+    transition: 0.5s ease-in-out;
+}
+
+.categories-accordion-dropdown-menu ul a:first-child {
+    display: none;
+}
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+    border: none!important;
+    border-radius: 0!important;
+}
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+ font-size: 0.9rem;
+
+}
+
+#web-submenu-container .nav-item .iconcontainer p {
+    font-size: 0.75rem;
+}
+
+#web-submenu-container .nav-item .nav-link {
+    height: 100%;
+    width: 7rem;
+}
+
+#sixTabRow1 {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+//Offer details
+
+.merchant-detail .logo {
+    width: 70px;
+    height: 70px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.offer-rating .rating-display {
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
+}

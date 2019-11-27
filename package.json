@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "couponslistingscss": "node-sass --watch coupons-listing.scss -o ./css/main/",
     "mainscss": "node-sass --watch main.scss -o ./css/main/",
+    "offerdetailsscss": "node-sass --watch offer-details.scss -o ./css/main/",
     "build": "tsc --outFile typescript.js -w typescript.ts"
   },
   "repository": {
