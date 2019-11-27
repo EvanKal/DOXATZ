@@ -6,6 +6,8 @@
 @import "node_modules/bootstrap/scss/mixins";
 
 
+
+
 $theme-colors: (
     "dark-blue": #062B64,
     "light-blue": #93A1BB,
@@ -85,6 +87,9 @@ h6 {
              box-shadow: 0 8px 6px -6px white;
  }
 
+ .bg-custom-light-dark {
+     background-color: theme-color-level(dark, -2);
+ }
 //Sidebar 
 
 // nav #navbarResponsive {
@@ -327,6 +332,7 @@ nav #navbarResponsive {
     top: 0vh;
     z-index: 10;
     transition: 0.5s ease-in-out;
+    background-color: theme-color-level(secondary, -2);
 
     /* background: linear-gradient(rgba(10,49,110),rgba(10,49,110,0.9)); */
     /* background: #052c6b; */
@@ -517,6 +523,7 @@ nav #navbarResponsive .navmenulink p{
 
 footer {
     font-family: Roboto,sans-serif !important;
+    background-color: theme-color-level(promo-gray, -10);
 }
 
 footer h4 {
@@ -678,7 +685,7 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 ////////////////////////////////////////////////////
-//Other elements
+//Coupons Listing
 ///////////////////////////////////////////////////////
 
 #mobile-submenu {
@@ -686,16 +693,18 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    background-color: theme-color-level(promo-gray, -7);
-    border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -7);
+    background-color: theme-color-level(promo-gray, -6);
+    border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -6);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
 .tab-content .tab-pane.active, 
-.tab-content .tab-pane.show,
-.tab-content .tab-pane .list-group-item
+.tab-content .tab-pane.show {
+    background-color: theme-color-level(promo-gray, -6);
+}
 
-{
-    background-color: theme-color-level(promo-gray, -7);
+.tab-content .tab-pane .list-group-item {
+    background:none;
 }
 
 
