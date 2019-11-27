@@ -68,7 +68,7 @@
     /* Carousel */
 
 .mainCarouselContainer {
-    height: 70vh;
+    height: 30rem;
     width: 100vw;
     overflow: hidden;
 }
@@ -99,20 +99,16 @@
     transform: translateY(-50%);
 }
 
-#offerscontainer {
-    /* height: 20vh; */
-}
-
 #offerscontainer > div {
 transform: translateY(-50%);
 }
 
 .main-search form {
     position: relative!important;
-    top: -6vh !important;
+    top: -3rem !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
-    height: 12vh;
+    height: 6rem;
     width: 700px;
 }
 
