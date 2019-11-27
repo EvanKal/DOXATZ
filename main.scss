@@ -332,7 +332,7 @@ nav #navbarResponsive {
     top: 0vh;
     z-index: 10;
     transition: 0.5s ease-in-out;
-    background-color: theme-color-level(secondary, -2);
+    // background-color: theme-color-level(secondary, -2);
 
     /* background: linear-gradient(rgba(10,49,110),rgba(10,49,110,0.9)); */
     /* background: #052c6b; */
@@ -690,6 +690,11 @@ nav.navbar .my-dropdown.active .select > i {
 
 #mobile-submenu {
     background-color: theme-color-level(secondary, -5);
+}
+
+#mobile-submenu .categories-accordion-dropdown-menu-container .list-group .list-group-item.active{
+    background-color: theme-color-level(promo-gray, -6);
+    border-color: theme-color-level(promo-gray, -6);
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {

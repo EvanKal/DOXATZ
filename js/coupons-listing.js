@@ -7,6 +7,8 @@ window.addEventListener('DOMContentLoaded', () => {
     draggableSubmenu();
     changeHeaderToCategoryName();
     toggleCollapseOnListGroupItemClick();
+    toggleActiveClassInListGroup();
+    toggleSpinner();
 
 });
 
@@ -67,16 +69,16 @@ function checkIfCardDescriptionOverflowsInCouponListing() {
 
 function draggableSubmenu() {
 
-    
+
     $('#sixTabRow1 ul').draggable({
         axis: "x",
         distance: 5,
-        drag: function( event, ui ) {
+        drag: function (event, ui) {
             // ui.helper.draggable("enable");
             let helperScrollWidth = ui.helper.get(0).scrollWidth;
             let parentclientWidth = ui.helper.get(0).parentNode.clientWidth;
 
-            let difference = parentclientWidth-helperScrollWidth;
+            let difference = parentclientWidth - helperScrollWidth;
 
             console.log("helperScrollWidth", helperScrollWidth);
             console.log("clientWidth", parentclientWidth);
@@ -84,29 +86,29 @@ function draggableSubmenu() {
 
             console.log(ui.helper.get(0).parentNode.clientWidth);
 
-            if(ui.position.left < difference) {
+            if (ui.position.left < difference) {
                 ui.position.left = difference;
                 console.log("true");
             }
 
-            if(ui.position.left > 0) {
+            if (ui.position.left > 0) {
                 ui.position.left = 0;
                 console.log("false");
             }
-            
+
         }
     });
 }
 
 function changeHeaderToCategoryName() {
     document.querySelectorAll("#web-submenu .nav-link").forEach((elem) => {
-        elem.addEventListener("click", ()=>{
+        elem.addEventListener("click", () => {
             document.querySelector(".category-container h1").innerHTML = elem.querySelector("p").innerHTML;
         })
     });
 
     document.querySelectorAll("#mobile-submenu .categories-dropdown-item").forEach((elem) => {
-        elem.addEventListener("click", (event)=>{
+        elem.addEventListener("click", (event) => {
             document.querySelector(".category-container h1").innerHTML = elem.querySelector("p").innerHTML;
             document.querySelector(".category-container h2").innerHTML = elem.nextSibling.querySelector("a.active").innerHTML;
             document.querySelector(".category-container h1.slash").classList.remove("d-none");
@@ -114,17 +116,64 @@ function changeHeaderToCategoryName() {
     });
 }
 
+function toggleActiveClassInListGroup() {
+    document.querySelector("#mobile-submenu").addEventListener("click", (event) => {
+
+        if (event.target.classList.contains("list-group-item")) {
+
+            //Active class in list group handling
+            event.target.parentNode.querySelector("a.active").classList.remove("active");
+            event.target.classList.add("active");
+
+            //Category Sub-Category handling
+            let category = event.target.parentNode.previousSibling.querySelector("p").innerHTML;
+            let subcategory = event.target.innerHTML;
+            document.querySelector(".category-container h1").innerHTML = category;
+            document.querySelector(".category-container h2").innerHTML = subcategory;
+            document.querySelector(".category-container h1.slash").classList.remove("d-none");
+        }
+
+
+    });
+
+    document.querySelector("#web-submenu").addEventListener("click", (event) => {
+
+        if (event.target.classList.contains("list-group-item")) {
+
+            //Active class in list group handling
+            event.target.parentNode.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active");
+
+        }
+
+
+    });
+}
+
+
+
 function toggleCollapseOnListGroupItemClick() {
 
     //This method might be unnecessary if window reloads but ok if an ajax call is made after the click
     document.querySelector("#mobile-submenu").addEventListener("click", (event) => {
 
-        console.log(event.target.classList.contains("list-group-item"));
-        if(event.target.classList.contains("list-group-item")) {
+        if (event.target.classList.contains("list-group-item")) {
             $('#accordionDropdownMenuContainer').collapse('hide');
         }
+
     });
 }
+
+function toggleSpinner() {
+    document.querySelector(".more-coupons-button ").addEventListener("click", (event) => {
+
+        document.querySelector(".more-coupons-spinner-container").classList.toggle("d-flex");
+        document.querySelector(".more-coupons-spinner-container").classList.toggle("d-none");
+
+    });
+}
+
+
 // Not used
 
 // function togglecategoriesAccordionDropdown() {

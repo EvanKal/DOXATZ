@@ -7939,7 +7939,6 @@ nav #navbarResponsive {
   top: 0vh;
   z-index: 10;
   transition: 0.5s ease-in-out;
-  background-color: #9b8b69;
   /* background: linear-gradient(rgba(10,49,110),rgba(10,49,110,0.9)); */
   /* background: #052c6b; */ }
 
@@ -8229,6 +8228,10 @@ nav.navbar .my-dropdown.active .select > i {
 
 #mobile-submenu {
   background-color: #b8ac94; }
+
+#mobile-submenu .categories-accordion-dropdown-menu-container .list-group .list-group-item.active {
+  background-color: #cccccc;
+  border-color: #cccccc; }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
