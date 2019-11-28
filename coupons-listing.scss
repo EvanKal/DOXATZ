@@ -29,6 +29,10 @@
     display: none;
 }
 
+#mobile-submenu .list-group.show .categories-dropdown-item {
+    display: none!important;
+}
+
 #web-submenu-container .tab-content .list-group .list-group-item {
     border: none!important;
     border-radius: 0!important;

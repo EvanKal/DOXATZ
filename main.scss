@@ -725,15 +725,12 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 .nav-tabs {
-    // border: none;
-    border-bottom: 1px solid theme-color-level(promo-gray, -6);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: theme-color-level(promo-gray, -6);
+    border-bottom: 0px !important;
+    border-bottom-color: theme-color-level(promo-gray, -6) !important;
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    border: none;
+    border: none !important;
     background-color: theme-color-level(promo-gray, -6);
     // border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -6);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
@@ -742,11 +739,11 @@ nav.navbar .my-dropdown.active .select > i {
 
 .tab-content .tab-pane.active, 
 .tab-content .tab-pane.show {
-    background-color: theme-color-level(promo-gray, -6);
+    background-color: theme-color-level(promo-gray, -6) !important;
 }
 
 .tab-content .tab-pane .list-group-item {
-    background:none;
+    background:none !important;
 }
 
 
@@ -1383,6 +1380,10 @@ font-size: 1.1rem !important;
 
 
 /* Small Coupon */
+
+// .container-fluid.coupon-carousel-container {
+//     max-width: 1400px;
+// }
 
 
 

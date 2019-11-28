@@ -8237,23 +8237,21 @@ nav.navbar .my-dropdown.active .select > i {
   border-color: #cccccc; }
 
 .nav-tabs {
-  border-bottom: 1px solid #cccccc;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #cccccc; }
+  border-bottom: 0px !important;
+  border-bottom-color: #cccccc !important; }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  border: none;
+  border: none !important;
   background-color: #cccccc;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .tab-content .tab-pane.active,
 .tab-content .tab-pane.show {
-  background-color: #cccccc; }
+  background-color: #cccccc !important; }
 
 .tab-content .tab-pane .list-group-item {
-  background: none; }
+  background: none !important; }
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
