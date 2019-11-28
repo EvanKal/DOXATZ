@@ -711,16 +711,30 @@ nav.navbar .my-dropdown.active .select > i {
     background-color: theme-color-level(secondary, -5);
 }
 
+#web-submenu {
+    background-color: theme-color-level(secondary, -5);
+}
+
 #mobile-submenu .categories-accordion-dropdown-menu-container .list-group .list-group-item.active{
     background-color: theme-color-level(promo-gray, -6);
     border-color: theme-color-level(promo-gray, -6);
 }
 
+.nav-tabs {
+    border: none;
+    // border-bottom: 1px solid theme-color-level(promo-gray, -6);
+    // border-bottom-width: 1px;
+    // border-bottom-style: solid;
+    // border-bottom-color: theme-color-level(promo-gray, -6);
+}
+
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border: none;
     background-color: theme-color-level(promo-gray, -6);
-    border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -6);
+    // border-color: #dee2e6 #dee2e6 theme-color-level(promo-gray, -6);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
+
 
 .tab-content .tab-pane.active, 
 .tab-content .tab-pane.show {

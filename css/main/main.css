@@ -8226,14 +8226,20 @@ nav.navbar .my-dropdown.active .select > i {
 #mobile-submenu {
   background-color: #b8ac94; }
 
+#web-submenu {
+  background-color: #b8ac94; }
+
 #mobile-submenu .categories-accordion-dropdown-menu-container .list-group .list-group-item.active {
   background-color: #cccccc;
   border-color: #cccccc; }
 
+.nav-tabs {
+  border: none; }
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
+  border: none;
   background-color: #cccccc;
-  border-color: #dee2e6 #dee2e6 #cccccc;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; }
 
 .tab-content .tab-pane.active,
