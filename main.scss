@@ -754,10 +754,7 @@ nav.navbar .my-dropdown.active .select > i {
 .custom-scrollbar::-webkit-scrollbar {
     width: 5px;
   }
-.custom-scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: theme-color(light);
-  }
+
 .custom-scrollbar::-webkit-scrollbar-track {
     background: theme-color-level(promo-gray, -6);
     border-radius: 6px;  
@@ -768,6 +765,11 @@ nav.navbar .my-dropdown.active .select > i {
     border-radius: 6px;
   }
 
+  //for Firefox
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: theme-color(light);
+  }
 
 ////////////////////////////////////////////////////////////
 //Responsive queries for Navbar, Footer and Fonts

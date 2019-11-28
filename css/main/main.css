@@ -8256,10 +8256,6 @@ nav.navbar .my-dropdown.active .select > i {
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: white; }
-
 .custom-scrollbar::-webkit-scrollbar-track {
   background: #cccccc;
   border-radius: 6px; }
@@ -8268,6 +8264,10 @@ nav.navbar .my-dropdown.active .select > i {
   background-color: white;
   border: 3px solid white;
   border-radius: 6px; }
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: white; }
 
 @media (min-width: 576px) {
   html {
