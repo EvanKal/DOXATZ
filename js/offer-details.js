@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    togglecategoriesDropdownMenuArrow();
+    toggleDropdownMenuArrow();
     checkIfCardDescriptionOverflowsInCouponListing();
     toggleCollapseOnListGroupItemClick();
     toggleActiveClassInListGroup();
@@ -9,25 +9,21 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-function togglecategoriesDropdownMenuArrow() {
-    $("#accordionDropdownMenuContainer").on('hide.bs.collapse', function (event) {
-
-        console.log("hidden");
-
+function toggleDropdownMenuArrow() {
+    $("#accordionDropdownMenuContainer").on('hide.bs.collapse', function () {
         if ($('#categoriesAccordionButton .iconcontainer i').hasClass("menulinkiconrotate")) {
             $('#categoriesAccordionButton .iconcontainer i').removeClass("menulinkiconrotate");
         }
     });
 
 
-    $("#accordionDropdownMenuContainer").on('show.bs.collapse', function (event) {
-
-        console.log("Shown");
-
+    $("#accordionDropdownMenuContainer").on('show.bs.collapse', function () {
         if (!$('#categoriesAccordionButton .iconcontainer i').hasClass("menulinkiconrotate")) {
             $('#categoriesAccordionButton .iconcontainer i').addClass("menulinkiconrotate");
         }
     });
+
+
 }
 
 function checkIfCardDescriptionOverflowsInCouponListing() {
