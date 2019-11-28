@@ -8013,6 +8013,9 @@ nav.navbar #userDropdownMenu .dropdown-menu .dropdown-item {
 nav.navbar #userDropdownMenu .dropdown-menu .user-menu-elements-container {
   width: 15rem !important; }
 
+nav.navbar #userDropdownMenu .dropdown-menu .user-menu-elements-container #userDropdownMenuButton {
+  display: none !important; }
+
 nav.navbar #userDropdownMenuButton i {
   transition: 0.5s ease-in-out; }
 
@@ -8234,7 +8237,10 @@ nav.navbar .my-dropdown.active .select > i {
   border-color: #cccccc; }
 
 .nav-tabs {
-  border: none; }
+  border-bottom: 1px solid #cccccc;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #cccccc; }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {

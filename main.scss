@@ -426,6 +426,10 @@ nav.navbar #userDropdownMenu .dropdown-menu .user-menu-elements-container {
     width: 15rem!important;
 }
 
+nav.navbar #userDropdownMenu .dropdown-menu .user-menu-elements-container #userDropdownMenuButton {
+    display: none !important;
+}
+
 nav.navbar #userDropdownMenuButton i  {
     transition: 0.5s ease-in-out;
 }
@@ -721,11 +725,11 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 .nav-tabs {
-    border: none;
-    // border-bottom: 1px solid theme-color-level(promo-gray, -6);
-    // border-bottom-width: 1px;
-    // border-bottom-style: solid;
-    // border-bottom-color: theme-color-level(promo-gray, -6);
+    // border: none;
+    border-bottom: 1px solid theme-color-level(promo-gray, -6);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: theme-color-level(promo-gray, -6);
 }
 
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
