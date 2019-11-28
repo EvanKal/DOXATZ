@@ -8253,6 +8253,9 @@ nav.navbar .my-dropdown.active .select > i {
 .tab-content .tab-pane .list-group-item {
   background: none !important; }
 
+.offer-rating .rating-display {
+  color: #b8ac94 !important; }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 

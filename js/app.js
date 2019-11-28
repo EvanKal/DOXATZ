@@ -143,7 +143,7 @@ function initializeCarousels() {
     ]
   });
 
-  $('.mySlickCarousel.small-coupon-carousel').each(function(elem) {
+  $('.mySlickCarousel.small-coupon-carousel').each(function (elem) {
     $(this).slick({
       infinite: true,
       prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
@@ -837,35 +837,39 @@ function toggleuserDropdownMenuButtonArrow() {
   $("#userDropdownMenu").on('hide.bs.dropdown', function (event) {
 
     if ($('#userDropdownMenu .iconcontainer i').hasClass("menulinkiconrotate")) {
-        $('#userDropdownMenu .iconcontainer i').removeClass("menulinkiconrotate");
+      $('#userDropdownMenu .iconcontainer i').removeClass("menulinkiconrotate");
     }
-});
+  });
 
 
-$("#userDropdownMenu").on('show.bs.dropdown', function (event) {
+  $("#userDropdownMenu").on('show.bs.dropdown', function (event) {
     if (!$('#userDropdownMenu .iconcontainer i').hasClass("menulinkiconrotate")) {
-        $('#userDropdownMenu .iconcontainer i').addClass("menulinkiconrotate");
+      $('#userDropdownMenu .iconcontainer i').addClass("menulinkiconrotate");
     }
-});
+  });
 
 }
 
 function checkIfMainCarouselHasBeenScrolledOutOfView() {
 
   let maincarousel = document.querySelector(".mainCarouselContainer");
-  let navbar = document.querySelector(".navbar");
-  let navbarrect = navbar.getBoundingClientRect();
-  var rect = maincarousel.getBoundingClientRect();
-  var maincarouselBottom = rect.bottom;
-  var navbarBottom = navbarrect.bottom;
-  var notVisible = (maincarouselBottom - navbarBottom) < 0;
-  if (notVisible) {
-    navbar.classList.add("shownavbackground");
-    navbar.classList.remove("hidenavbackground");
-  } else {
-    navbar.classList.add("hidenavbackground");
-    navbar.classList.remove("shownavbackground");
+  let navbar = document.querySelector(".navbar.toggleablebackground");
+
+  if (navbar) {
+    let navbarrect = navbar.getBoundingClientRect();
+    var rect = maincarousel.getBoundingClientRect();
+    var maincarouselBottom = rect.bottom;
+    var navbarBottom = navbarrect.bottom;
+    var notVisible = (maincarouselBottom - navbarBottom) < 0;
+    if (notVisible) {
+      navbar.classList.add("shownavbackground");
+      navbar.classList.remove("hidenavbackground");
+    } else {
+      navbar.classList.add("hidenavbackground");
+      navbar.classList.remove("shownavbackground");
+    }
   }
+
 
 }
 
