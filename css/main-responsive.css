@@ -13,10 +13,10 @@
     } */
 
     .mySlickCarousel.large-coupon-carousel .card {
-        width: 400px;
-    min-width: 400px;
-    height: 400px;
-    min-height: 400px;
+        width: 400px !important;
+    min-width: 400px !important;
+    height: 400px !important;
+    min-height: 400px !important;
     }
 
     .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
@@ -195,3 +195,5 @@ transform: translateY(-50%);
         width: 50%;
     }
  }
+ 
+ @media (min-width: 768px) { 

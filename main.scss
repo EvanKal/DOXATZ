@@ -1550,9 +1550,9 @@ font-size: 1.1rem !important;
 
 .jumbotron {
     height: 100vh;
-    
-
+    min-height: 600px;  
 }
+
 
 .jumbotron .jumbotron-hero {
     background-size: cover;

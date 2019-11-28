@@ -8826,7 +8826,8 @@ form {
 
 /* Jumbotron */
 .jumbotron {
-  height: 100vh; }
+  height: 100vh;
+  min-height: 600px; }
 
 .jumbotron .jumbotron-hero {
   background-size: cover;
