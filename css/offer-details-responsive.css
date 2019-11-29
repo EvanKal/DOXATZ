@@ -1,0 +1,67 @@
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devic/es (landscape phones, 576px and up) */
+
+
+@media (min-width: 576px) { 
+
+
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    .container-fluid.countdown-custom {
+        order: -1;
+        position: sticky;
+        top: 0;
+        /* bottom: -100%; */
+    }
+    
+    .container-fluid.countdown-custom {
+        position: sticky;
+        top: 3.75rem;
+    
+    }
+    
+    .container-fluid.countdown-custom .countdown-container{
+        position: absolute;
+        right: 0;
+    }
+
+    .countdown-container-borders {
+        border-bottom: 1px solid;
+        border-top: 3px solid;
+    }
+
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.9rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.8rem;
+    }
+
+    #web-submenu-container .tab-content .list-group .list-group-item {
+        font-size: 0.8rem;
+       
+       }
+
+
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+
+ }

@@ -847,7 +847,7 @@
 
     <div class="container-fluid mt-5">
         <div class="row">
-            <div class="merchant-detail col-12 col-md-6 d-flex justify-content-between">
+            <div class="merchant-detail col-12 col-md-7 d-flex justify-content-between">
                 <div class="merchant-name col-6 p-0">
                     <h1>Starbucks Coffee</h1>
                     <h2>2η Γραμμή</h2>
@@ -865,115 +865,290 @@
             </div>
         </div>
 
-
-
-
-    </div>
-
-    <div class="container-fluid position-relative my-2">
         <div class="row offer-rating">
             <div class="rating-display col-12 d-flex justify-content-start my-4"></div>
         </div>
+    </div>
 
-        <!-- The offer carousel -->
-        <div class="row my-3">
-            <div class="mainCarouselContainer d-flex position-relative m-0 p-0 col-12 col-md-6">
+    <div class="dynamic-container d-flex flex-column">
 
-                <!-- The carousel -->
+        <div class="container-fluid position-relative">
 
-                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="hero-image" style="background-image: url('images/1.jpg');"></div>
-                            <!-- <img src="images/1.jpg" class="" alt="..."> -->
-                            <!-- <div class="carousel-caption ">
+            <!-- The offer carousel -->
+            <div class="row m-0">
+                <div class="mainCarouselContainer d-flex position-relative m-0 p-0 col-12 col-md-7">
+
+                    <!-- The carousel -->
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators d-none">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="hero-image" style="background-image: url('images/1.jpg');"></div>
+                                <!-- <img src="images/1.jpg" class="" alt="..."> -->
+                                <!-- <div class="carousel-caption ">
                                 <h3>First slide label</h3>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div> -->
-                        </div>
-                        <div class="carousel-item">
-                            <div class="hero-image" style="background-image: url('images/2.jpg');"></div>
-                            <!-- <img src="images/2.jpg" class="" alt="..."> -->
-                            <!-- <div class="carousel-caption ">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="hero-image" style="background-image: url('images/2.jpg');"></div>
+                                <!-- <img src="images/2.jpg" class="" alt="..."> -->
+                                <!-- <div class="carousel-caption ">
                                 <h3>Second slide label</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div> -->
-                        </div>
-                        <div class="carousel-item">
-                            <div class="hero-image" style="background-image: url('images/3.jpg');"></div>
-                            <!-- <img src="images/3.jpg" class="" alt="..."> -->
-                            <!-- <div class="carousel-caption ">
+                            </div>
+                            <div class="carousel-item">
+                                <div class="hero-image" style="background-image: url('images/3.jpg');"></div>
+                                <!-- <img src="images/3.jpg" class="" alt="..."> -->
+                                <!-- <div class="carousel-caption ">
                                 <h3>Third slide label</h3>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div> -->
+                            </div>
                         </div>
+                        <a class="carousel-control-prev d-flex d-md-flex w-25 h-100 justify-content-start"
+                            href="#carouselExampleCaptions" role="button" data-slide="prev">
+                            <div
+                                class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
+                                <img class="mr-2 img-fluid" src="images/icons/left-arrow-white.png" alt="">
+                            </div>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next d-flex d-md-flex w-25 h-100 justify-content-end"
+                            href="#carouselExampleCaptions" role="button" data-slide="next">
+                            <div
+                                class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
+                                <img class="mr-2 img-fluid" src="images/icons/right-arrow-white.png" alt="">
+                            </div>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev d-flex d-md-flex w-25 h-100 justify-content-start"
-                        href="#carouselExampleCaptions" role="button" data-slide="prev">
-                        <div
-                            class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
-                            <img class="mr-2 img-fluid" src="images/icons/left-arrow-white.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid countdown-custom">
+            <!-- The offer countdown -->
+            <div class="row">
+                <div class="countdown-container col-12 col-md-5">
+
+                    <div class="countdown-container-borders p-md-3 m-md-2">
+
+
+                        <div class="col-12 offer-countdown-info my-5 my-md-0 p-0">
+                            <p class="offer-countdown-text m-0">
+                                Έκπτωση 25% για αγορές αξίας έως και 200 &euro;
+                            </p>
                         </div>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next d-flex d-md-flex w-25 h-100 justify-content-end"
-                        href="#carouselExampleCaptions" role="button" data-slide="next">
-                        <div
-                            class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
-                            <img class="mr-2 img-fluid" src="images/icons/right-arrow-white.png" alt="">
+
+                        <div class="col-12 p-0 offer-countdown-container">
+
+                            <p class="offer-countdown-text my-2">
+                                Η προσφορά λήγει σε:
+                            </p>
+
+                            <div id="countdown-elements-container"
+                                class="col-12 p-0 my-5  text-light text-center d-flex flex-wrap justify-content-center">
+
+                                <div class="weeks-days-container d-flex flex-row">
+                                    <div id="weeks" class="countdown-element p-2 m-2 rounded">
+                                        <div id="weeks-value" class=" p-3"></div>
+                                        <span class="my-4">ΕΒΔ.</span>
+                                    </div>
+                                    <div id="days" class="countdown-element p-2 m-2 rounded">
+                                        <div id="days-value" class=" p-3"></div>
+                                        <span class="my-4">ΗΜ.</span>
+                                    </div>
+                                </div>
+                                <div class="minutes-hours-seconds-container d-flex flex-row">
+                                    <div id="hours" class="countdown-element p-2 m-2 rounded">
+                                        <div id="hours-value" class=" p-3"></div>
+                                        <span class="my-4">ΩΡΕΣ</span>
+                                    </div>
+                                    <div id="minutes" class="countdown-element p-2 m-2 rounded">
+                                        <div id="minutes-value" class=" p-3"></div>
+                                        <span class="my-4">ΛΕΠΤΑ</span>
+                                    </div>
+                                    <div id="seconds" class="countdown-element p-2 m-2 rounded">
+                                        <div id="seconds-value" class=" p-3"></div>
+                                        <span class="my-4">ΔΕΥΤ.</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <span class="sr-only">Next</span>
-                    </a>
+
+                        <div class="col-12 buy-button justify-content-center p-2 d-flex">
+                            <a class="btn btn-dark text-light col-6">
+                                Αγορά
+                            </a>
+                        </div>
+
+                        <div class="col-12 share-button justify-content-center p-2 d-flex">
+                            <a class="btn btn-dark text-light d-flex justify-content-around col-6">
+                                Μοιράσου το <span
+                                    class="badge badge-light d-flex align-items-center position-absolute">9</span>
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- The offer countdown -->
-        <div class="row">
-            <div class="countdown-container col-12 col-md-6">
 
-                <div class="col-12 offer-countdown-info my-5 p-0">
-                    <p class="offer-countdown-text m-0">
-                        Έκπτωση 25% για αγορές αξίας έως και 200 &euro;
+        <div class="container-fluid">
+            <div class="row d-flex flex-column">
+
+                <div class="offer-info col-12 col-md-7 my-3">
+                    <h2>Starbucks Coffee</h2>
+                    <p class="offer-info-description my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
                     </p>
                 </div>
 
-                <div class="col-12 p-0 offer-countdown-container">
-
-                    <p class="offer-countdown-text my-2">
-                        Η προσφορά λήγει σε:
+                <div class="offer-terms col-12 col-md-7 my-3">
+                    <h2>Terms</h2>
+                    <p class="offer-info-description my-2">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.
                     </p>
 
-                    <div id="countdown-elements-container"
-                        class="col-12 p-0 my-5  text-light text-center d-flex flex-wrap justify-content-center">
-                        
-                        <div class="weeks-days-container d-flex flex-row">
-                            <div id="weeks" class="countdown-element p-2 m-2 rounded">
-                                <div id="weeks-value" class=" p-3"></div>
-                                <span class="my-4">ΕΒΔ.</span>
+                </div>
+
+                <div class="offer-map col-12 col-md-7 my-3">
+                    <h2>Χάρτης</h2>
+                    <div class="map-container col-12 p-0">
+
+                    </div>
+                </div>
+
+                <div class="offer-share col-12 col-md-7">
+                    <h2>Μοιράσου το:</h2>
+
+                    <div class="offer-share-icons-container col-12 d-flex justify-content-start">
+
+                        <a class="offer-share-icon col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                <img class="mr-2 img-fluid w-100" src="images/icons/facebook-gold.png"
+                                    alt="Facebook logo">
                             </div>
-                            <div id="days" class="countdown-element p-2 m-2 rounded">
-                                <div id="days-value" class=" p-3"></div>
-                                <span class="my-4">ΗΜ.</span>
+                        </a>
+                        <a class="offer-share-icon  col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                <img class="mr-2 img-fluid w-100" src="images/icons/twitter-sign-gold.png"
+                                    alt="Twitter logo">
+                            </div>
+                        </a>
+                        <a class="offer-share-icon col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                            href=#>
+                            <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                <img class="mr-2 img-fluid w-100" src="images/icons/instagram-gold.png"
+                                    alt="Instagram logo">
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row offer-reviews-container">
+
+                <div id="offerReviewsAccordion" class=" col-12 my-3">
+
+                    <div id="offerReviewsAccordionButton"
+                        class="btn d-flex justify-content-center pointer-cursor text-dark p-0" data-toggle="collapse"
+                        data-target="#offerReviewsAccordionDropdown" aria-expanded="true"
+                        aria-controls="offerReviewsAccordionDropdown">
+                        <div class="position-relative d-flex align-items-center col-12 p-0 justify-content-start">
+                            <h2 class="m-0 p-0">Αξιολογήσεις</h2>
+                            <div class="offer-rating">
+                                <div class="rating-display col-12 d-flex justify-content-start "></div>
+                            </div>
+                            <div
+                                class="badge badge-secondary text-light p-1 d-flex align-items-center justify-content-center">
+                                <span>130</span>
+                            </div>
+                            <div class="iconcontainer col-1 ml-2 text-dark"><i
+                                    class="fa fa-chevron-right text-dark"></i>
                             </div>
                         </div>
-                        <div class="minutes-hours-seconds-container d-flex flex-row">
-                            <div id="hours" class="countdown-element p-2 m-2 rounded">
-                                <div id="hours-value" class=" p-3"></div>
-                                <span class="my-4">ΩΡΕΣ</span>
-                            </div>
-                            <div id="minutes" class="countdown-element p-2 m-2 rounded">
-                                <div id="minutes-value" class=" p-3"></div>
-                                <span class="my-4">ΛΕΠΤΑ</span>
-                            </div>
-                            <div id="seconds" class="countdown-element p-2 m-2 rounded">
-                                <div id="seconds-value" class=" p-3"></div>
-                                <span class="my-4">ΔΕΥΤ.</span>
+                    </div>
+
+
+                    <div id="offerReviewsAccordionDropdownMenuContainer"
+                        class="offers-accordion-dropdown-menu text-dark my-3 col-12 col-md-7 p-0 d-flex flex-wrap flex-row justify-content-around">
+
+                        <div id="offerReviewsAccordionDropdown" class="collapse col-12"
+                            aria-labelledby="offerReviewsAccordionButton" data-parent="#offerReviewsAccordion">
+
+
+                            <div class="reviews-display col-12 p-0">
+                                <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                    <div class="offer-review-description col-12 p-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                    <div class="offer-reviewer-rating">
+                                        <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                    </div>
+                                    <div class="offer-review-reviewer col-6 my-3 p-0"><em>Evangelos</em></div>
+                                    <div class="offer-review-date col-6 my-3 p-0"><em>24 January 2019</em></div>
+                                </div>
+                                <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                    <div class="offer-review-description col-12 p-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                    <div class="offer-reviewer-rating">
+                                        <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                    </div>
+                                    <div class="offer-review-reviewer col-6 my-3 p-0"><em>Stefania</em></div>
+                                    <div class="offer-review-date col-6 my-3 p-0"><em>16 January 2019</em></div>
+                                </div>
+                                <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                    <div class="offer-review-description col-12 p-0">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </div>
+                                    <div class="offer-reviewer-rating">
+                                        <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                    </div>
+                                    <div class="offer-review-reviewer col-6 my-3 p-0"><em>Aggelos</em></div>
+                                    <div class="offer-review-date col-6 my-3 p-0"><em>30 January 2019</em></div>
+                                </div>
                             </div>
                         </div>
 
@@ -981,175 +1156,20 @@
 
 
                 </div>
+            </div>
 
-                <div class="col-12 buy-button justify-content-center p-2 d-flex">
-                    <a class="btn btn-dark text-light col-6">
-                        Αγορά
+            <div class="row">
+                <div class="submit-review justify-content-center d-flex col-12 col-md-7 justify-content-center">
+                    <a class="btn btn-dark text-light">
+                        Γράψτε μια Αξιολόγηση
                     </a>
                 </div>
-
-                <div class="col-12 buy-button justify-content-center p-2 d-flex">
-                    <a class="btn btn-dark text-light d-flex justify-content-around col-6">
-                        Μοιράσου το <span class="badge badge-light">9</span>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row d-flex flex-column">
-
-            <div class="offer-info col-12 col-md-6 my-3">
-                <h2>Starbucks Coffee</h2>
-                <p class="offer-info-description my-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.
-                </p>
             </div>
 
-            <div class="offer-terms col-12 col-md-6 my-3">
-                <h2>Terms</h2>
-                <p class="offer-info-description my-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.
-                </p>
-
-            </div>
-
-            <div class="offer-map col-12 col-md-6 my-3">
-                <h2>Χάρτης</h2>
-                <div class="map-container col-12 p-0">
-
-                </div>
-            </div>
-
-            <div class="offer-share col-12 col-md-6">
-                <h2>Μοιράσου το:</h2>
-
-                <div class="offer-share-icons-container col-12 d-flex justify-content-start">
-
-                    <a class="offer-share-icon col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
-                            <img class="mr-2 img-fluid w-100" src="images/icons/facebook-gold.png" alt="Facebook logo">
-                        </div>
-                    </a>
-                    <a class="offer-share-icon  col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
-                            <img class="mr-2 img-fluid w-100" src="images/icons/twitter-sign-gold.png"
-                                alt="Twitter logo">
-                        </div>
-                    </a>
-                    <a class="offer-share-icon col-4 btn d-flex align-items-center justify-content-center justify-content-sm-start"
-                        href=#>
-                        <div class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
-                            <img class="mr-2 img-fluid w-100" src="images/icons/instagram-gold.png"
-                                alt="Instagram logo">
-                        </div>
-
-                    </a>
-                </div>
-
-            </div>
-
-
-
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row offer-reviews-container">
-
-            <div id="offerReviewsAccordion" class=" col-12 my-3">
-
-                <div id="offerReviewsAccordionButton"
-                    class="btn d-flex justify-content-center pointer-cursor text-dark p-0" data-toggle="collapse"
-                    data-target="#offerReviewsAccordionDropdown" aria-expanded="true"
-                    aria-controls="offerReviewsAccordionDropdown">
-                    <div class="position-relative d-flex align-items-center col-12 p-0 justify-content-start">
-                        <h2 class="m-0 p-0">Αξιολογήσεις</h2>
-                        <div class="offer-rating">
-                            <div class="rating-display col-12 d-flex justify-content-start "></div>
-                        </div>
-                        <div
-                            class="badge badge-secondary text-light p-1 d-flex align-items-center justify-content-center">
-                            <span>130</span>
-                        </div>
-                        <div class="iconcontainer col-1 ml-2 text-dark"><i class="fa fa-chevron-right text-dark"></i>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div id="offerReviewsAccordionDropdownMenuContainer"
-                    class="offers-accordion-dropdown-menu text-dark my-3 col-12 col-md-6 p-0 d-flex flex-wrap flex-row justify-content-around">
-
-                    <div id="offerReviewsAccordionDropdown" class="collapse col-12"
-                        aria-labelledby="offerReviewsAccordionButton" data-parent="#offerReviewsAccordion">
-
-
-                        <div class="reviews-display col-12 p-0">
-                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
-                                <div class="offer-review-description col-12 p-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                                <div class="offer-reviewer-rating">
-                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
-                                </div>
-                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Evangelos</em></div>
-                                <div class="offer-review-date col-6 my-3 p-0"><em>24 January 2019</em></div>
-                            </div>
-                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
-                                <div class="offer-review-description col-12 p-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                                <div class="offer-reviewer-rating">
-                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
-                                </div>
-                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Stefania</em></div>
-                                <div class="offer-review-date col-6 my-3 p-0"><em>16 January 2019</em></div>
-                            </div>
-                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
-                                <div class="offer-review-description col-12 p-0">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </div>
-                                <div class="offer-reviewer-rating">
-                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
-                                </div>
-                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Aggelos</em></div>
-                                <div class="offer-review-date col-6 my-3 p-0"><em>30 January 2019</em></div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="submit-review justify-content-center d-flex col-12 col-md-6 justify-content-center">
-                <a class="btn btn-dark text-light">
-                    Γράψτε μια Αξιολόγηση
-                </a>
-            </div>
         </div>
 
     </div>
+
 
     <div class="container-fluid">
 
@@ -1589,12 +1609,12 @@
     <div class="container-fluid">
         <div class="row">
             <div class="merchant-about col-12">
-                <div class="merchant-about-info-container col-12 col-md-6 p-0">
+                <div class="merchant-about-info-container col-12 col-md-7 p-0">
                     <h1>Σχετικά με το συνεργάτη</h1>
                     <p>Σύντομη περιγραφή</p>
                 </div>
 
-                <div class="col-12 col-md-6 merchant-about-button-container justify-content-center p-5 d-flex">
+                <div class="col-12 col-md-7 merchant-about-button-container justify-content-center p-5 d-flex">
                     <a class="btn btn-dark text-light">
                         Δείτε περισσότερα
                     </a>
@@ -1682,12 +1702,12 @@
                             </h4>
                             <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0">
                                 <div
-                                    class=" col-12 col-md-6 col-md-12 d-flex align-items-center justify-content-center">
+                                    class=" col-12 col-md-7 col-md-12 d-flex align-items-center justify-content-center">
                                     <img class="img-fluid download-images-gp col-4 col-sm-6 col-md-12 col-lg-8"
                                         src="images/logo/google-play-badge.png" alt="Get it on google play">
                                 </div>
                                 <div
-                                    class=" col-12 col-md-6 col-md-12 mt-2 d-flex align-items-center justify-content-center">
+                                    class=" col-12 col-md-7 col-md-12 mt-2 d-flex align-items-center justify-content-center">
                                     <img class="img-fluid download-images-appst col-4 col-sm-6 col-md-12 col-lg-8"
                                         src="images/logo/Download_on_the_App_Store_Badge.png"
                                         alt="Download on the app store">

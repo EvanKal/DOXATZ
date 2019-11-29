@@ -8263,6 +8263,9 @@ nav.navbar .my-dropdown.active .select > i {
   background-color: white !important;
   color: #9c9c9c !important; }
 
+.countdown-container-borders {
+  border-color: #b8ac94; }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 
