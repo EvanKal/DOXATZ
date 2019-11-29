@@ -14,22 +14,24 @@
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
+    .dynamic-container {
+        position: relative;
+        height: 100%;
+    }
+
     .container-fluid.countdown-custom {
         order: -1;
-        position: sticky;
-        top: 0;
-        /* bottom: -100%; */
-    }
-    
-    .container-fluid.countdown-custom {
-        position: sticky;
-        top: 3.75rem;
-    
-    }
-    
-    .container-fluid.countdown-custom .countdown-container{
         position: absolute;
-        right: 0;
+        height: 100%;
+        /* position: -webkit-sticky; */
+        /* top: 3.75rem; */
+    }
+
+    .container-fluid.countdown-custom .stickyrow {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 3.75rem;
+        justify-content: flex-end;
     }
 
     .countdown-container-borders {
