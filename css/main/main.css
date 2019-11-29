@@ -8256,6 +8256,13 @@ nav.navbar .my-dropdown.active .select > i {
 .offer-rating .rating-display {
   color: #b8ac94 !important; }
 
+#countdown-elements-container .countdown-element {
+  background-color: #b8ac94 !important; }
+
+#countdown-elements-container .countdown-element > div {
+  background-color: white !important;
+  color: #9c9c9c !important; }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 

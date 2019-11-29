@@ -937,28 +937,59 @@
         <div class="row">
             <div class="countdown-container col-12 col-md-6">
 
-                <div class="col-12 offer-countdown-info my-5 ">
+                <div class="col-12 offer-countdown-info my-5 p-0">
                     <p class="offer-countdown-text m-0">
                         Έκπτωση 25% για αγορές αξίας έως και 200 &euro;
                     </p>
                 </div>
 
-                <div class="col-12 offer-countdown-container ">
+                <div class="col-12 p-0 offer-countdown-container">
 
                     <p class="offer-countdown-text my-2">
                         Η προσφορά λήγει σε:
                     </p>
 
+                    <div id="countdown-elements-container"
+                        class="col-12 p-0 my-5  text-light text-center d-flex flex-wrap justify-content-center">
+                        
+                        <div class="weeks-days-container d-flex flex-row">
+                            <div id="weeks" class="countdown-element p-2 m-2 rounded">
+                                <div id="weeks-value" class=" p-3"></div>
+                                <span class="my-4">ΕΒΔ.</span>
+                            </div>
+                            <div id="days" class="countdown-element p-2 m-2 rounded">
+                                <div id="days-value" class=" p-3"></div>
+                                <span class="my-4">ΗΜ.</span>
+                            </div>
+                        </div>
+                        <div class="minutes-hours-seconds-container d-flex flex-row">
+                            <div id="hours" class="countdown-element p-2 m-2 rounded">
+                                <div id="hours-value" class=" p-3"></div>
+                                <span class="my-4">ΩΡΕΣ</span>
+                            </div>
+                            <div id="minutes" class="countdown-element p-2 m-2 rounded">
+                                <div id="minutes-value" class=" p-3"></div>
+                                <span class="my-4">ΛΕΠΤΑ</span>
+                            </div>
+                            <div id="seconds" class="countdown-element p-2 m-2 rounded">
+                                <div id="seconds-value" class=" p-3"></div>
+                                <span class="my-4">ΔΕΥΤ.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
                 </div>
 
-                <div class="col-12 buy-button justify-content-center p-5 d-flex">
-                    <a class="btn btn-dark text-light">
+                <div class="col-12 buy-button justify-content-center p-2 d-flex">
+                    <a class="btn btn-dark text-light col-6">
                         Αγορά
                     </a>
                 </div>
 
-                <div class="col-12 buy-button justify-content-center p-5 d-flex">
-                    <a class="btn btn-dark text-light">
+                <div class="col-12 buy-button justify-content-center p-2 d-flex">
+                    <a class="btn btn-dark text-light d-flex justify-content-around col-6">
                         Μοιράσου το <span class="badge badge-light">9</span>
                     </a>
                 </div>
@@ -1051,17 +1082,57 @@
                             class="badge badge-secondary text-light p-1 d-flex align-items-center justify-content-center">
                             <span>130</span>
                         </div>
-                        <div class="col-1 ml-2 text-dark"><i class="fa fa-chevron-right text-dark"></i></div>
+                        <div class="iconcontainer col-1 ml-2 text-dark"><i class="fa fa-chevron-right text-dark"></i>
+                        </div>
                     </div>
                 </div>
 
 
                 <div id="offerReviewsAccordionDropdownMenuContainer"
-                    class="offers-accordion-dropdown-menu p-0 text-dark col-12 col-md-6 d-flex flex-wrap flex-row justify-content-around">
+                    class="offers-accordion-dropdown-menu text-dark my-3 col-12 col-md-6 p-0 d-flex flex-wrap flex-row justify-content-around">
 
                     <div id="offerReviewsAccordionDropdown" class="collapse col-12"
                         aria-labelledby="offerReviewsAccordionButton" data-parent="#offerReviewsAccordion">
-                        <p>Litsaki</p>
+
+
+                        <div class="reviews-display col-12 p-0">
+                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                <div class="offer-review-description col-12 p-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="offer-reviewer-rating">
+                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                </div>
+                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Evangelos</em></div>
+                                <div class="offer-review-date col-6 my-3 p-0"><em>24 January 2019</em></div>
+                            </div>
+                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                <div class="offer-review-description col-12 p-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="offer-reviewer-rating">
+                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                </div>
+                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Stefania</em></div>
+                                <div class="offer-review-date col-6 my-3 p-0"><em>16 January 2019</em></div>
+                            </div>
+                            <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                <div class="offer-review-description col-12 p-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                                <div class="offer-reviewer-rating">
+                                    <div class="rating-display col-12 p-0 d-flex justify-content-start my-3"></div>
+                                </div>
+                                <div class="offer-review-reviewer col-6 my-3 p-0"><em>Aggelos</em></div>
+                                <div class="offer-review-date col-6 my-3 p-0"><em>30 January 2019</em></div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -1071,7 +1142,7 @@
         </div>
 
         <div class="row">
-            <div class="submit-review justify-content-center p-5 d-flex col-12 col-md-6 justify-content-center">
+            <div class="submit-review justify-content-center d-flex col-12 col-md-6 justify-content-center">
                 <a class="btn btn-dark text-light">
                     Γράψτε μια Αξιολόγηση
                 </a>

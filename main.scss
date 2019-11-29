@@ -754,6 +754,17 @@ nav.navbar .my-dropdown.active .select > i {
     color: theme-color-level(secondary, -5) !important;
 }
 
+#countdown-elements-container .countdown-element {
+    background-color: theme-color-level(secondary, -5) !important;
+}
+
+#countdown-elements-container .countdown-element > div {
+    background-color: theme-color-level(light) !important;
+    color: theme-color-level(promo-gray) !important;
+}
+
+
+
 
 /////////////////////////////////////////////////////////////////
 // Custom scrollbar for the mobile-menu
