@@ -19,12 +19,17 @@ $theme-colors: (
     "dark": #062B64,
     "light": white,
     "danger": #D7291E,
-    "promo-gray": #9C9C9C
+    "promo-gray": #9C9C9C,
+    "gray": $gray-600,
 
   );
 
+
+
 $body-bg: theme-color(light);
-// $body-bg: theme-color-level(promo-gray, -10);
+// $body-color: theme-color-level(promo-gray, 8);
+$body-color: theme-color-level(dark, 8);
+
 
 
 @import "node_modules/bootstrap/scss/bootstrap";
@@ -760,7 +765,7 @@ nav.navbar .my-dropdown.active .select > i {
 
 #countdown-elements-container .countdown-element > div {
     background-color: theme-color-level(light) !important;
-    color: theme-color-level(promo-gray) !important;
+    color: theme-color(dark) !important;
 }
 
 
