@@ -71,3 +71,7 @@
 .offer-share h2,
 #offerReviewsAccordionButton h2 {
   font-weight: 300 !important; }
+
+.mainCarouselContainer .head-icons-container {
+  z-index: 1;
+  text-shadow: none; }

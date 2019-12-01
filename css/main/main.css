@@ -7928,8 +7928,9 @@ h6 {
 .coupon-in-display .card .card-bottom-info .expiration.expires-soon i,
 .coupon-in-display .card .card-bottom-info .expiration.expires-soon .expiration-text,
 .coupon-in-display .card .card-head .head-icon.expires-soon i,
-#couponsDropdownMenu .coupon .head-icon.expires-soon i {
-  color: #D7291E; }
+#couponsDropdownMenu .coupon .head-icon.expires-soon i,
+.mainCarouselContainer .head-icons-container .head-icon.expires-soon i {
+  color: #D7291E !important; }
 
 [anim="ripple"] {
   position: relative;
