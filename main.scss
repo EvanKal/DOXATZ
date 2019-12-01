@@ -20,7 +20,7 @@ $theme-colors: (
     "light": white,
     "danger": #D7291E,
     "promo-gray": #9C9C9C,
-    "gray": $gray-600,
+    "gray600": $gray-600,
 
   );
 
@@ -713,6 +713,60 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 ////////////////////////////////////////////////////
+//Star rating system
+///////////////////////////////////////////////////////
+
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .star-rating-container .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating-group .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating-group .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+    
+    /* hide 'none' input from screenreaders */
+    .rating-group .rating__input--none {
+      display: none
+    }
+  
+    /* set icon padding and size */
+    .rating-group .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 1.2rem;
+    }
+    
+    /* set default star color */
+    .rating-group .rating__icon--star {
+      color: theme-color-level(secondary, -5);
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: theme-color-level(secondary, -5);
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  
+
+////////////////////////////////////////////////////
 //Coupons Listing
 ///////////////////////////////////////////////////////
 
@@ -764,8 +818,8 @@ nav.navbar .my-dropdown.active .select > i {
 }
 
 #countdown-elements-container .countdown-element > div {
-    background-color: theme-color-level(light) !important;
-    color: theme-color(dark) !important;
+    background-color: theme-color(light) !important;
+    color: theme-color(gray600) !important;
 }
 
 

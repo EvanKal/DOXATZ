@@ -34,9 +34,14 @@
         justify-content: flex-end;
     }
 
+    .countdown-container {
+        transform: scale(0.8);
+        top: -3rem;
+    }
     .countdown-container-borders {
         border-bottom: 1px solid;
         border-top: 3px solid;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     }
 
 

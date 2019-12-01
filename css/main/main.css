@@ -34,7 +34,7 @@
   --light-gold: #E6C65B;
   --lighter-gold: #F1E5C9;
   --promo-gray: #9C9C9C;
-  --gray: #6c757d;
+  --gray600: #6c757d;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1317,21 +1317,21 @@ pre {
   .table-hover .table-promo-gray:hover > th {
     background-color: #d6d6d6; }
 
-.table-gray,
-.table-gray > th,
-.table-gray > td {
+.table-gray600,
+.table-gray600 > th,
+.table-gray600 > td {
   background-color: #d6d8db; }
 
-.table-gray th,
-.table-gray td,
-.table-gray thead th,
-.table-gray tbody + tbody {
+.table-gray600 th,
+.table-gray600 td,
+.table-gray600 thead th,
+.table-gray600 tbody + tbody {
   border-color: #b3b7bb; }
 
-.table-hover .table-gray:hover {
+.table-hover .table-gray600:hover {
   background-color: #c8cbcf; }
-  .table-hover .table-gray:hover > td,
-  .table-hover .table-gray:hover > th {
+  .table-hover .table-gray600:hover > td,
+  .table-hover .table-gray600:hover > th {
     background-color: #c8cbcf; }
 
 .table-active,
@@ -2144,27 +2144,27 @@ fieldset:disabled a.btn {
     .show > .btn-promo-gray.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(138, 138, 139, 0.5); }
 
-.btn-gray {
+.btn-gray600 {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d; }
-  .btn-gray:hover {
+  .btn-gray600:hover {
     color: #fff;
     background-color: #5a6268;
     border-color: #545b62; }
-  .btn-gray:focus, .btn-gray.focus {
+  .btn-gray600:focus, .btn-gray600.focus {
     box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
-  .btn-gray.disabled, .btn-gray:disabled {
+  .btn-gray600.disabled, .btn-gray600:disabled {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-  .btn-gray:not(:disabled):not(.disabled):active, .btn-gray:not(:disabled):not(.disabled).active,
-  .show > .btn-gray.dropdown-toggle {
+  .btn-gray600:not(:disabled):not(.disabled):active, .btn-gray600:not(:disabled):not(.disabled).active,
+  .show > .btn-gray600.dropdown-toggle {
     color: #fff;
     background-color: #545b62;
     border-color: #4e555b; }
-    .btn-gray:not(:disabled):not(.disabled):active:focus, .btn-gray:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-gray.dropdown-toggle:focus {
+    .btn-gray600:not(:disabled):not(.disabled):active:focus, .btn-gray600:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-gray600.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
 
 .btn-outline-primary {
@@ -2461,25 +2461,25 @@ fieldset:disabled a.btn {
     .show > .btn-outline-promo-gray.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(156, 156, 156, 0.5); }
 
-.btn-outline-gray {
+.btn-outline-gray600 {
   color: #6c757d;
   border-color: #6c757d; }
-  .btn-outline-gray:hover {
+  .btn-outline-gray600:hover {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-  .btn-outline-gray:focus, .btn-outline-gray.focus {
+  .btn-outline-gray600:focus, .btn-outline-gray600.focus {
     box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
-  .btn-outline-gray.disabled, .btn-outline-gray:disabled {
+  .btn-outline-gray600.disabled, .btn-outline-gray600:disabled {
     color: #6c757d;
     background-color: transparent; }
-  .btn-outline-gray:not(:disabled):not(.disabled):active, .btn-outline-gray:not(:disabled):not(.disabled).active,
-  .show > .btn-outline-gray.dropdown-toggle {
+  .btn-outline-gray600:not(:disabled):not(.disabled):active, .btn-outline-gray600:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-gray600.dropdown-toggle {
     color: #fff;
     background-color: #6c757d;
     border-color: #6c757d; }
-    .btn-outline-gray:not(:disabled):not(.disabled):active:focus, .btn-outline-gray:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-outline-gray.dropdown-toggle:focus {
+    .btn-outline-gray600:not(:disabled):not(.disabled):active:focus, .btn-outline-gray600:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-gray600.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
 .btn-link {
@@ -4055,13 +4055,13 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(156, 156, 156, 0.5); }
 
-.badge-gray {
+.badge-gray600 {
   color: #fff;
   background-color: #6c757d; }
-  a.badge-gray:hover, a.badge-gray:focus {
+  a.badge-gray600:hover, a.badge-gray600:focus {
     color: #fff;
     background-color: #545b62; }
-  a.badge-gray:focus, a.badge-gray.focus {
+  a.badge-gray600:focus, a.badge-gray600.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); }
 
@@ -4227,13 +4227,13 @@ input[type="button"].btn-block {
   .alert-promo-gray .alert-link {
     color: #383838; }
 
-.alert-gray {
+.alert-gray600 {
   color: #383d41;
   background-color: #e2e3e5;
   border-color: #d6d8db; }
-  .alert-gray hr {
+  .alert-gray600 hr {
     border-top-color: #c8cbcf; }
-  .alert-gray .alert-link {
+  .alert-gray600 .alert-link {
     color: #202326; }
 
 @keyframes progress-bar-stripes {
@@ -4570,13 +4570,13 @@ input[type="button"].btn-block {
     background-color: #515151;
     border-color: #515151; }
 
-.list-group-item-gray {
+.list-group-item-gray600 {
   color: #383d41;
   background-color: #d6d8db; }
-  .list-group-item-gray.list-group-item-action:hover, .list-group-item-gray.list-group-item-action:focus {
+  .list-group-item-gray600.list-group-item-action:hover, .list-group-item-gray600.list-group-item-action:focus {
     color: #383d41;
     background-color: #c8cbcf; }
-  .list-group-item-gray.list-group-item-action.active {
+  .list-group-item-gray600.list-group-item-action.active {
     color: #fff;
     background-color: #383d41;
     border-color: #383d41; }
@@ -5311,12 +5311,12 @@ button.bg-promo-gray:hover,
 button.bg-promo-gray:focus {
   background-color: #838383 !important; }
 
-.bg-gray {
+.bg-gray600 {
   background-color: #6c757d !important; }
 
-a.bg-gray:hover, a.bg-gray:focus,
-button.bg-gray:hover,
-button.bg-gray:focus {
+a.bg-gray600:hover, a.bg-gray600:focus,
+button.bg-gray600:hover,
+button.bg-gray600:focus {
   background-color: #545b62 !important; }
 
 .bg-white {
@@ -5397,7 +5397,7 @@ button.bg-gray:focus {
 .border-promo-gray {
   border-color: #9C9C9C !important; }
 
-.border-gray {
+.border-gray600 {
   border-color: #6c757d !important; }
 
 .border-white {
@@ -7698,10 +7698,10 @@ a.text-lighter-gold:hover, a.text-lighter-gold:focus {
 a.text-promo-gray:hover, a.text-promo-gray:focus {
   color: #767676 !important; }
 
-.text-gray {
+.text-gray600 {
   color: #6c757d !important; }
 
-a.text-gray:hover, a.text-gray:focus {
+a.text-gray600:hover, a.text-gray600:focus {
   color: #494f54 !important; }
 
 .text-body {
@@ -8335,6 +8335,45 @@ nav.navbar .my-dropdown.active .select > i {
   margin-top: 0.2em;
   background: white; }
 
+/* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+.star-rating-container .rating-group {
+  display: inline-flex; }
+
+/* make hover effect work properly in IE */
+.rating-group .rating__icon {
+  pointer-events: none; }
+
+/* hide radio inputs */
+.rating-group .rating__input {
+  position: absolute !important;
+  left: -9999px !important; }
+
+/* hide 'none' input from screenreaders */
+.rating-group .rating__input--none {
+  display: none; }
+
+/* set icon padding and size */
+.rating-group .rating__label {
+  cursor: pointer;
+  padding: 0 0.1em;
+  font-size: 1.2rem; }
+
+/* set default star color */
+.rating-group .rating__icon--star {
+  color: #b8ac94; }
+
+/* if any input is checked, make its following siblings grey */
+.rating__input:checked ~ .rating__label .rating__icon--star {
+  color: #ddd; }
+
+/* make all stars orange on rating group hover */
+.rating-group:hover .rating__label .rating__icon--star {
+  color: #b8ac94; }
+
+/* make hovered input's following siblings grey on hover */
+.rating__input:hover ~ .rating__label .rating__icon--star {
+  color: #ddd; }
+
 #mobile-submenu {
   background-color: #b8ac94; }
 
@@ -8370,7 +8409,7 @@ nav.navbar .my-dropdown.active .select > i {
 
 #countdown-elements-container .countdown-element > div {
   background-color: white !important;
-  color: #062B64 !important; }
+  color: #6c757d !important; }
 
 .countdown-container-borders {
   border-color: #b8ac94; }
