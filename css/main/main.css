@@ -8405,6 +8405,9 @@ nav.navbar .my-dropdown.active .select > i {
 .offer-rating .rating-display {
   color: #b8ac94 !important; }
 
+.offer-reviewer-rating.offer-rating .rating-display {
+  color: #a7acb1 !important; }
+
 #countdown-elements-container .countdown-element {
   background-color: #b8ac94 !important; }
 

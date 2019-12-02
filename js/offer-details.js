@@ -167,11 +167,20 @@ function fillStarsInOfferRating(rating) {
 
 function firstExample() {
 
-    let x = 1;
-
-
     var yourDateToGo2 = new Date();
-    yourDateToGo2.setDate(yourDateToGo2.getDate() + x);
+
+    // this variable holds the number of days to count down from
+    // let x = 1;
+    // yourDateToGo2.setDate(yourDateToGo2.getDate() + x);
+
+    // this variable holds a string to be parsed into a Date object
+    // method documentation https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse
+    // Date-only forms are interpreted as a UTC time and date-time forms are interpreted as local time!
+    let y = "2020-01-01T00:00:00"
+    yourDateToGo2 = Date.parse(y);
+
+
+
 
     var timing2 = setInterval(
         function () {

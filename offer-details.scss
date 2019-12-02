@@ -1,6 +1,6 @@
 //Submenu
 .categories-accordion-container {
-    position: sticky !important;
+    // position: sticky !important;
     top: 3.75rem!important;
     z-index: 50;
     // height: 3.75rem;
@@ -8,9 +8,9 @@
 
 .categories-accordion-container .categories-accordion-dropdown-menu-container {
     // width: 20rem;
-    height: 40rem;
+    // height: 40rem;
     // top: 3.75rem !important;
-    overflow-y: auto;
+    // overflow-y: auto;
 }
 
 .categories-accordion-container .categories-accordion-dropdown-menu > div .dropdown-item{
@@ -104,3 +104,6 @@
     text-shadow: none;
 }
 
+.mainCarouselContainer.offer-details-carousel .carousel-indicators {
+    bottom: 0!important;
+}
