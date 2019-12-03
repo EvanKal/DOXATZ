@@ -1,0 +1,74 @@
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devic/es (landscape phones, 576px and up) */
+
+
+@media (min-width: 576px) { 
+
+    .coupons-display-container {
+        width: 41rem;
+    }
+
+    .filters-container {
+        position: static!important;
+        z-index: 1;
+        width: auto !important;
+        height: auto !important;
+        right: auto;
+        top:auto;
+        transition: none;
+        overflow-y: unset;
+    }
+
+
+    .filters-container * {
+        font-size: 0.75rem!important;
+    }
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+    .coupons-display-container {
+        width: 58rem;
+    }
+
+    .filters-container * {
+        font-size: 0.7rem!important;
+    }
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.9rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.8rem;
+    }
+
+    #web-submenu-container .tab-content .list-group .list-group-item {
+        font-size: 0.8rem;
+       
+       }
+
+    .filters-container * {
+        font-size: 0.65rem!important;
+    }
+
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .coupons-display-container {
+        width: 80rem;
+    }
+
+ }

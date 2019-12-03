@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="images/logo/PROMOBOOK_favicon.PNG" />
+    <link rel="stylesheet" type="text/css" href="css/main/offer-details.css">
+    <link rel="stylesheet" type="text/css" href="css/offer-details-responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/main/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main-responsive.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Offer Details</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light py-1 shownavbackground sticky-top w-auto">
+
+        <div class="my-auto col-2 col-md-1 d-flex">
+            <button class="navbar-toggler border-0" anim="ripple" type="button" aria-controls="#navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars"></i></span>
+            </button>
+        </div>
+
+
+        <div class="d-none d-md-flex p-0 col-2 h-100 align-items-center " id="logoContainer">
+            <a class="navbar-brand p-0 d-flex align-items-center h-75 h-md-100" href="#"><img
+                    src="images/logo/PROMOBOOK_LOGO_WHITE.png" alt="logo" class="h-100 w-auto"></a>
+        </div>
+
+        <!-- <div class="col-">
+        
+                </div> -->
+
+        <div class="d-flex col-8 col-md-9  h-100 justify-content-end align-items-center" id="navButtonsContainer">
+
+
+            <!-- <select class="col-2 d-none d-md-flex custom-select custom-select-sm border-0 bg-none w-100">
+                        <option selected>ΕΛΛΗΝΙΚΑ</option>
+                        <option value="1">ENGLISH</option>
+                    </select> -->
+
+            <div
+                class="language-selection col-2 h-100 d-none d-md-flex border-0 bg-none w-100 text-light align-items-center justify-content-center">
+                <a class="btn col-5 p-0">
+                    EL
+                </a>
+                <div class="h-50 border-right p-0"></div>
+                <a class="btn col-5 p-0">
+                    EN
+                </a>
+            </div>
+
+            <div class="">
+                <div class="signedout justify-content-end">
+                    <!-- this needs to be d-flex -->
+                    <a class="btn btn-light btn-sm  mx-1" href="#" role="button" anim="ripple" data-toggle="modal"
+                        data-target="#signUpModaStep1">ΕΓΓΡΑΦΗ</a>
+                    <a class="btn btn-secondary btn-sm  mx-1 loginbtn" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+                </div>
+                <div class="signedin d-none align-items-center">
+                    <div id="messagesDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex align-items-center" href=# role="button"
+                            id="messagesDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div
+                                class="iconcontainer messages position-relative col-12 d-flex flex-column align-items-center">
+                                <img class="img-fluid" src="images/icons/envelope.png" alt="">
+                                <div
+                                    class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
+                                    <span>10</span></div>
+                            </div>
+
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="messagesDropdownMenuButton">
+                                <div class="messages-container dropdown-item d-flex flex-wrap">
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAneratednerated content,
+                                                    then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                    <a class="btn w-100" href="#">
+                                        <div class="message position-relative d-flex align-items-center">
+                                            <div class="message-contents w-75">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">nerated content, then add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                            <div class="text-dark ml-2 w-25 d-flex justify-content-center"><i
+                                                    class="fa fa-chevron-right"></i></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="messages-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλες οι ενημερώσεις μου</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="couponsDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex align-items-center " id="couponsDropdownMenuButton"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="iconcontainer coupons position-relative d-flex flex-column align-items-center">
+                                <img class="img-fluid" src="images/icons/coupon.png" alt="">
+                                <div
+                                    class="badge badge-secondary text-light p-1 position-absolute d-flex align-items-center justify-content-center">
+                                    <span>12</span></div>
+                            </div>
+
+
+                            <div class="dropdown-menu text-dark mt-2" aria-labelledby="couponsDropdownMenuButton">
+                                <div class="coupons-container dropdown-item d-flex flex-wrap">
+
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                    <div
+                                                        class="head-icons-container d-flex w-100 h-100 justify-content-end align-items-start">
+                                                        <div
+                                                            class="head-icon expires-soon bg-light mx-1 p-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
+                                        </div>
+                                    </div>
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                </div>
+                                            </div>
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
+                                        </div>
+                                    </div>
+                                    <div class="coupon position-relative d-flex flex-wrap align-items-center w-100">
+                                        <a class="btn p-0 d-flex flex-wrap" href="#">
+                                            <div class="coupon-image-container p-3 w-50">
+                                                <div class="coupon-image w-100 h-100"
+                                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(19).jpg'); ">
+                                                </div>
+                                            </div>
+                                            <div class="coupon-contents w-50 h-100 p-3">
+                                                <h6>Τίτλος ειδοποίησης</h6>
+                                                <p class="m-0 text-left text-dark">AAAAAAAAAAAAAAnerated content, then
+                                                    add a check for
+                                                    exceptionall</p>
+                                            </div>
+                                        </a>
+                                        <div class="coupon-redeem-button w-100 d-flex justify-content-end">
+                                            <a class="btn btn-dark btn-sm text-light">Εξαργύρωση</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="coupons-button-container dropdown-item d-flex justify-content-center">
+                                    <a class="btn-dark btn-sm text-light">Όλα τα κουπόνια μου</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="userDropdownMenu" class="dropdown">
+                        <a class=" btn text-light d-flex" href=# id="userDropdownMenuButton" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="iconcontainer position-relative d-flex align-items-center">
+                                <img class="img-fluid" src="images/icons/user.png" alt="">
+                                <p class="d-none d-md-block m-0 text-left text-light">Ευάγγελος Κ.</p>
+                                <div class="d-none d-md-block text-light ml-2"><i class="fa fa-chevron-right"></i></div>
+                            </div>
+
+                            <div id="" class="dropdown-menu text-dark mt-2" aria-labelledby="userDropdownMenuButton">
+                                <div class="user-menu-elements-container d-flex flex-wrap">
+                                    <a class="btn dropdown-item" href="#">
+                                        <div class="iconcontainer position-relative d-flex align-items-center">
+                                            <img class="mr-2 img-fluid" src="images/icons/gear-blue.png" alt="">
+                                            <p class="m-0 text-left text-dark">Ο λογαριασμός μου</p>
+                                        </div>
+                                    </a>
+                                    <a class="btn dropdown-item" href="#">
+                                        <div class="iconcontainer position-relative d-flex align-items-center">
+                                            <img class="mr-2 img-fluid" src="images/icons/coupon-blue.png" alt="">
+                                            <p class="m-0 text-left text-dark">Τα κουπόνια μου</p>
+                                        </div>
+                                    </a>
+                                    <a class="btn dropdown-item" href="#">
+                                        <div class="iconcontainer position-relative d-flex align-items-center">
+                                            <img class="mr-2 img-fluid" src="images/icons/envelope-blue.png" alt="">
+                                            <p class="m-0 text-left text-dark">Διαχ. Ειδοποιήσεων</p>
+                                        </div>
+                                    </a>
+                                    <a class="btn dropdown-item" href="#">
+                                        <div class="iconcontainer position-relative d-flex align-items-center">
+                                            <img class="mr-2 img-fluid" src="images/icons/sign-out-option-blue.png"
+                                                alt="">
+                                            <p class="m-0 text-left text-dark">Αποσύνδεση</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class=" custom-scrollbar ml-auto position-fixed d-flex flex-wrap justify-content-between bg-secondary"
+            id="navbarResponsive">
+            <div class="container-fluid flex-column d-flex navbar-top">
+                <div class="row empty-banner">
+
+                </div>
+
+                <div class="row">
+                    <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
+                    <div class="logo-container w-100 d-flex justify-content-center p-3">
+                        <img src="images/logo/PROMOBOOK_LOGO_WHITE.png" class="w-75 img-fluid">
+                    </div>
+                    <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
+                </div>
+
+                <div class="row">
+                    <ul class="accordion col-12" id="navMenuLinks">
+                        <li class="border-0">
+                            <div class="p-1" id="headingOne">
+                                <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΑΡΧΙΚΗ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingTwo">
+                                <a class="navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΣΧΕΤΙΚΑ ΜΕ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="border-0">
+                            <div class="p-1" id="headingThree">
+                                <a class=" navmenulink text-light btn collapsed col d-flex align-items-center p-0"
+                                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseTwo" href=# anim="ripple">
+                                    <div class="col-2"><i class="fa fa-chevron-right"></i></div>
+                                    <p class="m-0">ΣΥΝΕΡΓΑΤΕΣ</p>
+                                </a>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#navMenuLinks">
+                                <ul>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                    <li class="p-1">
+                                        <a class="text-light btn col d-flex align-items-center p-0" href="#">
+                                            <p class="m-0">Facebook</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container-fluid flex-column d-flex justify-content-end navbar-middle">
+                <div class="signedout">
+                    <div class="row">
+                        <hr class="my-2-4 mt-0 d-inline-block mx-auto w-75 bg-light">
+                        <div class="loginbuttonsinsidebar-container col-12 d-flex">
+                            <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
+                                <p class="text-light p-0 col-12">Νέος Χρήστης;</p>
+                                <a class="btn btn-light btn-sm col-12" href="#" role="button">ΕΓΓΡΑΦΗ</a>
+                            </div>
+
+
+                            <div class="p-3 col-6 d-flex flex-wrap align-items-end justify-content-center">
+                                <a class="btn btn-light btn-sm loginbtn col-12" href="#" role="button">ΣΥΝΔΕΣΗ</a>
+                            </div>
+                        </div>
+                        <hr class="my-2 mt-0 d-inline-block mx-auto w-75 bg-light">
+                    </div>
+                </div>
+
+                <div class="signedin d-none">
+                    <!-- <div class="row">
+                                <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                                    <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                                    <p class="m-0 text-left">Ευάγγελος Κ.</p>
+                                </a>
+                                <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                                    <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                                    <p class="m-0 text-left">Τα κουπόνια μου</p>
+                                </a>
+                                <a class=" btn text-light col-12  d-flex align-items-center" href=#>
+                                    <div class="mr-2 text-right"><i class="fa fa-facebook-square"></i></div>
+                                    <p class="m-0 text-left">Αποσύνδεση</p>
+                                </a>
+                            </div> -->
+
+
+
+                </div>
+            </div>
+
+
+            <div class="row navbar-search align-items-end p-1">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <form action=""
+                        class="shadow-none d-flex align-items-center flex-wrap justify-content-center w-100">
+                        <div class="col-6  pl-0">
+                            <div class="my-dropdown w-100 p-1">
+                                <div class="select mx-1 border-0 p-1">
+                                    <span>Επιλέξτε</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="male">Male</li>
+                                    <li id="female">Female</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 pr-0">
+                            <div class="my-dropdown w-100 p-1">
+                                <div class="select mx-1 border-0 p-1">
+                                    <span>Επιλέξτε</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="male">Male</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                    <li id="female">Female</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="submit" class="col-10 btn btn-light btn-sm mt-2 col-12">
+                            <div
+                                class="iconcontainer position-relative d-flex align-items-center w-100 justify-content-center">
+                                <img class="mr-2 img-fluid" src="images/icons/search.png" alt="">
+                                <p class="m-0 text-left text-dark">Search</p>
+                            </div>
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+    </nav>
+
+    <!-- Modals -->
+
+    <!-- Sign up Modal -->
+
+    <!-- Step 1 -->
+    <div class="modal fade p-0" id="signUpModaStep1" tabindex="-1" role="dialog" aria-labelledby="signUpModaStep1Title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModaStep1Title">Εγγραφή νέου χρήστη</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="">
+                                    Συμπληρώστε το μοναδικό κωδικό
+                                    που
+                                    βρήκατε στο έντυπο τεύχος του PROMOBOOK
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12">
+                                    <label for="activationCode" class="col-form-label">Κωδικός:</label>
+                                    <input type="text" class="form-control " id="activationCode">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark" data-toggle="modal"
+                            data-target="#signUpModalStep2">Επόμενο</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="modal fade p-0" id="signUpModalStep2" tabindex="-1" role="dialog"
+        aria-labelledby="signUpModalStep2Title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalStep2Title">Εγγραφή νέου χρήστη</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="" class="needs-validation">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="">
+                                    Ο κωδικός σας αναγνωρίστηκε με επιτυχία!
+                                </p>
+                                <p class="">
+                                    Συμπληρώστε παρακάτω τα προσωπικά σας στοιχεία για να δημιουργήσετε το λογαριασμό
+                                    σας.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-12 p-1">
+                                    <label for="fullnameinput" class="col-form-label">Ονοματεπώνυμο: *</label>
+                                    <input type="text" class="form-control" id="fullnameinput" required>
+                                </div>
+
+                                <div class="form-group col-6 p-1">
+                                    <label for="emailinput" class="col-form-label">Email: *</label>
+                                    <input type="email" class="form-control" id="emailinput"
+                                        placeholder="name@example.com" required>
+                                </div>
+                                <div class="form-group col-6 p-1">
+                                    <label for="telinput" class="col-form-label">Κινητό τηλέφωνο: *</label>
+                                    <input type="tel" pattern="[0-9]{10}" class="form-control" id="telinput"
+                                        placeholder="69 xxx xxx xx" required>
+                                    <!-- <small>Ο αριθμός πρέπει να ακολουθεί το μοτίβο 69 χχχ χχχ χχ</small> -->
+                                    <!-- <div class="valid-feedback">
+                                        Looks good!
+                                    </div> -->
+                                </div>
+
+                                <div class="form-group col-6 p-1">
+                                    <label for="passwordinput" class="col-form-label">Κωδικός: *</label>
+                                    <input type="password" class="form-control" id="passwordinput"
+                                        placeholder="Πληκτρολογήστε τον κωδικό σας" required>
+                                </div>
+                                <div class="form-group col-6 p-1">
+                                    <label for="passwordinput2" class="col-form-label">Επανάληψη κωδικού: *</label>
+                                    <input type="password" class="form-control" id="passwordinput2"
+                                        placeholder="Πληκτρολογήστε πάλι τον κωδικό σας" required>
+                                </div>
+
+                                <div class="form-group col-6 p-1">
+                                    <label for="genderFormGroup" class="col-form-label">Φύλο:</label>
+                                    <div id="genderFormGroup">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genderRadio1"
+                                                value="option1">
+                                            <label class="form-check-label" for="genderRadio1">Άνδρας</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="gender" id="genderRadio2"
+                                                value="option2">
+                                            <label class="form-check-label" for="genderRadio2">Γυναίκα</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6 p-1">
+                                    <label for="dateinput" class="col-form-label">Ημ. Γέννησης:</label>
+                                    <!-- <input type="text" class="form-control" id="dateinput"> -->
+                                    <input type="date" class="form-control" id="dateinput" value="1980-01-01">
+                                </div>
+
+                                <!-- <button type="submit" class="btn btn-dark" data-toggle="" data-target="">Επόμενο</button> -->
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark" data-toggle="" data-target="">Επόμενο</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket purchase modal-->
+    <div class="modal fade p-0" id="ticketPurchaseModal" tabindex="-1" role="dialog" aria-labelledby="ticketPurchaseModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ticketPurchaseModalTitle">Αγορά κουπονιού</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="">
+                                    Η προσφορά προστέθηκε στα κουπόνια σας!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-dark" data-toggle="modal"
+                            data-target="#ticketPurchaseModal">Κλείσιμο</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-submenu" class="container-fluid categories-accordion-container d-md-none">
+        <div class="row d-flex align-items-center py-2">
+            <div id="categoriesAccordion" class="col-12">
+
+                <div id="categoriesAccordionButton" class="btn d-flex justify-content-center pointer-cursor text-light"
+                    href=# data-toggle="collapse" data-target="#accordionDropdownMenuContainer" aria-expanded="true"
+                    aria-controls="accordionDropdownMenuContainer">
+                    <div
+                        class="iconcontainer position-relative d-flex align-items-center col-12 p-0 justify-content-end">
+                        <h6 class="col-10 m-0 text-center">ΚΑΤΗΓΟΡΙΑ</h6>
+                        <div class="col-1 ml-2"><i class="fa fa-chevron-right"></i></div>
+                    </div>
+                </div>
+
+                <div id="accordionDropdownMenuContainer" class="custom-scrollbar  mt-3 categories-accordion-dropdown-menu-container
+                     collapse" aria-labelledby="categoriesAccordionButton" data-parent="#categoriesAccordion">
+                    <ul id=""
+                        class="categories-accordion-dropdown-menu p-0 text-dark col-12 d-flex flex-wrap flex-row justify-content-around"
+                        aria-labelledby="">
+
+                        <div class="col-5 col-sm-4 m-2 p-0">
+                            <a id="submenuheading1"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu1" aria-expanded="true"
+                                aria-controls="submenu1">
+                                <div
+                                    class="iconcontainer position-relative  d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6" src="images/icons/shopping-bag (2).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΚΑΘΗΜΕΡΙΝΑ</p>
+                                </div>
+
+                                <ul id="submenu1" class="list-group btn-group btn-group-toggle collapse"
+                                    aria-labelledby="submenuheading1" data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+
+                        <div class="col-5 col-sm-4 m-2 p-0">
+                            <a id="submenuheading2"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu2" aria-expanded="true"
+                                aria-controls="submenu2">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/house (5).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΣΠΙΤΙ-ΓΡΑΦΕΙΟ</p>
+                                </div>
+
+                                <ul id="submenu2" class="list-group collapse" aria-labelledby="submenuheading2"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+
+                        <div class="col-5 col-sm-4 m-2 p-0">
+                            <a id="submenuheading3"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu3" aria-expanded="true"
+                                aria-controls="submenu3">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/makeup (1).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΓΥΝΑΙΚΑ</p>
+                                </div>
+
+                                <ul id="submenu3" class="list-group collapse" aria-labelledby="submenuheading3"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-5 col-sm-4 m-2 p-0">
+
+                            <a id="submenuheading4"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu4" aria-expanded="true"
+                                aria-controls="submenu4">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/kids (2).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΠΑΙΔΙ</p>
+                                </div>
+
+                                <ul id="submenu4" class="list-group collapse" aria-labelledby="submenuheading4"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-5 col-sm-4 m-2 p-0">
+
+                            <a id="submenuheading5"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu5" aria-expanded="true"
+                                aria-controls="submenu5">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/car (1).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΑΥΤΟΚΙΝΗΤΟ-ΜΗΧΑΝΗ</p>
+                                </div>
+
+                                <ul id="submenu5" class="list-group collapse" aria-labelledby="submenuheading5"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-5 col-sm-4 m-2 p-0">
+
+                            <a id="submenuheading6"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu6" aria-expanded="true"
+                                aria-controls="submenu6">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/smartwatch (1).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΥΓΕΙΑ & ΑΘΛΗΣΗ</p>
+                                </div>
+
+                                <ul id="submenu6" class="list-group collapse" aria-labelledby="submenuheading6"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-5 col-sm-4 m-2 p-0">
+
+                            <a id="submenuheading7"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu7" aria-expanded="true"
+                                aria-controls="submenu7">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/theater (1).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΨΥΧΑΓΩΓΙΑ</p>
+                                </div>
+
+                                <ul id="submenu7" class="list-group collapse" aria-labelledby="submenuheading7"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="col-5 col-sm-4 m-2 p-0">
+
+                            <a id="submenuheading8"
+                                class="dropdown-item categories-dropdown-item d-flex align-items-center col-12" href="#"
+                                data-toggle="collapse" data-target="#submenu8" aria-expanded="true"
+                                aria-controls="submenu8">
+                                <div
+                                    class="iconcontainer position-relative d-flex align-items-center  col-12 flex-wrap justify-content-center">
+                                    <img class="col-8 col-sm-6 img-fluid" src="images/icons/veterinary (1).png" alt="">
+                                    <p class="col-12 m-0 text-center text-dark">ΚΑΤΟΙΚΙΔΙΑ</p>
+                                </div>
+
+                                <ul id="submenu8" class="list-group collapse" aria-labelledby="submenuheading8"
+                                    data-parent="#accordionDropdownMenuContainer">
+                                    <a class="list-group-item-action list-group-item active" href="#">Όλα</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Supermarket</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Κρεοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Ιχθυοπωλεία</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Fast food</a>
+                                    <a class="list-group-item-action list-group-item" href="#">Karate</a>
+                                </ul>
+                            </a>
+                        </div>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="web-submenu" class="container-fluid d-none d-md-block">
+        <div class="row ">
+
+            <div id="web-submenu-container" class="col-12 p-0">
+
+
+                <div class="rows-containers d-flex flex-wrap">
+
+                    <div id="sixTabRow1" class="six-tab-container w-100 d-flex order1 position-relative">
+                        <ul class="nav nav-tabs d-flex flex-nowrap mx-2 absolute-top" id="myTab" role="tablist">
+
+
+                            <li class="nav-item">
+                                <a class="nav-link active d-flex align-items p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel1" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/shopping-bag (2).png"
+                                            alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΚΑΘΗΜΕΡΙΝΑ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#pane2" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/house (5).png" alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΣΠΙΤΙ-ΓΡΑΦΕΙΟ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel3" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/makeup (1).png" alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΓΥΝΑΙΚΑ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel4" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/kids (2).png" alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΠΑΙΔΙ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel5" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/car (1).png" alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΑΥΤΟΚΙΝΗΤΟ-ΜΗΧΑΝΗ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel6" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/smartwatch (1).png"
+                                            alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΥΓΕΙΑ & ΑΘΛΗΣΗ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel7" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/theater (1).png" alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΨΥΧΑΓΩΓΙΑ</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center p-0" id="home-tab" data-toggle="tab"
+                                    href="#panel8" role="tab" aria-controls="home" aria-selected="true">
+                                    <div
+                                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center p-md-0 py-lg-2">
+                                        <img class="col-2 p-0 mb-1 d-md-none" src="images/icons/veterinary (1).png"
+                                            alt="">
+                                        <p class="col-10 p-md-1 m-0 text-center text-light">ΚΑΤΟΙΚΙΔΙΑ</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane show active" id="panel1" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel2" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel3" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel4" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel5" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel6" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel7" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Karate</a>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="panel8" role="tabpanel" aria-labelledby="contact-tab">
+                        <ul class="list-group d-flex flex-row flex-wrap p-2">
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Όλα</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Supermarket</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Κρεοπωλεία</a>
+                            <a class="w-auto list-group-item list-group-item-action active" href="#">Fast-food</a>
+                            <a class="w-auto list-group-item list-group-item-action" href="#">Karate</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-0 col-12 col-lg-10 col-xl-9 justify-content-center">
+
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="merchant-detail col-12 col-md-7 d-flex justify-content-between">
+                    <div class="merchant-name col-6 p-0">
+                        <h1>Starbucks Coffee</h1>
+                        <h2>2η Γραμμή</h2>
+                    </div>
+
+                    <div class="iconcontainer col-6 position-relative d-flex justify-content-center align-items-center">
+                        <a class="d-flex justify-content-end " href="#">
+                            <img class="col-8 col-sm-5 img-fluid" src="images/logo/dummylogo.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <!--                 
+                <div class="logo" style="background-image: url('images/logo/dummylogo.jpg');">
+                </div> -->
+                </div>
+            </div>
+
+            <div class="row offer-rating">
+                <div class="rating-display col-12 d-flex justify-content-start my-4"></div>
+            </div>
+        </div>
+
+        <div class="dynamic-container d-flex flex-column">
+
+            <div class="container-fluid position-relative">
+
+                <!-- The offer carousel -->
+                <div class="row m-0">
+                    <div
+                        class="mainCarouselContainer offer-details-carousel d-flex position-relative m-0 p-0 col-12 col-md-7">
+
+                        <!-- The carousel -->
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <div
+                                class="head-icons-container d-flex w-100 h-100 justify-content-end align-items-start position-absolute">
+                                <div
+                                    class="head-icon expires-soon bg-light mx-1 p-1 d-flex justify-content-center align-items-center shadow-sm">
+                                    <i class="fa fa-hourglass"></i></div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="hero-image" style="background-image: url('images/1.jpg');"></div>
+                                    <!-- <img src="images/1.jpg" class="" alt="..."> -->
+                                    <!-- <div class="carousel-caption ">
+                                <h3>First slide label</h3>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </div> -->
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="hero-image" style="background-image: url('images/2.jpg');"></div>
+                                    <!-- <img src="images/2.jpg" class="" alt="..."> -->
+                                    <!-- <div class="carousel-caption ">
+                                <h3>Second slide label</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div> -->
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="hero-image" style="background-image: url('images/3.jpg');"></div>
+                                    <!-- <img src="images/3.jpg" class="" alt="..."> -->
+                                    <!-- <div class="carousel-caption ">
+                                <h3>Third slide label</h3>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </div> -->
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev d-flex d-md-flex w-25 h-100 justify-content-start"
+                                href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <div
+                                    class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
+                                    <img class="mr-2 img-fluid" src="images/icons/left-arrow-white.png" alt="">
+                                </div>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next d-flex d-md-flex w-25 h-100 justify-content-end"
+                                href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <div
+                                    class="position-relative d-flex align-items-center w-25 h-100 flex-wrap justify-content-center">
+                                    <img class="mr-2 img-fluid" src="images/icons/right-arrow-white.png" alt="">
+                                </div>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container-fluid countdown-custom">
+                <!-- The offer countdown -->
+                <div class="row stickyrow">
+                    <div class="countdown-container col-12 col-md-5">
+
+                        <div class="countdown-container-borders p-md-3 m-md-2">
+
+
+                            <div class="col-12 offer-countdown-info mt-5 my-md-0 p-0">
+                                <p class="offer-countdown-text m-0">
+                                    Έκπτωση 25% για αγορές αξίας έως και 200 &euro;
+                                </p>
+                            </div>
+
+                            <div class="col-12 p-0 offer-countdown-container">
+
+                                <p class=" my-2">
+                                    Η προσφορά λήγει σε:
+                                </p>
+
+                                <div id="countdown-elements-container"
+                                    class="col-12 p-0 my-5  text-light text-center d-flex flex-wrap justify-content-center">
+
+                                    <div class="weeks-days-container d-flex flex-row">
+                                        <div id="weeks" class="countdown-element p-2 m-2 rounded">
+                                            <div id="weeks-value" class="rounded p-2  m-2"></div>
+                                            <span class="my-4">ΕΒΔ.</span>
+                                        </div>
+                                        <div id="days" class="countdown-element p-2 m-2 rounded">
+                                            <div id="days-value" class="rounded p-2 m-2"></div>
+                                            <span class="my-4">ΗΜ.</span>
+                                        </div>
+                                    </div>
+                                    <div class="minutes-hours-seconds-container d-flex flex-row">
+                                        <div id="hours" class="countdown-element p-2 m-2 rounded">
+                                            <div id="hours-value" class="rounded p-2 m-2"></div>
+                                            <span class="my-4">ΩΡΕΣ</span>
+                                        </div>
+                                        <div id="minutes" class="countdown-element p-2 m-2 rounded">
+                                            <div id="minutes-value" class="rounded p-2 m-2"></div>
+                                            <span class="my-4">ΛΕΠΤΑ</span>
+                                        </div>
+                                        <div id="seconds" class="countdown-element p-2 m-2 rounded">
+                                            <div id="seconds-value" class="rounded p-2 m-2"></div>
+                                            <span class="my-4">ΔΕΥΤ.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-12 buy-button justify-content-center p-2 d-flex">
+                                <a class="btn btn-lg btn-secondary text-light col-5 col-sm-4 col-md-8" data-toggle="modal"
+                                data-target="#ticketPurchaseModal">
+                                    Αγορά
+                                </a>
+                            </div>
+
+                            <div class="col-12 share-button justify-content-center p-2 d-flex">
+                                <a
+                                    class="btn btn-lg btn-secondary text-light d-flex justify-content-around col-5 col-sm-4 col-md-8">
+                                    Μοιράσου το <span
+                                        class="badge badge-light p-1 d-flex align-items-center position-absolute">9</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <div class="row d-flex flex-column">
+
+                    <div class="offer-info col-12 col-md-7 my-3">
+                        <h2 class="text-secondary my-2">Starbucks Coffee</h2>
+                        <p class="offer-info-description my-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+
+                    <div class="offer-terms col-12 col-md-7 my-3">
+                        <h2 class="text-secondary my-2">Terms</h2>
+                        <p class="offer-info-description my-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse
+                            cillum dolore eu fugiat nulla pariatur.
+                        </p>
+
+                    </div>
+
+                    <div class="offer-map col-12 col-md-7 my-3">
+                        <h2 class="text-secondary my-2">Χάρτης</h2>
+                        <div class="map-container col-12 p-0">
+
+                        </div>
+                    </div>
+
+                    <div class="offer-share col-12 col-md-7">
+                        <h2 class="text-secondary my-2">Μοιράσου το:</h2>
+
+                        <div class="offer-share-icons-container d-flex justify-content-start">
+
+                            <a class="offer-share-icon col-2 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                    <img class="mr-2 img-fluid w-100" src="images/icons/facebook-gold.png"
+                                        alt="Facebook logo">
+                                </div>
+                            </a>
+                            <a class="offer-share-icon  col-2 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                    <img class="mr-2 img-fluid w-100" src="images/icons/twitter-sign-gold.png"
+                                        alt="Twitter logo">
+                                </div>
+                            </a>
+                            <a class="offer-share-icon col-2 btn d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative col-6 d-flex align-items-center justify-content-between p-0">
+                                    <img class="mr-2 img-fluid w-100" src="images/icons/instagram-gold.png"
+                                        alt="Instagram logo">
+                                </div>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row offer-reviews-container">
+
+                    <div id="offerReviewsAccordion" class=" col-12 col-md-7 my-3">
+
+                        <div id="offerReviewsAccordionButton"
+                            class="btn d-flex justify-content-center pointer-cursor text-dark p-0"
+                            data-toggle="collapse" data-target="#offerReviewsAccordionDropdown" aria-expanded="true"
+                            aria-controls="offerReviewsAccordionDropdown">
+                            <div class="position-relative d-flex align-items-center col-12 p-0 justify-content-start">
+                                <h2 class="m-0 my-2 p-0 text-secondary">Αξιολογήσεις</h2>
+                                <div class="offer-rating">
+                                    <div class="rating-display col-12 d-flex justify-content-start "></div>
+                                </div>
+                                <div
+                                    class="badge badge-secondary text-light p-1 d-flex align-items-center justify-content-center">
+                                    <span>130</span>
+                                </div>
+                                <div class="iconcontainer col-1 ml-2 text-dark"><i
+                                        class="fa fa-chevron-right text-dark"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="offerReviewsAccordionDropdownMenuContainer"
+                            class="offers-accordion-dropdown-menu text-dark my-3 col-12  p-0 d-flex flex-wrap flex-row justify-content-around">
+
+                            <div id="offerReviewsAccordionDropdown" class="collapse col-12"
+                                aria-labelledby="offerReviewsAccordionButton" data-parent="#offerReviewsAccordion">
+
+
+                                <div class="reviews-display col-12 p-0 text-gray600">
+                                    <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                        <div class="offer-review-description col-12 p-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="offer-reviewer-rating offer-rating">
+                                            <div class="rating-display col-12 p-0 d-flex justify-content-start my-3">
+                                            </div>
+                                        </div>
+                                        <div class="offer-review-reviewer col-6 my-3 p-0"><em>Evangelos</em></div>
+                                        <div class="offer-review-date col-6 my-3 p-0"><em>24 January 2019</em></div>
+                                    </div>
+                                    <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                        <div class="offer-review-description col-12 p-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="offer-reviewer-rating offer-rating">
+                                            <div class="rating-display col-12 p-0 d-flex justify-content-start my-3">
+                                            </div>
+                                        </div>
+                                        <div class="offer-review-reviewer col-6 my-3 p-0"><em>Stefania</em></div>
+                                        <div class="offer-review-date col-6 my-3 p-0"><em>16 January 2019</em></div>
+                                    </div>
+                                    <div class="offer-review-item col-12 p-0 my-2 border-bottom border-promo-gray">
+                                        <div class="offer-review-description col-12 p-0">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                            nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </div>
+                                        <div class="offer-reviewer-rating offer-rating">
+                                            <div class="rating-display col-12 p-0 d-flex justify-content-start my-3">
+                                            </div>
+                                        </div>
+                                        <div class="offer-review-reviewer col-6 my-3 p-0"><em>Aggelos</em></div>
+                                        <div class="offer-review-date col-6 my-3 p-0"><em>30 January 2019</em></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div id="submitReviewAccordion" class="col-12 col-md-7">
+
+                        <div id="submitReviewAccordionButton"
+                            class="btn d-flex justify-content-center pointer-cursor text-dark p-0"
+                            data-toggle="collapse" data-target="#submitReviewAccordionDropdown" aria-expanded="true"
+                            aria-controls="submitReviewAccordionDropdown">
+                            <a class="btn btn-dark text-light">
+                                Γράψτε μια Αξιολόγηση
+                            </a>
+                        </div>
+
+
+                        <div id="submitReviewAccordionDropdownMenuContainer"
+                            class="submit-review-accordion-dropdown-menu text-dark my-5 col-12 p-0 d-flex flex-wrap flex-row justify-content-around">
+
+                            <div id="submitReviewAccordionDropdown" class="collapse col-12"
+                                aria-labelledby="submitReviewAccordionButton" data-parent="#submitReviewAccordion">
+
+
+                                <div class="submit-review-container col-12 p-0">
+                                    <form action="" class="h-auto w-auto">
+
+                                        <div class="star-rating-container">
+                                            <label for="starRatingGroup" class="my-2 col-12 p-0">Επιλέξτε αριθμό
+                                                αστεριών</label>
+
+                                            <div id="starRatingGroup" class="rating-group col-12">
+                                                <input disabled checked class="rating__input rating__input--none"
+                                                    name="rating3" id="rating3-none" value="0" type="radio">
+                                                <label aria-label="1 star" class="rating__label" for="rating3-1"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating3" id="rating3-1" value="1"
+                                                    type="radio">
+                                                <label aria-label="2 stars" class="rating__label" for="rating3-2"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating3" id="rating3-2" value="2"
+                                                    type="radio">
+                                                <label aria-label="3 stars" class="rating__label" for="rating3-3"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating3" id="rating3-3" value="3"
+                                                    type="radio">
+                                                <label aria-label="4 stars" class="rating__label" for="rating3-4"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating3" id="rating3-4" value="4"
+                                                    type="radio">
+                                                <label aria-label="5 stars" class="rating__label" for="rating3-5"><i
+                                                        class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                                <input class="rating__input" name="rating3" id="rating3-5" value="5"
+                                                    type="radio">
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="form-group h-auto w-auto p-0">
+                                            <label for="submitReviewTextarea" class="my-2">Γράψτε την αξιολόγησή
+                                                σας</label>
+                                            <textarea class="form-control my-2" id="submitReviewTextarea"
+                                                rows="3"></textarea>
+                                        </div>
+                                        <div class="d-flex justify-content-end w-100">
+                                            <button type="submit"
+                                                class="btn btn-sm btn-secondary text-light my-2">Υποβολή</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12 d-flex align-items-center">
+                <div class="col-3 p-0">
+                    <hr class="teal accent-3 w-100">
+                </div>
+                <a class="d-flex justify-content-center col-6" href="#">
+                    <img class="col-sm-5 col-xl-4 img-fluid" src="images/logo/dummylogo.jpg" alt="">
+                </a>
+                <div class="col-3 p-0">
+                    <hr class="teal accent-3 w-100">
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-left mt-5">
+            <div class="col-12 padding">
+                <h2 class="display-7">Περισσότερα Κουπόνια</h2>
+            </div>
+        </div>
+
+        <div class="row position-relative justify-content-center ">
+
+            <div
+                class="slick-controls text-secondary mx-auto position-absolute d-none d-md-flex h-100 w-100 align-items-center justify-content-between">
+                <!-- <a class="btn-floating text-secondary prev-arrow d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></a> -->
+                <a class="btn-floating text-secondary prev-arrow align-items-center justify-content-center">
+                    <div
+                        class="position-relative d-flex align-items-center w-50 h-100 flex-wrap justify-content-center">
+                        <img class="mr-2 img-fluid" src="images/icons/left-arrow-gold.png" alt="">
+                    </div>
+                </a>
+                <a class="btn-floating text-secondary next-arrow align-items-center justify-content-center">
+                    <div
+                        class="position-relative d-flex align-items-center w-50 h-100 flex-wrap justify-content-center">
+                        <img class="mr-2 img-fluid" src="images/icons/right-arrow-gold.png" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="mySlickCarousel my-4 small-coupon-carousel w-100 d-flex justify-content-center">
+
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(15).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <div
+                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            <i class="fa fa-hourglass"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration expires-soon w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σύντομα!</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σε 10 μέρες</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <div
+                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                            <i class="fa fa-hourglass"></i></div>
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration expires-soon w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σύντομα!</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(31).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σε 10 μέρες</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(3).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σε 10 μέρες</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(37).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σε 10 μέρες</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-carousel-item ">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(2).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h4 m-0 ">Τίτλος κουπονιού</p>
+                                        <p class="h5 m-0 ">και 2η γραμμη</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                            officia
+                                            deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column p-2">
+                                <div class="card-bottom-info h-50 w-100 d-flex flex-column">
+                                    <div class="rating-display w-100 h-50 d-flex justify-content-start px-2 "></div>
+                                    <div class="expiration w-100 h-50 d-flex">
+                                        <div class="expiration-icon h-100 px-2"><i class="fa fa-hourglass"></i></div>
+                                        <div class="expiration-text h-100">Λήγει σε 10 μέρες</div>
+                                    </div>
+                                </div>
+                                <div class="card-bottom-footer h-50 w-100 d-flex p-2">
+                                    <div class="price w-75 h-100 d-flex">
+                                        <div class="price-discounted border-right px-2 d-flex align-items-center">
+                                            <span>50 &euro;</span></div>
+                                        <div class="price-original px-2 d-flex align-items-center"><s>100 &euro;</s>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-bottom-descriptionlogo-container w-25 h-100 d-flex justify-content-center align-items-center">
+                                        <div class="logo border border-dark-blue rounded-circle"
+                                            style="background-image: url('images/logo/dummylogo.jpg');">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row justify-content-center pb-5">
+            <a class="btn btn-dark-blue" href="#">
+                Περισσότερα
+            </a>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="merchant-about col-12">
+                <div class="merchant-about-info-container col-12 p-0">
+                    <h1>Σχετικά με το συνεργάτη</h1>
+                    <p>Σύντομη περιγραφή</p>
+                </div>
+
+                <div class="col-12 merchant-about-button-container justify-content-center p-5 d-flex">
+                    <a class="btn btn-dark text-light">
+                        Δείτε περισσότερα
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <footer class="page-footer">
+                <div class="container-fluid text-primary">
+                    <div class="row text-center p-3">
+                        <div
+                            class="col-12 col-sm-6 col-md-3 d-flex flex-wrap justify-content-center justify-content-sm-start mb-3">
+                            <h4 class="text-dark col-12 text-sm-left">Ακολουθήστε μας</h4>
+                            <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                            <a class="footer-link-to-site btn col-8 d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                    <img class="mr-2 img-fluid w-25" src="images/icons/facebook-gold.png" alt="">
+                                    <p class="m-0 text-left text-secondary w-50">Facebook</p>
+                                </div>
+                            </a>
+                            <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                    <img class="mr-2 img-fluid w-25" src="images/icons/twitter-sign-gold.png" alt="">
+                                    <p class="m-0 text-left text-secondary w-50">Twitter</p>
+                                </div>
+                            </a>
+                            <a class="footer-link-to-site btn col-8  d-flex align-items-center justify-content-center justify-content-sm-start"
+                                href=#>
+                                <div
+                                    class="position-relative d-flex align-items-center justify-content-between col-6 col-sm-8 col-md-12 col-lg-10">
+                                    <img class="mr-2 img-fluid w-25" src="images/icons/instagram-gold.png" alt="">
+                                    <p class="m-0 text-left text-secondary w-50">Instagram</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
+                            <h4 class="text-dark col-12 text-sm-left">Σχετικά με</h4>
+                            <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                            <ul class="list-unstyled col-8 p-3">
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 1</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 2</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 3</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="col-12 col-sm-6 col-md-3 mb-3 d-flex flex-wrap justify-content-center justify-content-sm-start">
+                            <h4 class="text-dark col-12 text-sm-left">Προσφορές</h4>
+                            <!-- <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto w-100"> -->
+                            <ul class="list-unstyled col-8 p-3">
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 1</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 2</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 3</a>
+                                </li>
+                                <li class="d-flex justify-content-center justify-content-sm-start">
+                                    <a href="#!" class="text-secondary">Link 4</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 d-flex flex-wrap mb-3 download-images">
+                            <h4 class="text-dark col-12 text-left m-0">Κατεβάστε το PROMO BOOK στο κινητό σας!
+                            </h4>
+                            <div class="download-images col-12 d-flex flex-wrap mt-3 mt-md-0 p-0">
+                                <div
+                                    class=" col-12 p-0  d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <img class="img-fluid download-images-gp col-5 col-sm-6 col-md-8 col-xl-5"
+                                        src="images/logo/google-play-badge.png" alt="Get it on google play">
+                                </div>
+                                <div
+                                    class=" col-12 p-0  mt-2 d-flex align-items-center justify-content-center justify-content-sm-start">
+                                    <img class="img-fluid download-images-appst col-5 col-sm-6 col-md-8 col-xl-5"
+                                        src="images/logo/Download_on_the_App_Store_Badge.png"
+                                        alt="Download on the app store">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center border-top p-2 m-0 align-items-center">
+                        <div class="col-md-3 d-none d-md-block h-100 d-flex align-items-center">
+                        </div>
+                        <!-- <h5 class="footer-copyrigh">&copy; 2020 Promobook SA</h5> -->
+                        <div class="col-md-6 col-12 h-100 text-center">
+                            <span class="footer-copyright text-center text-dark ">©
+                                2019 Copyright:Promobook SA</span>
+                        </div>
+                        <div class="col-md-3 col-6 h-100 d-flex justify-content-center align-items-center">
+                            <div class="logo-container w-100 h-50 d-flex justify-content-center justify-content-md-end">
+                                <img src="images/logo/logoblue2.png" class="col-6 col-sm-4 col-md-6 col-lg-4 img-fluid">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+    <script src="js/offer-details.js "></script>
+    <script src="js/app.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM "
+        crossorigin="anonymous "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        type="text/javascript"></script>
+
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</body>
+
+</html>

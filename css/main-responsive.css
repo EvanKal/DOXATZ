@@ -7,40 +7,16 @@
 
 @media (min-width: 576px) { 
 
-    html {
-        font-size: calc(0.4em + 1vw);
-    }
-
-    
-    nav #navbarResponsive {
-        width: 50%;
-        left: -50%;
-    }
-
-    .navbar-toggler-slidein {
-        transform: translateX(700%);
-    }
-
-    nav.navbar .dropdown .messages-container {
-        height: 250px!important;
-        width: 250px !important;
-    }
-    
-    nav.navbar .dropdown .coupons-container {
-        height: 300px!important;
-        width: 300px !important;
-    }
-
     /* .main-search form div:first-child {
         border-bottom: 0!important;
         border-right: 1px solid #dee2e6!important;
     } */
 
     .mySlickCarousel.large-coupon-carousel .card {
-        width: 400px;
-    min-width: 400px;
-    height: 400px;
-    min-height: 400px;
+        width: 400px !important;
+    min-width: 400px !important;
+    height: 400px !important;
+    min-height: 400px !important;
     }
 
     .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
@@ -76,40 +52,8 @@
 
  }
 
- 
-@media (min-width: 680px) { 
-    /* .mainCarouselContainer img {
-        width: 100% !important;
-        height: auto !important;
-    } */
-
-
- }
-
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-html {
-        font-size: calc(0.3em + 1vw);
-}
-
-nav #navbarResponsive {
-        width: 30%;
-        left: -30%;
-}
-
-nav.navbar .dropdown .messages-container {
-    height: 300px!important;
-    width: 300px !important;
-}
-
-nav.navbar .dropdown .coupons-container {
-    height: 350px!important;
-    width: 350px !important;
-}
-
-.navbar-toggler-slidein {
-    transform: translateX(500%);
-}
 
 .main-search form > div:first-of-type {
     border-bottom: 0!important;
@@ -124,7 +68,7 @@ nav.navbar .dropdown .coupons-container {
     /* Carousel */
 
 .mainCarouselContainer {
-    height: 70vh;
+    height: 30rem;
     width: 100vw;
     overflow: hidden;
 }
@@ -155,24 +99,20 @@ nav.navbar .dropdown .coupons-container {
     transform: translateY(-50%);
 }
 
-#offerscontainer {
-    height: 20vh;
-}
-
 #offerscontainer > div {
 transform: translateY(-50%);
 }
 
 .main-search form {
     position: relative!important;
-    top: -6vh !important;
+    top: -3rem !important;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
-    height: 12vh;
+    height: 6rem;
     width: 700px;
 }
 
-.form-group {
+.main-search .form-group {
     height: 100%;
     margin: 0;
     width: 35%;
@@ -180,7 +120,7 @@ transform: translateY(-50%);
     margin-bottom: 0 !important;
 }
 
-.form-group * {
+.main-search .form-group * {
     margin: 0;
 }
 
@@ -231,60 +171,21 @@ transform: translateY(-50%);
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    html {
-        font-size: calc(0.25em + 1vw) !important;
-    }
-
-    .navbar-toggler-slidein {
-        transform: translateX(600%);
-    }
-
-    nav.navbar .dropdown .messages-container {
-        height: 350px!important;
-        width: 350px !important;
-    }
-    
-    nav.navbar .dropdown .coupons-container {
-        height: 350px!important;
-        width: 400px !important;
-    }
 
     .mainCarouselContainer img {
         width: 100% !important;
         height: auto !important;
     }
 
-    nav #navbarResponsive {
-        width: 30%;
-        left: -30%;
-    }
-
     .mySlickCarousel.icon-carousel .icon-item .icon-text  {
-        font-size: 0.55em;
+        font-size: 0.5em!important;
         font-family: 'Roboto Slab', serif !important;
-    }
-
-    footer .logo-container img {
-        width: 35% !important;
     }
 
 }
 
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-    html {
-        font-size: calc(0.1em + 1vw) !important;
-    }
-
-    nav #navbarResponsive {
-        width: 25%;
-        left: -25%;
-    }
-
-    .navbar-toggler-slidein {
-        /* left: 20% */
-        transform: translateX(650%);
-    }
 
     .download-images .download-images-gp{
         width: 55%;
@@ -293,8 +194,5 @@ transform: translateY(-50%);
      .download-images .download-images-appst{
         width: 50%;
     }
-
-    footer .logo-container img {
-        width: 25% !important;
-    }
  }
+ 
