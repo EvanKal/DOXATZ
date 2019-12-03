@@ -7,8 +7,9 @@ window.addEventListener('DOMContentLoaded', () => {
     fillStarsInOfferRating(3);
     // couponBuyButtonAddListener();
     // couponDropdownToggle();
-
+    // initiateDatepicker();
     firstExample();
+    animateCouponsBadgeInTooltip();
 });
 
 
@@ -145,6 +146,11 @@ function fillStarsInOfferRating(rating) {
     });
 }
 
+
+// function initiateDatepicker() {
+//     $("#dateinput").datepicker();
+// }
+
 // function couponBuyButtonAddListener() {
 //     document.querySelector(".buy-button a.btn").addEventListener("click", () => {
 //         $("#couponsDropdownMenu .dropdown-menu").addClass("show");
@@ -215,4 +221,16 @@ function firstExample() {
             }
         }, 1000);
 
+}
+
+
+function animateCouponsBadgeInTooltip() {
+
+    $("#ticketPurchaseModal").on("hidden.bs.modal", function () {
+        $("#couponsDropdownMenuButton .coupons .badge").addClass("animatebadge");
+    });
+
+    document.querySelector("#couponsDropdownMenuButton .coupons .badge").addEventListener('animationend', (event) => {
+        event.target.classList.remove("animatebadge");
+      });
 }

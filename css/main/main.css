@@ -63,7 +63,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #020f24;
+  color: #041a3c;
   text-align: left;
   background-color: white; }
 
@@ -1795,7 +1795,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #020f24;
+  color: #041a3c;
   text-align: center;
   vertical-align: middle;
   user-select: none;
@@ -1810,7 +1810,7 @@ textarea.form-control {
     .btn {
       transition: none; } }
   .btn:hover {
-    color: #020f24;
+    color: #041a3c;
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
@@ -7705,7 +7705,7 @@ a.text-gray600:hover, a.text-gray600:focus {
   color: #494f54 !important; }
 
 .text-body {
-  color: #020f24 !important; }
+  color: #041a3c !important; }
 
 .text-muted {
   color: #6c757d !important; }
@@ -7972,23 +7972,23 @@ a {
     background-color: #5bbce4;
     color: white; }
 
-form {
+.navbar-search form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 1em;
   height: 8rem;
   width: 100%; }
 
-.form-group {
+.navbar-search .form-group {
   height: 100%;
   margin: 0;
   width: 35%;
   padding-right: 1.5em;
   margin-bottom: 0 !important; }
 
-.form-control {
+.navbar-search .form-control {
   font-size: 1.1rem !important; }
 
-.form-group * {
+.navbar-search .form-group * {
   margin: 0; }
 
 /* burger menu icon */
@@ -8066,6 +8066,22 @@ nav.navbar .iconcontainer .badge {
   font-size: 0.6rem;
   top: 30%;
   left: 60%; }
+
+nav.navbar #couponsDropdownMenuButton {
+  overflow: visible; }
+
+@keyframes mymove {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(2, 2); }
+  100% {
+    transform: scale(1, 1); } }
+
+.animatebadge {
+  animation: mymove 1s;
+  animation-delay: 0.5s;
+  z-index: 100; }
 
 .dropdown-menu {
   right: 0% !important;
@@ -8213,6 +8229,34 @@ footer a i {
 footer .footer-copyright {
   font-size: 0.8rem; }
 
+.modal form {
+  box-shadow: none; }
+
+.modal .form-control:focus {
+  border-color: #e7e3db;
+  box-shadow: 0 0 0 0.2rem #e7e3db; }
+
+.modal form label {
+  color: #a59678;
+  font-weight: 400; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: pink;
+  font-size: 0.7rem; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: pink; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: pink; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: pink; }
+
 .my-dropdown {
   color: #062B64; }
 
@@ -8335,6 +8379,10 @@ nav.navbar .my-dropdown.active .select > i {
   height: 1em;
   margin-top: 0.2em;
   background: white; }
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none; }
 
 /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
 .star-rating-container .rating-group {
@@ -8564,21 +8612,24 @@ nav.navbar .my-dropdown.active .select > i {
 
 form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 1em; }
+
+.main-search form {
   padding: 1em;
   height: 8rem;
   /* width: 100%; */ }
 
-.form-group {
+.main-search .form-group {
   height: 100%;
   margin: 0;
   width: 35%;
   padding-right: 1.5em;
   margin-bottom: 0 !important; }
 
-.form-control {
+.main-search .form-control {
   font-size: 1.1rem !important; }
 
-.form-group * {
+.main-search .form-group * {
   margin: 0; }
 
 .main-search form button {

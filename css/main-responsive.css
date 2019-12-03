@@ -112,7 +112,7 @@ transform: translateY(-50%);
     width: 700px;
 }
 
-.form-group {
+.main-search .form-group {
     height: 100%;
     margin: 0;
     width: 35%;
@@ -120,7 +120,7 @@ transform: translateY(-50%);
     margin-bottom: 0 !important;
 }
 
-.form-group * {
+.main-search .form-group * {
     margin: 0;
 }
 

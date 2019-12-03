@@ -28,7 +28,7 @@ $theme-colors: (
 
 $body-bg: theme-color(light);
 // $body-color: theme-color-level(promo-gray, 8);
-$body-color: theme-color-level(dark, 8);
+$body-color: theme-color-level(dark, 5);
 
 
 
@@ -238,14 +238,14 @@ a {
 
 //Form css for the form in the navbar 
 
-form {
+.navbar-search form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     padding: 1em;
     height: 8rem;
     width: 100%;
 }
 
-.form-group {
+.navbar-search .form-group {
     height: 100%;
     margin: 0;
     width: 35%;
@@ -253,11 +253,11 @@ form {
     margin-bottom: 0 !important;
 }
 
-.form-control {
+.navbar-search .form-control {
 font-size: 1.1rem !important;
 }
 
-.form-group * {
+.navbar-search .form-group * {
     margin: 0;
 }
 
@@ -362,6 +362,30 @@ nav.navbar .iconcontainer .badge{
     top: 30%;
     left: 60%;
 }
+
+nav.navbar #couponsDropdownMenuButton {
+    overflow: visible;
+}
+
+@keyframes mymove {
+        0% {
+            transform: scale(1,1);
+        }
+        50% {
+            transform: scale(2,2);
+        }
+        100% {
+            transform: scale(1,1);
+        }
+}
+
+
+.animatebadge {
+    animation: mymove 1s;
+    animation-delay: 0.5s;
+    z-index: 100;
+}
+
 
 .dropdown-menu {
     right: 0% !important;
@@ -571,6 +595,44 @@ footer .footer-copyright {
     font-size: 0.8rem;
 }
 
+///////////////////////////////////////////////////
+//The modals
+///////////////////////////////////////////////////
+
+.modal form {
+    box-shadow: none;
+}
+
+.modal .form-control:focus {
+    border-color: theme-color-level(secondary, -10);
+    box-shadow: 0 0 0 0.2rem theme-color-level(secondary, -10);
+
+}
+
+.modal form label {
+    color: theme-color-level(secondary, -3);
+    font-weight: 400;
+}
+
+.modal form input[type=date] {
+   
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: pink;
+    font-size: 0.7rem;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: pink;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: pink;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: pink;
+  }
+
+
 //////////////////////////////////////////////////
 //My-Dropdown (Select elements)
 /////////////////////////////////////////////////
@@ -711,6 +773,15 @@ nav.navbar .my-dropdown.active .select > i {
     height: 1em;
     margin-top: 0.2em;
     background: white;
+}
+
+////////////////////////////////////////////////////
+//Input type date
+///////////////////////////////////////////////////////
+
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+    display: none;
 }
 
 ////////////////////////////////////////////////////
@@ -1082,13 +1153,17 @@ nav.navbar .dropdown .coupons-container {
 }
 
 form {
-    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);   
+    padding: 1em;
+}
+
+.main-search form {
     padding: 1em;
     height: 8rem;
     /* width: 100%; */
 }
 
-.form-group {
+.main-search .form-group {
     height: 100%;
     margin: 0;
     width: 35%;
@@ -1096,11 +1171,11 @@ form {
     margin-bottom: 0 !important;
 }
 
-.form-control {
+.main-search .form-control {
 font-size: 1.1rem !important;
 }
 
-.form-group * {
+.main-search .form-group * {
     margin: 0;
 }
 
