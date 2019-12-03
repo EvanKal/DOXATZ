@@ -1,0 +1,12 @@
+.mainCarouselContainer.partnerCarousel .carousel-control-prev,
+.mainCarouselContainer.partnerCarousel .carousel-control-next {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  top: 76%; }
+
+.mainCarouselContainer.partnerCarousel .carousel-control-next {
+  right: 40%; }
+
+.mainCarouselContainer.partnerCarousel .carousel-control-prev {
+  left: 40%; }
