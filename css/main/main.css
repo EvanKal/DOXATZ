@@ -8207,6 +8207,40 @@ nav #navbarResponsive .navmenulink p {
 .navbar ul {
   list-style: none; }
 
+.categories-accordion-container {
+  top: 3.75rem !important;
+  z-index: 50; }
+
+.categories-accordion-container .categories-accordion-dropdown-menu > div .dropdown-item {
+  height: 10rem; }
+
+.categories-accordion-container .categories-accordion-dropdown-menu a p {
+  white-space: normal !important; }
+
+.categories-accordion-container .iconcontainer i {
+  transition: 0.5s ease-in-out; }
+
+.categories-accordion-dropdown-menu ul a:first-child {
+  display: none; }
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+  border: none !important;
+  border-radius: 0 !important; }
+
+#web-submenu-container .tab-content .list-group .list-group-item {
+  font-size: 0.9rem; }
+
+#web-submenu-container .nav-item .iconcontainer p {
+  font-size: 0.75rem; }
+
+#web-submenu-container .nav-item .nav-link {
+  height: 100%;
+  width: 7rem; }
+
+#sixTabRow1 {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
 .download-images .download-images-gp {
   width: 75%; }
 

@@ -79,11 +79,11 @@ function toggleActiveClassInListGroup() {
             event.target.classList.add("active");
 
             //Category Sub-Category handling
-            let category = event.target.parentNode.previousSibling.querySelector("p").innerHTML;
-            let subcategory = event.target.innerHTML;
-            document.querySelector(".category-container h1").innerHTML = category;
-            document.querySelector(".category-container h2").innerHTML = subcategory;
-            document.querySelector(".category-container h1.slash").classList.remove("d-none");
+            // let category = event.target.parentNode.previousSibling.querySelector("p").innerHTML;
+            // let subcategory = event.target.innerHTML;
+            // document.querySelector(".category-container h1").innerHTML = category;
+            // document.querySelector(".category-container h2").innerHTML = subcategory;
+            // document.querySelector(".category-container h1.slash").classList.remove("d-none");
         }
 
 
