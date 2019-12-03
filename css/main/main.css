@@ -8500,6 +8500,12 @@ input[type="date"]::-webkit-clear-button {
 .countdown-container-borders {
   border-color: #b8ac94; }
 
+.partner-rating .rating-display:not(.in-carousel-rating) {
+  color: #b8ac94 !important; }
+
+.partner-reviewer-rating.partner-rating .rating-display {
+  color: #a7acb1 !important; }
+
 .partners-display-container .partner-in-display .card-middle,
 .partners-display-container .partner-in-display .card-bottom {
   color: #a7acb1; }
