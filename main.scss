@@ -962,7 +962,31 @@ input[type="date"]::-webkit-clear-button {
 }
 
 
+/////////////////////////////////////////////////////////////////
+// Custom scrollbar for the mobile-menu
+////////////////////////////////////////////////////////////////
 
+.partners-display-container .partner-in-display .card-middle,
+.partners-display-container .partner-in-display .card-bottom
+{
+    color: theme-color-level(gray600, -5);
+}
+
+.partners-display-container .partner-in-display .card-middle .card-middle-headers p.h3
+{
+    color: theme-color-level(secondary, -2);
+    font-weight: 100;
+}
+
+.partners-display-container .partner-in-display .card-middle .card-middle-description
+{
+    font-size: 0.85rem;
+}
+
+.partners-display-container .partner-in-display .card-bottom-button a
+{
+    background-color: theme-color-level(secondary, -2);
+}
 
 /////////////////////////////////////////////////////////////////
 // Custom scrollbar for the mobile-menu
@@ -1085,6 +1109,19 @@ nav.navbar .dropdown .coupons-container {
     nav #navbarResponsive {
         width: 20rem;
         left: -20rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.9rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.8rem;
+    }
+
+    #web-submenu-container .tab-content .list-group .list-group-item {
+        font-size: 0.8rem;
+       
     }
 
     footer .logo-container img {
