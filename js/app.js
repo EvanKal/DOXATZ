@@ -143,7 +143,7 @@ function initializeCarousels() {
     ]
   });
 
-  $('.mySlickCarousel.small-coupon-carousel').each(function (elem) {
+  $('.mySlickCarousel.small-coupon-carousel.full-width-small-coupon-carousel').each(function (elem) {
     $(this).slick({
       infinite: true,
       prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
@@ -177,6 +177,28 @@ function initializeCarousels() {
         },
         {
           breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
+  $('.mySlickCarousel.small-coupon-carousel.partner-details-small-coupon-carousel').each(function (elem) {
+    $(this).slick({
+      infinite: true,
+      prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(this).siblings(".slick-controls"),
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1

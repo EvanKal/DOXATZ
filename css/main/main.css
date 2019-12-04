@@ -8500,6 +8500,42 @@ input[type="date"]::-webkit-clear-button {
 .countdown-container-borders {
   border-color: #b8ac94; }
 
+.partner-rating .rating-display:not(.in-carousel-rating) {
+  color: #b8ac94 !important; }
+
+.partner-reviewer-rating.partner-rating .rating-display {
+  color: #a7acb1 !important; }
+
+.partners-display-container .partner-in-display .card-middle,
+.partners-display-container .partner-in-display .card-bottom {
+  color: #a7acb1; }
+
+.partners-display-container .partner-in-display .card-middle .card-middle-headers p.h3 {
+  color: #9b8b69;
+  font-weight: 100; }
+
+.partners-display-container .partner-in-display .card-middle .card-middle-description {
+  font-size: 0.85rem; }
+
+.partners-display-container .partner-in-display .card-bottom-button a {
+  background-color: #9b8b69; }
+
+.partner-contact-info .partner-contact-element p {
+  color: #a7acb1; }
+
+.reviews-nav-container .pagination .page-link {
+  color: #020f24; }
+
+.page-item.active .page-link {
+  z-index: 1;
+  background-color: #e2e3e5;
+  border-color: #e2e3e5; }
+
+.page-link:focus {
+  border-color: #e7e3db;
+  box-shadow: 0 0 0 0.2rem #e7e3db;
+  color: white; }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 
@@ -8570,6 +8606,12 @@ input[type="date"]::-webkit-clear-button {
   nav #navbarResponsive {
     width: 20rem;
     left: -20rem; }
+  #web-submenu-container .nav-item .iconcontainer p {
+    font-size: 0.9rem; }
+  #web-submenu-container .nav-item .iconcontainer p {
+    font-size: 0.8rem; }
+  #web-submenu-container .tab-content .list-group .list-group-item {
+    font-size: 0.8rem; }
   footer .logo-container img {
     width: 35% !important; } }
 
@@ -8647,6 +8689,10 @@ input[type="date"]::-webkit-clear-button {
 form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 1em; }
+
+form textarea:focus {
+  border-color: #e7e3db !important;
+  box-shadow: 0 0 0 0.2rem #e7e3db !important; }
 
 .main-search form {
   padding: 1em;

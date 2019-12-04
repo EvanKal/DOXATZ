@@ -671,10 +671,6 @@ footer .footer-copyright {
     font-weight: 400;
 }
 
-.modal form input[type=date] {
-   
-}
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: pink;
     font-size: 0.7rem;
@@ -961,8 +957,63 @@ input[type="date"]::-webkit-clear-button {
     border-color: theme-color-level(secondary, -5);
 }
 
+///////////////////////////////////////////////////////////////////////
+//Partner details
+//////////////////////////////////////////////////////
+.partner-rating .rating-display:not(.in-carousel-rating) {
+    color: theme-color-level(secondary, -5) !important;
+}
 
+.partner-reviewer-rating.partner-rating .rating-display {
+    color: theme-color-level(gray600, -5) !important;
+}
 
+/////////////////////////////////////////////////////////////////
+// Custom scrollbar for the mobile-menu
+////////////////////////////////////////////////////////////////
+
+.partners-display-container .partner-in-display .card-middle,
+.partners-display-container .partner-in-display .card-bottom
+{
+    color: theme-color-level(gray600, -5);
+}
+
+.partners-display-container .partner-in-display .card-middle .card-middle-headers p.h3
+{
+    color: theme-color-level(secondary, -2);
+    font-weight: 100;
+}
+
+.partners-display-container .partner-in-display .card-middle .card-middle-description
+{
+    font-size: 0.85rem;
+}
+
+.partners-display-container .partner-in-display .card-bottom-button a
+{
+    background-color: theme-color-level(secondary, -2);
+}
+
+.partner-contact-info .partner-contact-element p {
+    color: theme-color-level(gray600, -5);
+}
+
+.reviews-nav-container .pagination .page-link {
+    color: theme-color-level(dark, 8);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    // color: #fff;
+    background-color: theme-color-level(gray600, -10);
+    border-color: theme-color-level(gray600, -10);
+}
+
+.page-link:focus {
+    border-color: #e7e3db;
+    box-shadow: 0 0 0 0.2rem #e7e3db;
+    color: theme-color(light);
+}
 
 /////////////////////////////////////////////////////////////////
 // Custom scrollbar for the mobile-menu
@@ -1085,6 +1136,19 @@ nav.navbar .dropdown .coupons-container {
     nav #navbarResponsive {
         width: 20rem;
         left: -20rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.9rem;
+    }
+
+    #web-submenu-container .nav-item .iconcontainer p {
+        font-size: 0.8rem;
+    }
+
+    #web-submenu-container .tab-content .list-group .list-group-item {
+        font-size: 0.8rem;
+       
     }
 
     footer .logo-container img {
@@ -1212,6 +1276,11 @@ nav.navbar .dropdown .coupons-container {
 form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);   
     padding: 1em;
+}
+
+form textarea:focus {
+    border-color: #e7e3db !important;
+    box-shadow: 0 0 0 0.2rem #e7e3db !important;
 }
 
 .main-search form {

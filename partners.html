@@ -18,7 +18,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Offer Details</title>
+    <title>Partners</title>
 </head>
 
 <body>
@@ -985,13 +985,301 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
-        <div class="row">
-            <div class="merchant-detail col-12 col-md-7 d-flex justify-content-between">
-                <div class="merchant-name col-6 p-0">
-                    <h1>ΣΥΝΕΡΓΑΤΕΣ</h1>
-                </div>
+    <div class="container-fluid">
+        <div class="row my-sm-5 m-md-5 justify-content-between">
+
+            <div class="filters-toggle-button-container d-flex d-sm-none col-12 p-0 justify-content-end">
+                <button type="button" class="btn btn-outline-dark btn-sm col-3 m-5">
+                    <div class="iconcontainer position-relative align-items-center d-flex justify-content-around">
+                        <img class="col-2 m-1 p-0" src="images/icons/funnel.png" alt="">
+                        <span class="ml-2 m-0 text-left text-dark">Φίλτρα</span>
+                    </div>
+                </button>
             </div>
+
+            <div class="category-container col-md-12 col-lg-3 align-items-center d-flex justify-content-center">
+                <h1 class="text-center m-0">ΣΥΝΕΡΓΑΤΕΣ</h1>
+                <h1 class="slash mx-3 d-none d-md-none">/</h1>
+                <h2 class="text-center m-0 d-md-none"></h2>
+            </div>
+
+            <div class="filters-container custom-scrollbar col-md-12 col-lg-8 d-flex flex-wrap flex-sm-row justify-content-around justify-content-lg-end align-items-start align-items-sm-center 
+                    bg-light align-content-start">
+
+                <button type="button" class="close col-12 justify-content-start d-flex m-2 d-sm-none"
+                    aria-label="Close Filters">
+                    <span class="text-secondary" aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="d-flex align-items-center px-0 col-12 col-sm-4">
+                    <div
+                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center flex-row p-4">
+                        <img class="col-lg-1 col-2 p-0 mb-1" src="images/icons/placeholder (1).png" alt="">
+                        <div class="col-lg-11 col-10 padding justify-content-center d-flex">
+                            <div class="my-dropdown ">
+                                <div class="select mx-1 border-0 align-items-baseline justify-content-between d-flex">
+                                    <span>Όλες</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="male">Όλες</li>
+                                    <li id="female">Αθήνα</li>
+                                    <li id="female">Θεσσαλονίκη</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center px-0 col-12 col-sm-4">
+                    <div
+                        class="iconcontainer position-relative d-flex align-items-center  col-12 justify-content-center flex-row p-4">
+                        <img class="col-lg-1 col-2 p-0 mb-1" src="images/icons/network.png" alt="">
+                        <div class="col-lg-11 col-10 padding justify-content-center d-flex">
+                            <div class="my-dropdown ">
+                                <div class="select mx-1 border-0 align-items-baseline justify-content-between d-flex">
+                                    <span>Όλοι</span>
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                                <input type="hidden" name="gender">
+                                <ul class="my-dropdown-menu">
+                                    <li id="">Starbucks</li>
+                                    <li id="">Everest</li>
+                                    <li id="">Hondos Center</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center mx-5">
+
+            <main class="partners-display-container my-5 mx-2 d-flex flex-wrap justify-content-center">
+
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-in-display m-3">
+                    <div class="card mb-2 mb-2 text-dark rounded-0 border-0 shadow ">
+                        <div class="card-body p-0 w-100">
+                            <div class="card-top h-75 w-100">
+                                <div class="card-head w-100 h-50 d-flex justify-content-end"
+                                    style="background-image: url( 'https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(32).jpg'); ">
+                                    <div class="head-icons-container d-flex w-100 justify-content-end">
+                                        <!-- <div
+                                                            class="head-icon expires-soon bg-light mx-1 d-flex justify-content-center align-items-center shadow-sm">
+                                                            <i class="fa fa-hourglass"></i></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-middle h-50 w-100 p-2">
+                                    <div class="card-middle-headers h-50 ">
+                                        <p class="h5 m-0 ">Εστίαση</p>
+                                        <p class="h3 my-2 ">Starbucks</p>
+                                    </div>
+                                    <div class="card-middle-description w-100 h-50 p-2">
+                                        <p class=" ">Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-bottom h-25 w-100 d-flex flex-column justify-content-center align-items-center p-2">
+                                <div class="card-bottom-button d-flex flex-row justify-content-center p-0">
+                                    <a class="btn-sm btn-secondary text-light">
+                                        Περισσότερα
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+        <div class="row more-coupons-spinner-container d-none justify-content-center">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <div class="row more-coupons-button justify-content-center p-5 d-flex">
+            <a class="btn btn-dark text-light">
+                Περισσότερα
+            </a>
         </div>
     </div>
 

@@ -1,0 +1,26 @@
+.mainCarouselContainer.partnerCarousel .carousel-control-prev,
+.mainCarouselContainer.partnerCarousel .carousel-control-next {
+    position: absolute;
+    height: 5rem;
+    width: 5rem;
+    top: 76%;
+    z-index: 20;
+}
+
+.mainCarouselContainer.partnerCarousel .carousel-control-next {
+    right: 38%;
+}
+
+.mainCarouselContainer.partnerCarousel .carousel-control-prev {
+    left: 38%;
+}
+
+.partner-map .map-container {
+    height: 20rem;
+    background-color: wheat;
+}
+
+
+#partnerReviewsAccordionButton .iconcontainer i {
+    transition: 0.5s ease-in-out;
+}
