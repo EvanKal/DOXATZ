@@ -1,0 +1,41 @@
+.merchant-detail .logo {
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.offer-rating .rating-display {
+  font-size: 1.3rem !important;
+  font-weight: 900 !important; }
+
+.offer-map .map-container {
+  height: 20rem;
+  background-color: wheat; }
+
+#offerReviewsAccordionButton .iconcontainer i {
+  transition: 0.5s ease-in-out; }
+
+#countdown-elements-container .countdown-element {
+  width: 5rem; }
+
+.share-button .badge {
+  top: 20% !important;
+  right: 5% !important; }
+
+.countdown-container .offer-countdown-text {
+  font-size: 1.2rem; }
+
+.offer-info h2,
+.offer-terms h2,
+.offer-map h2,
+.offer-share h2,
+#offerReviewsAccordionButton h2 {
+  font-weight: 300 !important; }
+
+.mainCarouselContainer .head-icons-container {
+  z-index: 1;
+  text-shadow: none; }
+
+.mainCarouselContainer.offer-details-carousel .carousel-indicators {
+  bottom: 0 !important; }
