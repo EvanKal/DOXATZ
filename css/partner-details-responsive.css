@@ -20,6 +20,14 @@
 
  /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
+
+    .mainCarouselContainer.partnerCarousel .carousel-control-next {
+        right: 40%;
+    }
+    
+    .mainCarouselContainer.partnerCarousel .carousel-control-prev {
+        left: 40%;
+    }
  
 
 }
@@ -27,6 +35,13 @@
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-
+    .mainCarouselContainer.partnerCarousel .carousel-control-next {
+        right: 41%;
+    }
+    
+    .mainCarouselContainer.partnerCarousel .carousel-control-prev {
+        left: 41%;
+    }
+ 
 
  }

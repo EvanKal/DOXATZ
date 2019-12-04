@@ -4,14 +4,15 @@
     height: 5rem;
     width: 5rem;
     top: 76%;
+    z-index: 20;
 }
 
 .mainCarouselContainer.partnerCarousel .carousel-control-next {
-    right: 40%;
+    right: 38%;
 }
 
 .mainCarouselContainer.partnerCarousel .carousel-control-prev {
-    left: 40%;
+    left: 38%;
 }
 
 .partner-map .map-container {

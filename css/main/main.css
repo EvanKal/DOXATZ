@@ -8520,6 +8520,22 @@ input[type="date"]::-webkit-clear-button {
 .partners-display-container .partner-in-display .card-bottom-button a {
   background-color: #9b8b69; }
 
+.partner-contact-info .partner-contact-element p {
+  color: #a7acb1; }
+
+.reviews-nav-container .pagination .page-link {
+  color: #020f24; }
+
+.page-item.active .page-link {
+  z-index: 1;
+  background-color: #e2e3e5;
+  border-color: #e2e3e5; }
+
+.page-link:focus {
+  border-color: #e7e3db;
+  box-shadow: 0 0 0 0.2rem #e7e3db;
+  color: white; }
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
 
@@ -8673,6 +8689,10 @@ input[type="date"]::-webkit-clear-button {
 form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 1em; }
+
+form textarea:focus {
+  border-color: #e7e3db !important;
+  box-shadow: 0 0 0 0.2rem #e7e3db !important; }
 
 .main-search form {
   padding: 1em;

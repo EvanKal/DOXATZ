@@ -671,10 +671,6 @@ footer .footer-copyright {
     font-weight: 400;
 }
 
-.modal form input[type=date] {
-   
-}
-
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: pink;
     font-size: 0.7rem;
@@ -998,6 +994,27 @@ input[type="date"]::-webkit-clear-button {
     background-color: theme-color-level(secondary, -2);
 }
 
+.partner-contact-info .partner-contact-element p {
+    color: theme-color-level(gray600, -5);
+}
+
+.reviews-nav-container .pagination .page-link {
+    color: theme-color-level(dark, 8);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    // color: #fff;
+    background-color: theme-color-level(gray600, -10);
+    border-color: theme-color-level(gray600, -10);
+}
+
+.page-link:focus {
+    border-color: #e7e3db;
+    box-shadow: 0 0 0 0.2rem #e7e3db;
+    color: theme-color(light);
+}
+
 /////////////////////////////////////////////////////////////////
 // Custom scrollbar for the mobile-menu
 ////////////////////////////////////////////////////////////////
@@ -1259,6 +1276,11 @@ nav.navbar .dropdown .coupons-container {
 form {
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);   
     padding: 1em;
+}
+
+form textarea:focus {
+    border-color: #e7e3db !important;
+    box-shadow: 0 0 0 0.2rem #e7e3db !important;
 }
 
 .main-search form {
