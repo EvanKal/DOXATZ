@@ -2,8 +2,15 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     fillStarsInPartnerRating(3);
+    changeClassInParterSmallCouponCarousel();
 
 });
+
+window.addEventListener('resize', () => {
+    changeClassInParterSmallCouponCarousel()
+});
+
+
 
 
 function fillStarsInPartnerRating(rating) {
@@ -33,4 +40,37 @@ function fillStarsInPartnerRating(rating) {
         elem.appendChild(fragment);
 
     });
+}
+
+function changeClassInParterSmallCouponCarousel() {
+
+
+    //This method changes the class that defines the type of the small coupon carousel
+    // so that it behaves correctly when it changes from full width to smaller and vice versa
+    let carousel = document.querySelector(".partner-offers-carousel .mySlickCarousel.small-coupon-carousel");
+
+    if(window.innerWidth >= 768) {
+        carousel.classList.add("partner-details-small-coupon-carousel");
+        carousel.classList.remove("full-width-small-coupon-carousel");
+
+       try {
+        $(carousel).slick("unslick");
+       } catch (error) {
+           console.log("Carousel not initialized yet");
+       }
+        
+
+    } else {
+        carousel.classList.add("full-width-small-coupon-carousel");
+        carousel.classList.remove("partner-details-small-coupon-carousel");
+
+        try {
+            $(carousel).slick("unslick");
+           } catch (error) {
+            console.log("Carousel not initialized yet");
+           }
+    }
+
+    initializeCarousels();
+
 }
