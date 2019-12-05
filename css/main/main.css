@@ -8484,6 +8484,9 @@ input[type="date"]::-webkit-clear-button {
 .tab-content .tab-pane .list-group-item {
   background: none !important; }
 
+.coupon-in-display .card:hover .card-head:after {
+  border-bottom: 5px solid #b8ac94; }
+
 .offer-rating .rating-display {
   color: #b8ac94 !important; }
 
@@ -8506,20 +8509,6 @@ input[type="date"]::-webkit-clear-button {
 .partner-reviewer-rating.partner-rating .rating-display {
   color: #a7acb1 !important; }
 
-.partners-display-container .partner-in-display .card-middle,
-.partners-display-container .partner-in-display .card-bottom {
-  color: #a7acb1; }
-
-.partners-display-container .partner-in-display .card-middle .card-middle-headers p.h3 {
-  color: #9b8b69;
-  font-weight: 100; }
-
-.partners-display-container .partner-in-display .card-middle .card-middle-description {
-  font-size: 0.85rem; }
-
-.partners-display-container .partner-in-display .card-bottom-button a {
-  background-color: #9b8b69; }
-
 .partner-contact-info .partner-contact-element p {
   color: #a7acb1; }
 
@@ -8535,6 +8524,23 @@ input[type="date"]::-webkit-clear-button {
   border-color: #e7e3db;
   box-shadow: 0 0 0 0.2rem #e7e3db;
   color: white; }
+
+.partners-display-container .partner-in-display .card-middle,
+.partners-display-container .partner-in-display .card-bottom {
+  color: #a7acb1; }
+
+.partners-display-container .partner-in-display .card-middle .card-middle-headers p.h3 {
+  color: #9b8b69;
+  font-weight: 100; }
+
+.partners-display-container .partner-in-display .card-middle .card-middle-description {
+  font-size: 0.85rem; }
+
+.partners-display-container .partner-in-display .card-bottom-button a {
+  background-color: #9b8b69; }
+
+.partner-in-display .card:hover .card-head:after {
+  border-bottom: 5px solid #b8ac94; }
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 5px; }
@@ -8697,7 +8703,7 @@ form textarea:focus {
 .main-search form {
   padding: 1em;
   height: 8rem;
-  /* width: 100%; */ }
+  width: 100%; }
 
 .main-search .form-group {
   height: 100%;
@@ -9018,7 +9024,7 @@ form textarea:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #88754D;
+  border-bottom: 5px solid #b8ac94;
   pointer-events: none;
   top: -62%; }
 
@@ -9030,7 +9036,7 @@ form textarea:focus {
   background-repeat: no-repeat; }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom .price-discounted {
-  font-size: 1.6rem !important; }
+  font-size: 1.2rem !important; }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom .price-original {
   font-weight: 100 !important; }
@@ -9041,8 +9047,30 @@ form textarea:focus {
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .price,
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .rating-display {
-  font-size: 1.3rem !important;
-  font-weight: 900 !important; }
+  font-size: 1.2rem !important;
+  font-weight: 900 !important;
+  color: #9b8b69; }
+
+.mySlickCarousel.small-coupon-carousel .card .card-middle .rating-display {
+  color: #b8ac94; }
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle,
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-bottom {
+  color: #a7acb1; }
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h4 {
+  color: #9b8b69;
+  font-weight: 300; }
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h5 {
+  color: #9b8b69;
+  font-weight: 100; }
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-description {
+  font-size: 0.85rem; }
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-bottom-button a {
+  background-color: #9b8b69; }
 
 /* Large Coupon  */
 .mySlickCarousel.large-coupon-carousel .card {
@@ -9071,7 +9099,7 @@ form textarea:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #88754D;
+  border-bottom: 5px solid #b8ac94;
   pointer-events: none; }
 
 .mySlickCarousel.large-coupon-carousel .card .card-head .logo {
@@ -9122,6 +9150,55 @@ form textarea:focus {
   height: 100% !important;
   background-size: cover;
   background-position: center; }
+
+.partner-coupon-carousel .slick-carousel-item .card {
+  font-family: Roboto,sans-serif !important;
+  width: 20rem;
+  height: 30rem;
+  min-height: 30rem;
+  min-width: 20rem; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head {
+  background-size: 180% !important;
+  background-position: 50% !important;
+  background-repeat: no-repeat;
+  transition: background-size .3s ease-in;
+  -webkit-transition: background-size .3s ease-in; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head:before {
+  z-index: 0;
+  background: radial-gradient(ellipse at center, transparent 0, #000 100%); }
+
+.partner-coupon-carousel .slick-carousel-item .card:hover .card-head {
+  background-size: 200% !important; }
+
+.partner-coupon-carousel .slick-carousel-item .card:hover .card-head:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid #b8ac94;
+  pointer-events: none;
+  top: -62%; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head .head-icons-container .head-icon {
+  width: 25px;
+  height: 25px; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle,
+.partner-coupon-carousel .slick-carousel-item .card .card-bottom {
+  color: #a7acb1; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h3 {
+  color: #9b8b69;
+  font-weight: 100; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-description {
+  font-size: 0.85rem; }
+
+.partner-coupon-carousel .slick-carousel-item .card .card-bottom-button a {
+  background-color: #9b8b69; }
 
 /* Download Pomobook promo */
 .download-images .download-images-gp {

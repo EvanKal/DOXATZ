@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // initiateIconCarousel();
   // modifyCarouselsToSingleSlideCarousel();
-  checkIfCardDescriptionOverflows();
+  // checkIfCardDescriptionOverflows();
   fillStarsInCards(3);
   setUpSlickCarouselDisplayOptions();
   assignRipleToAllBtn();
@@ -170,6 +170,42 @@ function initializeCarousels() {
         },
         {
           breakpoint: 890,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 590,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+
+  $('.mySlickCarousel.partner-coupon-carousel.full-width-small-coupon-carousel').each(function (elem) {
+    $(this).slick({
+      infinite: true,
+      prevArrow: $(this).siblings(".slick-controls").find(".prev-arrow"),
+      nextArrow: $(this).siblings(".slick-controls").find(".next-arrow"),
+      appendArrows: $(this).siblings(".slick-controls"),
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1500,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 1000,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1

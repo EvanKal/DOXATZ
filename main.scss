@@ -930,6 +930,9 @@ input[type="date"]::-webkit-clear-button {
     background:none !important;
 }
 
+.coupon-in-display .card:hover .card-head:after {
+  border-bottom: 5px solid theme-color-level(secondary, -5);
+}
 ////////////////////////////////////////////////////////////////////
 //Offer details
 ///////////////////////////////////////////////////////////////////
@@ -968,8 +971,29 @@ input[type="date"]::-webkit-clear-button {
     color: theme-color-level(gray600, -5) !important;
 }
 
+.partner-contact-info .partner-contact-element p {
+    color: theme-color-level(gray600, -5);
+}
+
+.reviews-nav-container .pagination .page-link {
+    color: theme-color-level(dark, 8);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    // color: #fff;
+    background-color: theme-color-level(gray600, -10);
+    border-color: theme-color-level(gray600, -10);
+}
+
+.page-link:focus {
+    border-color: #e7e3db;
+    box-shadow: 0 0 0 0.2rem #e7e3db;
+    color: theme-color(light);
+}
+
 /////////////////////////////////////////////////////////////////
-// Custom scrollbar for the mobile-menu
+// Partners
 ////////////////////////////////////////////////////////////////
 
 .partners-display-container .partner-in-display .card-middle,
@@ -994,26 +1018,11 @@ input[type="date"]::-webkit-clear-button {
     background-color: theme-color-level(secondary, -2);
 }
 
-.partner-contact-info .partner-contact-element p {
-    color: theme-color-level(gray600, -5);
+.partner-in-display .card:hover .card-head:after {
+
+  border-bottom: 5px solid theme-color-level(secondary, -5);
 }
 
-.reviews-nav-container .pagination .page-link {
-    color: theme-color-level(dark, 8);
-}
-
-.page-item.active .page-link {
-    z-index: 1;
-    // color: #fff;
-    background-color: theme-color-level(gray600, -10);
-    border-color: theme-color-level(gray600, -10);
-}
-
-.page-link:focus {
-    border-color: #e7e3db;
-    box-shadow: 0 0 0 0.2rem #e7e3db;
-    color: theme-color(light);
-}
 
 /////////////////////////////////////////////////////////////////
 // Custom scrollbar for the mobile-menu
@@ -1286,7 +1295,7 @@ form textarea:focus {
 .main-search form {
     padding: 1em;
     height: 8rem;
-    /* width: 100%; */
+    width: 100%;
 }
 
 .main-search .form-group {
@@ -1713,7 +1722,7 @@ font-size: 1.1rem !important;
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #88754D;
+  border-bottom: 5px solid theme-color-level(secondary, -5);
   pointer-events: none;
   top: -62%;
 }
@@ -1728,7 +1737,7 @@ font-size: 1.1rem !important;
 }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom .price-discounted{
-    font-size: 1.6rem!important;
+    font-size: 1.2rem!important;
 }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom .price-original{
@@ -1741,9 +1750,42 @@ font-size: 1.1rem !important;
 }
 
 .mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .price,
-.mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .rating-display {
-    font-size: 1.3rem !important;
+.mySlickCarousel.small-coupon-carousel .card .card-bottom-footer .rating-display{
+    font-size: 1.2rem !important;
     font-weight: 900 !important;
+    color: theme-color-level(secondary, -2);
+}
+
+.mySlickCarousel.small-coupon-carousel .card .card-middle .rating-display{
+    color: theme-color-level(secondary, -5);
+}
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle,
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-bottom
+{
+    color: theme-color-level(gray600, -5);
+}
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h4
+{
+    color: theme-color-level(secondary, -2);
+    font-weight: 300;
+}
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h5
+{
+    color: theme-color-level(secondary, -2);
+    font-weight: 100;
+}
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-description
+{
+    font-size: 0.85rem;
+}
+
+.mySlickCarousel.small-coupon-carousel .slick-carousel-item .card .card-bottom-button a
+{
+    background-color: theme-color-level(secondary, -2);
 }
 
 /* Large Coupon  */
@@ -1784,7 +1826,7 @@ font-size: 1.1rem !important;
   position: absolute;
   width: 100%;
   height: 100%;
-  border-bottom: 5px solid #88754D;
+  border-bottom: 5px solid theme-color-level(secondary, -5);
   pointer-events: none;
 }
 
@@ -1843,6 +1885,75 @@ font-size: 1.1rem !important;
     height: 100% !important;
     background-size: cover;
     background-position: center;
+}
+
+// Partner coupon
+
+.partner-coupon-carousel .slick-carousel-item .card {
+    font-family: Roboto,sans-serif !important;
+
+    width: 20rem;
+    height: 30rem;
+    min-height: 30rem;
+    min-width: 20rem;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head {
+    background-size: 180%!important;
+    background-position: 50%!important;
+    background-repeat: no-repeat;
+    
+
+    transition: background-size .3s ease-in;
+    -webkit-transition: background-size .3s ease-in;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head:before {
+    z-index: 0;
+    background: radial-gradient(ellipse at center,transparent 0,#000 100%);
+}
+
+.partner-coupon-carousel .slick-carousel-item .card:hover .card-head {
+    background-size: 200%!important;
+}
+
+
+.partner-coupon-carousel .slick-carousel-item .card:hover .card-head:after {
+    content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom: 5px solid theme-color-level(secondary, -5);
+  pointer-events: none;
+  top: -62%;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-head .head-icons-container .head-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle,
+.partner-coupon-carousel .slick-carousel-item .card .card-bottom
+{
+    color: theme-color-level(gray600, -5);
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-headers p.h3
+{
+    color: theme-color-level(secondary, -2);
+    font-weight: 100;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-middle .card-middle-description
+{
+    font-size: 0.85rem;
+}
+
+.partner-coupon-carousel .slick-carousel-item .card .card-bottom-button a
+{
+    background-color: theme-color-level(secondary, -2);
 }
 
 
